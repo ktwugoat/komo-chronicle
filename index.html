@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sean Xiang Chronicle MVP</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --panel: rgba(14, 24, 46, 0.78);
+      --line: rgba(125, 162, 255, 0.28);
+      --text: #eef2ff;
+      --muted: #b9c6f3;
+      --accent: #7da2ff;
+      --accent2: #5eead4;
+      --pink: #d8b4fe;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(125,162,255,.22), transparent 26%),
+        radial-gradient(circle at 80% 15%, rgba(94,234,212,.18), transparent 24%),
+        radial-gradient(circle at 70% 65%, rgba(216,180,254,.14), transparent 24%),
+        linear-gradient(180deg, #06101d 0%, #081425 42%, #09172a 100%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(125,162,255,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(125,162,255,.07) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(circle at center, black 45%, transparent 88%);
+      opacity: .45;
+    }
+
+    .orbit, .orbit2, .orbit3 {
+      position: fixed;
+      border-radius: 999px;
+      border: 1px solid rgba(125,162,255,.16);
+      pointer-events: none;
+      animation: spin 28s linear infinite;
+    }
+    .orbit { width: 700px; height: 700px; top: -180px; right: -120px; }
+    .orbit2 { width: 480px; height: 480px; bottom: -120px; left: -80px; animation-duration: 22s; }
+    .orbit3 { width: 280px; height: 280px; top: 180px; left: 56%; animation-duration: 16s; }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 28px 20px 90px; position: relative; z-index: 1; }
+
+    .hero {
+      min-height: 82vh;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items: center;
+      padding: 30px 0 24px;
+    }
+
+    .eyebrow {
+      color: var(--accent2);
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 96px);
+      line-height: .95;
+      margin: 0 0 16px;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      line-height: 1.75;
+      color: var(--muted);
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+    .chip {
+      border: 1px solid rgba(125,162,255,.24);
+      background: rgba(12, 21, 41, .65);
+      color: #dfe7ff;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-card, .panel {
+      background: var(--panel);
+      border: 1px solid rgba(125,162,255,.16);
+      border-radius: 24px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 30px 80px rgba(0,0,0,.28);
+    }
+
+    .hero-card {
+      padding: 24px;
+      min-height: 430px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 24% 30%, rgba(125,162,255,.28), transparent 18%),
+        radial-gradient(circle at 68% 38%, rgba(94,234,212,.18), transparent 15%),
+        radial-gradient(circle at 58% 76%, rgba(216,180,254,.18), transparent 20%);
+      opacity: .9;
+    }
+
+    .world-title {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: #dbeafe;
+      margin-bottom: 18px;
+    }
+
+    .world {
+      position: relative;
+      z-index: 1;
+      height: 250px;
+      border-radius: 20px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 40%, rgba(125,162,255,.16), transparent 25%),
+        linear-gradient(180deg, rgba(15,24,44,.6), rgba(8,14,28,.9));
+      border: 1px solid rgba(125,162,255,.12);
+    }
+
+    .world:before {
+      content: "";
+      position: absolute;
+      inset: 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(125,162,255,.14);
+      background:
+        radial-gradient(circle at center, rgba(125,162,255,.08), transparent 65%),
+        repeating-linear-gradient(90deg, transparent 0 34px, rgba(125,162,255,.07) 34px 35px),
+        repeating-linear-gradient(transparent 0 24px, rgba(125,162,255,.07) 24px 25px);
+    }
+
+    .dot {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 0 0 7px rgba(125,162,255,.16), 0 0 22px rgba(125,162,255,.48);
+      z-index: 2;
+    }
+
+    .dot.hk { left: 74%; top: 43%; background: var(--accent2); }
+    .dot.uci { left: 20%; top: 40%; background: var(--accent); }
+    .dot.rc { left: 16%; top: 34%; background: var(--pink); }
+    .dot.ca { left: 14%; top: 24%; background: #f9a8d4; }
+
+    .path {
+      position: absolute;
+      height: 2px;
+      background: linear-gradient(90deg, rgba(125,162,255,0), rgba(125,162,255,.8), rgba(125,162,255,0));
+      transform-origin: left center;
+      z-index: 1;
+      opacity: .85;
+    }
+
+    .path.a { left: 18%; top: 39%; width: 55%; transform: rotate(3deg); }
+    .path.b { left: 14%; top: 29%; width: 10%; transform: rotate(55deg); }
+
+    .legend {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .section { margin-top: 42px; }
+    h2 { font-size: 30px; margin: 0 0 16px; }
+
+    .timeline {
+      border-left: 2px solid rgba(125,162,255,.24);
+      margin-left: 10px;
+      padding-left: 22px;
+    }
+
+    .item {
+      margin: 0 0 18px;
+      position: relative;
+      background: rgba(10, 18, 36, .48);
+      border: 1px solid rgba(125,162,255,.11);
+      border-radius: 18px;
+      padding: 16px 16px 16px 18px;
+    }
+
+    .item:before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      border-radius: 50%;
+      position: absolute;
+      left: -30px;
+      top: 22px;
+      box-shadow: 0 0 16px rgba(125,162,255,.5);
+    }
+
+    .year { color: var(--accent2); font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
+    .headline { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+    .desc { color: #d7defe; line-height: 1.65; }
+    .small { color: #93a5d7; font-size: 13px; }
+
+    .validation {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+    }
+
+    .logo {
+      padding: 16px;
+      text-align: center;
+      background: rgba(12, 20, 37, .65);
+      border: 1px solid rgba(125,162,255,.12);
+      border-radius: 16px;
+      color: #dfe7ff;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-card { min-height: auto; }
+      .legend { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="orbit"></div>
+  <div class="orbit2"></div>
+  <div class="orbit3"></div>
+
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Founder Chronicle MVP</div>
+        <h1>Sean Xiang</h1>
+        <div class="subtitle">
+          From an early-start technical trajectory to research, Silicon Valley company building, enterprise security alliances, and the AI era.
+          This version is designed as a hero-style founder page with world-map energy and a long, momentum-heavy timeline.
+        </div>
+        <div class="chips">
+          <div class="chip">USTC at age 16</div>
+          <div class="chip">CUHK PhD</div>
+          <div class="chip">Beckman / UC Irvine</div>
+          <div class="chip">Bloombase</div>
+          <div class="chip">Enterprise Security</div>
+          <div class="chip">AI Era Infrastructure</div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="world-title">Global Arc</div>
+        <div class="world">
+          <div class="path a"></div>
+          <div class="path b"></div>
+          <div class="dot hk" title="Hong Kong / USTC-CUHK arc"></div>
+          <div class="dot uci" title="Irvine / Beckman"></div>
+          <div class="dot rc" title="Redwood City / Silicon Valley"></div>
+          <div class="dot ca" title="Canada"></div>
+        </div>
+        <div class="legend">
+          <div><strong>Hong Kong / China</strong><br><span class="small">USTC opening arc, later CUHK PhD</span></div>
+          <div><strong>Irvine, California</strong><br><span class="small">Beckman Laser Institute / UC Irvine</span></div>
+          <div><strong>Redwood City</strong><br><span class="small">Bloombase / Silicon Valley founder chapter</span></div>
+          <div><strong>Canada</strong><br><span class="small">Expansion / Maple / broader global footprint</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="item"><div class="year">Age 16</div><div class="headline">Entered USTC</div><div class="desc">Entered the University of Science and Technology of China. This becomes the opening mythic milestone for the page.</div></div>
+        <div class="item"><div class="year">Early years</div><div class="headline">Technical formation accelerates</div><div class="desc">An early technical trajectory begins to separate from the ordinary path.</div></div>
+        <div class="item"><div class="year">Graduate era</div><div class="headline">Ph.D. at CUHK</div><div class="desc">Advanced training in Electrical and Electronic Engineering at The Chinese University of Hong Kong.</div></div>
+        <div class="item"><div class="year">Research era</div><div class="headline">Beckman Laser Institute / UC Irvine</div><div class="desc">Research chapter in California before the founder phase.</div></div>
+        <div class="item"><div class="year">Founder era</div><div class="headline">Co-founds Bloombase</div><div class="desc">Bloombase begins its long arc in enterprise data-at-rest security from the Silicon Valley / Redwood City context.</div></div>
+        <div class="item"><div class="year">2014</div><div class="headline">VMware + Hitachi alliance milestones</div><div class="desc">Enterprise ecosystem credibility becomes visible through alliance and certification milestones.</div></div>
+        <div class="item"><div class="year">2015</div><div class="headline">HP, Thales, HPE milestones</div><div class="desc">A cluster of cloud and security validation moments across major enterprise platforms.</div></div>
+        <div class="item"><div class="year">2017</div><div class="headline">IBM validation</div><div class="desc">Bloombase StoreSafe receives IBM security intelligence validation.</div></div>
+        <div class="item"><div class="year">2018</div><div class="headline">VMware Cloud on AWS + Canada chapter</div><div class="desc">Cloud transition and Canada expansion become visible in the public story.</div></div>
+        <div class="item"><div class="year">2019</div><div class="headline">Azure Marketplace + nCipher</div><div class="desc">Public cloud distribution and security partnership continue the enterprise arc.</div></div>
+        <div class="item"><div class="year">2020</div><div class="headline">Futurex milestone</div><div class="desc">Further cryptographic and security ecosystem trust signal.</div></div>
+        <div class="item"><div class="year">2023</div><div class="headline">NVIDIA DPU / GPU era</div><div class="desc">Bloombase is reframed for accelerated infrastructure and the AI era.</div></div>
+        <div class="item"><div class="year">2024</div><div class="headline">Conference / ecosystem presence</div><div class="desc">RSA, GTC, MWC, CYBERSEC and broader ecosystem visibility keep the story current.</div></div>
+        <div class="item"><div class="year">2025</div><div class="headline">Utimaco alliance</div><div class="desc">A current strategic alliance tied to AI-era security solutions.</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Validation Wall</h2>
+      <div class="validation">
+        <div class="logo">VMware</div>
+        <div class="logo">Hitachi</div>
+        <div class="logo">HP / HPE</div>
+        <div class="logo">Thales</div>
+        <div class="logo">IBM</div>
+        <div class="logo">AWS</div>
+        <div class="logo">Azure</div>
+        <div class="logo">nCipher</div>
+        <div class="logo">Futurex</div>
+        <div class="logo">NVIDIA</div>
+        <div class="logo">Utimaco</div>
+        <div class="logo">Bloombase</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
