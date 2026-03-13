@@ -1,0 +1,92 @@
+[
+  {
+    "id": "dossier",
+    "label": "Initial research dossier",
+    "url": "./research/sean-xiang-dossier.md",
+    "note": "In-repo synthesis of public facts, themes, and open questions."
+  },
+  {
+    "id": "timeline-v2",
+    "label": "Milestone table v2",
+    "url": "./research/milestone-table-v2.md",
+    "note": "Structured chronology used to drive the first real implementation."
+  },
+  {
+    "id": "launch-academy",
+    "label": "Launch Academy profile / Maple expansion story (2018)",
+    "url": "https://www.launchacademy.ca/new-start-up-visa-maple-company-bloombase-has-landed/",
+    "note": "Public summary covering Sean Xiang's Ph.D., Beckman role, and Canada expansion rationale."
+  },
+  {
+    "id": "vmware-2014",
+    "label": "Bloombase joins VMware Technology Alliance Partner Program (2014-01-22)",
+    "url": "https://www.bloombase.com/news_and_events/20140122-1.html",
+    "note": "Platform validation milestone."
+  },
+  {
+    "id": "hitachi-2014",
+    "label": "Bloombase joins Hitachi Data Systems Technology Alliance Program (2014-11-18)",
+    "url": "https://www.bloombase.com/news_and_events/20141118-1.html",
+    "note": "Enterprise interoperability and certification signal."
+  },
+  {
+    "id": "hp-2015",
+    "label": "HP Enterprise Secure Key Manager interoperability (2015-09-01)",
+    "url": "https://www.bloombase.com/news_and_events/20150901-1.html",
+    "note": "Security validation milestone."
+  },
+  {
+    "id": "thales-2015",
+    "label": "Thales ASAP alliance (2015-11-02)",
+    "url": "https://www.bloombase.com/news_and_events/20151102-1.html",
+    "note": "Cloud and big-data encryption ecosystem milestone."
+  },
+  {
+    "id": "hpe-2015",
+    "label": "HPE Helion Ready / ArcSight certification (2015-12-03)",
+    "url": "https://www.bloombase.com/news_and_events/20151203-1.html",
+    "note": "Cloud and security credibility signal."
+  },
+  {
+    "id": "ibm-2017",
+    "label": "IBM Ready for Security Intelligence validation (2017-03-20)",
+    "url": "https://www.bloombase.com/news_and_events/20170320-1.html",
+    "note": "Mature enterprise validation."
+  },
+  {
+    "id": "vmware-aws-2018",
+    "label": "StoreSafe for VMware Cloud on AWS (2018-07-09)",
+    "url": "https://www.bloombase.com/news_and_events/20180709-1.html",
+    "note": "Cloud transition milestone."
+  },
+  {
+    "id": "azure-2019",
+    "label": "Microsoft Azure Marketplace listing (2019-01-22)",
+    "url": "https://www.bloombase.com/news_and_events/20190122-1.html",
+    "note": "Public cloud distribution milestone."
+  },
+  {
+    "id": "ncipher-2019",
+    "label": "Bloombase and nCipher collaboration (2019-10-21)",
+    "url": "https://www.bloombase.com/news_and_events/20191021-1.html",
+    "note": "Strategic cloud security alliance."
+  },
+  {
+    "id": "futurex-2020",
+    "label": "Futurex and Bloombase partnership (2020-02-18)",
+    "url": "https://www.bloombase.com/news_and_events/20200218-1.html",
+    "note": "Cryptographic trust expansion."
+  },
+  {
+    "id": "nvidia-2023",
+    "label": "Rebuilding Bloombase data-at-rest security with NVIDIA DPUs and GPUs (2023)",
+    "url": "https://www.bloombase.com/blog/rebuilding-bloombase-data-at-rest-security-with-nvidia-dpus-and-gpus/",
+    "note": "AI-era infrastructure repositioning."
+  },
+  {
+    "id": "utimaco-2025",
+    "label": "Bloombase and Utimaco technology alliance for the AI era (2025-04-29)",
+    "url": "https://www.bloombase.com/",
+    "note": "Current strategic relevance; should later be replaced with the direct announcement URL once captured."
+  }
+]

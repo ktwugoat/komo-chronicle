@@ -1,0 +1,14 @@
+[
+  {
+    "group": "Cloud & platform ecosystems",
+    "items": ["VMware", "AWS", "Microsoft Azure", "HPE Helion", "IBM"]
+  },
+  {
+    "group": "Security & HSM partners",
+    "items": ["HP Enterprise Secure Key Manager", "Thales", "nCipher", "Futurex", "Utimaco"]
+  },
+  {
+    "group": "Infrastructure credibility",
+    "items": ["Hitachi Vantara / HDS", "Bloombase StoreSafe", "NVIDIA", "ArcSight", "Enterprise data-at-rest security"]
+  }
+]

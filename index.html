@@ -3,339 +3,572 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sean Xiang Chronicle MVP</title>
+  <title>Sean Xiang — Founder Chronicle</title>
+  <meta name="description" content="A source-backed editorial chronicle of Sean Xiang's path from research to enterprise security founder and AI-era infrastructure builder." />
   <style>
     :root {
-      --bg: #07111f;
-      --panel: rgba(14, 24, 46, 0.78);
-      --line: rgba(125, 162, 255, 0.28);
-      --text: #eef2ff;
-      --muted: #b9c6f3;
-      --accent: #7da2ff;
-      --accent2: #5eead4;
-      --pink: #d8b4fe;
+      --bg: #f3efe7;
+      --paper: rgba(255,255,255,.74);
+      --paper-strong: rgba(255,255,255,.92);
+      --ink: #1f2732;
+      --muted: #5f6977;
+      --soft: #758192;
+      --line: rgba(31,39,50,.12);
+      --line-strong: rgba(31,39,50,.2);
+      --accent: #19324f;
+      --accent-2: #2d5f73;
+      --accent-3: #b48a5a;
+      --shadow: 0 28px 60px rgba(31,39,50,.12);
+      --max: 1240px;
     }
 
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Inter, Arial, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
       background:
-        radial-gradient(circle at 15% 20%, rgba(125,162,255,.22), transparent 26%),
-        radial-gradient(circle at 80% 15%, rgba(94,234,212,.18), transparent 24%),
-        radial-gradient(circle at 70% 65%, rgba(216,180,254,.14), transparent 24%),
-        linear-gradient(180deg, #06101d 0%, #081425 42%, #09172a 100%);
-      color: var(--text);
-      overflow-x: hidden;
+        radial-gradient(circle at top left, rgba(180,138,90,.10), transparent 28%),
+        radial-gradient(circle at 85% 10%, rgba(45,95,115,.10), transparent 22%),
+        linear-gradient(180deg, #f7f3ec 0%, #f2ede5 100%);
+      min-height: 100vh;
     }
 
-    body:before {
+    body::before {
       content: "";
       position: fixed;
       inset: 0;
       pointer-events: none;
-      background-image:
-        linear-gradient(rgba(125,162,255,.07) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(125,162,255,.07) 1px, transparent 1px);
-      background-size: 60px 60px;
-      mask-image: radial-gradient(circle at center, black 45%, transparent 88%);
-      opacity: .45;
+      background-image: linear-gradient(rgba(31,39,50,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(31,39,50,.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(circle at center, black 42%, transparent 88%);
+      opacity: .55;
     }
 
-    .orbit, .orbit2, .orbit3 {
-      position: fixed;
-      border-radius: 999px;
-      border: 1px solid rgba(125,162,255,.16);
-      pointer-events: none;
-      animation: spin 28s linear infinite;
+    a { color: inherit; }
+    .shell { position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; padding: 32px 20px 88px; }
+    .topline {
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--soft); margin-bottom: 24px;
     }
-    .orbit { width: 700px; height: 700px; top: -180px; right: -120px; }
-    .orbit2 { width: 480px; height: 480px; bottom: -120px; left: -80px; animation-duration: 22s; }
-    .orbit3 { width: 280px; height: 280px; top: 180px; left: 56%; animation-duration: 16s; }
-    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-
-    .wrap { max-width: 1140px; margin: 0 auto; padding: 28px 20px 90px; position: relative; z-index: 1; }
 
     .hero {
-      min-height: 82vh;
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 28px;
-      align-items: center;
-      padding: 30px 0 24px;
+      display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr); gap: 24px; align-items: stretch;
+      margin-bottom: 28px;
     }
 
+    .card {
+      background: var(--paper);
+      border: 1px solid rgba(255,255,255,.72);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      border-radius: 28px;
+    }
+
+    .hero-copy { padding: 34px 34px 30px; }
     .eyebrow {
-      color: var(--accent2);
-      font-size: 12px;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
+      display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; color: var(--accent-2);
+      font-size: 12px; letter-spacing: .18em; text-transform: uppercase;
     }
-
+    .eyebrow::before { content: ""; width: 40px; height: 1px; background: currentColor; opacity: .6; }
     h1 {
-      font-size: clamp(48px, 8vw, 96px);
-      line-height: .95;
-      margin: 0 0 16px;
-      letter-spacing: -0.04em;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      line-height: 1.75;
-      color: var(--muted);
-      max-width: 760px;
-      margin-bottom: 22px;
-    }
-
-    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
-    .chip {
-      border: 1px solid rgba(125,162,255,.24);
-      background: rgba(12, 21, 41, .65);
-      color: #dfe7ff;
-      padding: 10px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      backdrop-filter: blur(8px);
-    }
-
-    .hero-card, .panel {
-      background: var(--panel);
-      border: 1px solid rgba(125,162,255,.16);
-      border-radius: 24px;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 30px 80px rgba(0,0,0,.28);
-    }
-
-    .hero-card {
-      padding: 24px;
-      min-height: 430px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-card:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 24% 30%, rgba(125,162,255,.28), transparent 18%),
-        radial-gradient(circle at 68% 38%, rgba(94,234,212,.18), transparent 15%),
-        radial-gradient(circle at 58% 76%, rgba(216,180,254,.18), transparent 20%);
-      opacity: .9;
-    }
-
-    .world-title {
-      position: relative;
-      z-index: 1;
-      font-size: 14px;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: #dbeafe;
-      margin-bottom: 18px;
-    }
-
-    .world {
-      position: relative;
-      z-index: 1;
-      height: 250px;
-      border-radius: 20px;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 20% 40%, rgba(125,162,255,.16), transparent 25%),
-        linear-gradient(180deg, rgba(15,24,44,.6), rgba(8,14,28,.9));
-      border: 1px solid rgba(125,162,255,.12);
-    }
-
-    .world:before {
-      content: "";
-      position: absolute;
-      inset: 16px;
-      border-radius: 999px;
-      border: 1px solid rgba(125,162,255,.14);
-      background:
-        radial-gradient(circle at center, rgba(125,162,255,.08), transparent 65%),
-        repeating-linear-gradient(90deg, transparent 0 34px, rgba(125,162,255,.07) 34px 35px),
-        repeating-linear-gradient(transparent 0 24px, rgba(125,162,255,.07) 24px 25px);
-    }
-
-    .dot {
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: white;
-      box-shadow: 0 0 0 7px rgba(125,162,255,.16), 0 0 22px rgba(125,162,255,.48);
-      z-index: 2;
-    }
-
-    .dot.hk { left: 74%; top: 43%; background: var(--accent2); }
-    .dot.uci { left: 20%; top: 40%; background: var(--accent); }
-    .dot.rc { left: 16%; top: 34%; background: var(--pink); }
-    .dot.ca { left: 14%; top: 24%; background: #f9a8d4; }
-
-    .path {
-      position: absolute;
-      height: 2px;
-      background: linear-gradient(90deg, rgba(125,162,255,0), rgba(125,162,255,.8), rgba(125,162,255,0));
-      transform-origin: left center;
-      z-index: 1;
-      opacity: .85;
-    }
-
-    .path.a { left: 18%; top: 39%; width: 55%; transform: rotate(3deg); }
-    .path.b { left: 14%; top: 29%; width: 10%; transform: rotate(55deg); }
-
-    .legend {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 12px;
-      margin-top: 16px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    .section { margin-top: 42px; }
-    h2 { font-size: 30px; margin: 0 0 16px; }
-
-    .timeline {
-      border-left: 2px solid rgba(125,162,255,.24);
-      margin-left: 10px;
-      padding-left: 22px;
-    }
-
-    .item {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(54px, 8.2vw, 110px);
+      line-height: .92;
+      letter-spacing: -.045em;
       margin: 0 0 18px;
-      position: relative;
-      background: rgba(10, 18, 36, .48);
-      border: 1px solid rgba(125,162,255,.11);
-      border-radius: 18px;
-      padding: 16px 16px 16px 18px;
+      max-width: 7ch;
+    }
+    .lede {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(22px, 2.1vw, 30px);
+      line-height: 1.42;
+      margin: 0 0 18px;
+      color: #253040;
+      max-width: 18ch;
+    }
+    .summary {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75;
+      max-width: 60ch;
+      margin: 0 0 24px;
+    }
+    .chips, .proof-strip { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      padding: 10px 14px; border-radius: 999px; font-size: 13px; color: var(--accent);
+      background: rgba(25,50,79,.06); border: 1px solid rgba(25,50,79,.1);
     }
 
-    .item:before {
-      content: "";
-      width: 12px;
-      height: 12px;
-      background: linear-gradient(135deg, var(--accent2), var(--accent));
-      border-radius: 50%;
-      position: absolute;
-      left: -30px;
-      top: 22px;
-      box-shadow: 0 0 16px rgba(125,162,255,.5);
+    .hero-aside { padding: 28px; display: flex; flex-direction: column; gap: 18px; }
+    .aside-title {
+      font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--soft);
+    }
+    .thesis-grid {
+      display: grid; gap: 12px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .stat {
+      padding: 16px; border-radius: 20px; background: rgba(255,255,255,.72); border: 1px solid rgba(31,39,50,.08);
+    }
+    .stat strong { display: block; font-family: Georgia, serif; font-size: 28px; margin-bottom: 4px; }
+    .stat span { font-size: 13px; line-height: 1.5; color: var(--muted); }
+
+    .phase-rail {
+      position: sticky; top: 0; z-index: 10; margin: 0 0 28px; padding: 14px; border-radius: 22px; background: rgba(247,243,236,.86);
+      backdrop-filter: blur(18px); border: 1px solid rgba(31,39,50,.08); box-shadow: 0 14px 28px rgba(31,39,50,.08);
+    }
+    .phase-rail ol {
+      display: grid; grid-template-columns: repeat(7, minmax(0,1fr)); gap: 10px; list-style: none; margin: 0; padding: 0;
+    }
+    .phase-rail a {
+      display: block; text-decoration: none; padding: 12px 10px; border-radius: 16px; min-height: 74px;
+      border: 1px solid transparent; transition: .18s ease; color: var(--muted);
+      background: rgba(255,255,255,.54);
+    }
+    .phase-rail a .phase-kicker { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .16em; margin-bottom: 8px; color: var(--soft); }
+    .phase-rail a strong { display: block; font-size: 14px; line-height: 1.4; color: var(--ink); }
+    .phase-rail a.active, .phase-rail a:hover {
+      border-color: rgba(25,50,79,.12); background: rgba(25,50,79,.07); color: var(--accent);
+      transform: translateY(-1px);
     }
 
-    .year { color: var(--accent2); font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 6px; }
-    .headline { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
-    .desc { color: #d7defe; line-height: 1.65; }
-    .small { color: #93a5d7; font-size: 13px; }
+    .overview {
+      display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); gap: 24px; margin-bottom: 34px;
+    }
+    .overview-copy, .overview-notes, .map-panel, .validation-panel, .sources-panel { padding: 28px; }
+    h2 {
+      font-family: Georgia, serif; font-size: clamp(32px, 4vw, 48px); letter-spacing: -.03em; margin: 0 0 12px;
+    }
+    .section-kicker, .section-label {
+      font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--soft); margin-bottom: 14px;
+    }
+    .intro-copy { color: var(--muted); line-height: 1.8; margin: 0; }
+    .overview-notes ul { margin: 0; padding-left: 20px; color: var(--muted); line-height: 1.8; }
 
-    .validation {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-      gap: 12px;
+    .main-grid {
+      display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(300px, .98fr); gap: 24px; align-items: start;
+    }
+    .chapters { display: grid; gap: 18px; }
+    .chapter {
+      position: relative; padding: 28px 28px 26px 34px;
+    }
+    .chapter::before {
+      content: ""; position: absolute; left: 16px; top: 30px; bottom: 30px; width: 2px; background: linear-gradient(180deg, rgba(25,50,79,.25), rgba(25,50,79,0));
+    }
+    .chapter-head { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: center; margin-bottom: 14px; }
+    .chapter-range { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-2); }
+    .chapter-phase { font-size: 12px; color: var(--soft); }
+    .chapter h3 {
+      font-family: Georgia, serif; font-size: clamp(28px, 3vw, 40px); line-height: 1.08; letter-spacing: -.03em; margin: 0 0 10px;
+    }
+    .dek { color: var(--accent); font-size: 17px; line-height: 1.65; margin-bottom: 18px; }
+    .chapter p { color: var(--muted); line-height: 1.82; margin: 0 0 14px; }
+    .proof-list { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .proof-list li {
+      padding: 12px 14px; border-radius: 16px; background: rgba(25,50,79,.05); border: 1px solid rgba(25,50,79,.08); color: var(--ink); line-height: 1.6;
+    }
+    .chapter-sources {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;
+    }
+    .source-pill {
+      text-decoration: none; padding: 8px 10px; border-radius: 999px; background: rgba(180,138,90,.12); border: 1px solid rgba(180,138,90,.18); color: #694f2f; font-size: 12px;
     }
 
-    .logo {
-      padding: 16px;
-      text-align: center;
-      background: rgba(12, 20, 37, .65);
-      border: 1px solid rgba(125,162,255,.12);
-      border-radius: 16px;
-      color: #dfe7ff;
-      font-weight: 600;
-      letter-spacing: .03em;
+    .sticky-stack { position: sticky; top: 98px; display: grid; gap: 18px; }
+    .map-panel { overflow: hidden; }
+    .map-frame {
+      position: relative; min-height: 420px; border-radius: 24px; overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(25,50,79,.08), rgba(25,50,79,.04)),
+        linear-gradient(120deg, rgba(255,255,255,.55), rgba(255,255,255,.2));
+      border: 1px solid rgba(25,50,79,.08);
+    }
+    .map-frame::before {
+      content: ""; position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 18% 24%, rgba(25,50,79,.08), transparent 16%), radial-gradient(circle at 80% 28%, rgba(45,95,115,.08), transparent 18%), radial-gradient(circle at 50% 68%, rgba(180,138,90,.08), transparent 20%);
+      pointer-events: none;
+    }
+    .map-grid {
+      position: absolute; inset: 0; background-image: linear-gradient(rgba(31,39,50,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(31,39,50,.045) 1px, transparent 1px); background-size: 44px 44px; opacity: .55;
+    }
+    .map-line, .map-dot { position: absolute; z-index: 1; }
+    .map-line {
+      height: 2px; transform-origin: left center; background: linear-gradient(90deg, rgba(25,50,79,0), rgba(25,50,79,.72), rgba(25,50,79,0));
+    }
+    .map-dot {
+      width: 16px; height: 16px; border-radius: 50%; transform: translate(-50%, -50%);
+      background: rgba(255,255,255,.95); border: 2px solid rgba(25,50,79,.24);
+      box-shadow: 0 0 0 10px rgba(25,50,79,.08);
+      transition: .18s ease;
+    }
+    .map-dot.active { transform: translate(-50%, -50%) scale(1.15); background: #19324f; border-color: #19324f; box-shadow: 0 0 0 14px rgba(25,50,79,.12); }
+    .map-label {
+      position: absolute; transform: translate(12px, -50%); max-width: 180px; z-index: 2; font-size: 12px; color: var(--muted);
+    }
+    .map-label strong { display: block; font-size: 14px; color: var(--ink); margin-bottom: 3px; }
+    .map-caption {
+      position: absolute; left: 18px; right: 18px; bottom: 18px; padding: 18px; border-radius: 18px;
+      background: rgba(255,255,255,.82); border: 1px solid rgba(25,50,79,.1); backdrop-filter: blur(10px);
+    }
+    .map-caption h3 { margin: 0 0 6px; font-size: 20px; font-family: Georgia, serif; }
+    .map-caption p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+    .validation-groups { display: grid; gap: 14px; }
+    .validation-group {
+      padding: 18px; border-radius: 20px; background: rgba(255,255,255,.66); border: 1px solid rgba(25,50,79,.08);
+    }
+    .validation-group h3 { margin: 0 0 10px; font-size: 15px; letter-spacing: .02em; }
+    .validation-items { display: flex; flex-wrap: wrap; gap: 8px; }
+    .validation-items span {
+      padding: 8px 10px; border-radius: 999px; background: rgba(25,50,79,.05); border: 1px solid rgba(25,50,79,.07); font-size: 12px; color: var(--accent);
     }
 
-    @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-card { min-height: auto; }
-      .legend { grid-template-columns: 1fr; }
+    .sources-wrap { margin-top: 34px; }
+    .sources-list { display: grid; gap: 12px; margin-top: 18px; }
+    .source-item {
+      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: start;
+      padding: 16px 18px; border-radius: 18px; background: rgba(255,255,255,.66); border: 1px solid rgba(25,50,79,.08);
+    }
+    .source-item strong { display: block; margin-bottom: 6px; }
+    .source-item p { margin: 0; color: var(--muted); line-height: 1.65; }
+    .source-item a {
+      text-decoration: none; white-space: nowrap; align-self: center; padding: 10px 12px; border-radius: 999px;
+      background: rgba(25,50,79,.06); border: 1px solid rgba(25,50,79,.08); color: var(--accent); font-size: 12px;
+    }
+
+    .footer-note { margin-top: 18px; color: var(--soft); font-size: 13px; line-height: 1.7; }
+
+    @media (max-width: 1080px) {
+      .hero, .overview, .main-grid { grid-template-columns: 1fr; }
+      .sticky-stack { position: static; }
+      .phase-rail ol { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    }
+
+    @media (max-width: 700px) {
+      .shell { padding-inline: 14px; }
+      .hero-copy, .hero-aside, .overview-copy, .overview-notes, .chapter, .map-panel, .validation-panel, .sources-panel { padding: 22px; }
+      .phase-rail ol { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .chapter { padding-left: 28px; }
+      .chapter::before { left: 12px; }
+      .thesis-grid { grid-template-columns: 1fr; }
+      .source-item { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <div class="orbit"></div>
-  <div class="orbit2"></div>
-  <div class="orbit3"></div>
+  <main class="shell">
+    <div class="topline">
+      <span>Sean Xiang Chronicle</span>
+      <span>Editorial founder timeline · source-backed structure</span>
+    </div>
 
-  <div class="wrap">
     <section class="hero">
-      <div>
-        <div class="eyebrow">Founder Chronicle MVP</div>
+      <article class="card hero-copy">
+        <div class="eyebrow">Founder chronicle</div>
         <h1>Sean Xiang</h1>
-        <div class="subtitle">
-          From an early-start technical trajectory to research, Silicon Valley company building, enterprise security alliances, and the AI era.
-          This version is designed as a hero-style founder page with world-map energy and a long, momentum-heavy timeline.
+        <p class="lede">From doctoral engineering formation to a long enterprise-security build — and now an argument for relevance in the AI infrastructure era.</p>
+        <p class="summary">
+          This version stops treating the project as a generic landing page. It reframes the site as a premium editorial chronicle with a single chronological spine, selective geography, curated validation, and visible sources.
+        </p>
+        <div class="chips" id="heroChips">
+          <span class="chip">CUHK Ph.D.</span>
+          <span class="chip">Beckman / UC Irvine</span>
+          <span class="chip">Bloombase</span>
+          <span class="chip">Enterprise security alliances</span>
+          <span class="chip">NVIDIA / AI-era repositioning</span>
         </div>
-        <div class="chips">
-          <div class="chip">USTC at age 16</div>
-          <div class="chip">CUHK PhD</div>
-          <div class="chip">Beckman / UC Irvine</div>
-          <div class="chip">Bloombase</div>
-          <div class="chip">Enterprise Security</div>
-          <div class="chip">AI Era Infrastructure</div>
-        </div>
-      </div>
+      </article>
 
-      <div class="hero-card">
-        <div class="world-title">Global Arc</div>
-        <div class="world">
-          <div class="path a"></div>
-          <div class="path b"></div>
-          <div class="dot hk" title="Hong Kong / USTC-CUHK arc"></div>
-          <div class="dot uci" title="Irvine / Beckman"></div>
-          <div class="dot rc" title="Redwood City / Silicon Valley"></div>
-          <div class="dot ca" title="Canada"></div>
+      <aside class="card hero-aside">
+        <div>
+          <div class="aside-title">Chronicle thesis</div>
+          <p class="summary" style="margin-top:8px; margin-bottom:0;">
+            The story is strongest when read as durable technical depth compounding into company-building, ecosystem trust, and a present-tense AI-security chapter — not as a vanity profile.
+          </p>
         </div>
-        <div class="legend">
-          <div><strong>Hong Kong / China</strong><br><span class="small">USTC opening arc, later CUHK PhD</span></div>
-          <div><strong>Irvine, California</strong><br><span class="small">Beckman Laser Institute / UC Irvine</span></div>
-          <div><strong>Redwood City</strong><br><span class="small">Bloombase / Silicon Valley founder chapter</span></div>
-          <div><strong>Canada</strong><br><span class="small">Expansion / Maple / broader global footprint</span></div>
+        <div class="thesis-grid">
+          <div class="stat">
+            <strong>7</strong>
+            <span>Editorial chapters with distinct narrative roles rather than a flat milestone list.</span>
+          </div>
+          <div class="stat">
+            <strong>5</strong>
+            <span>Geographic anchors, kept selective so the map stays explanatory instead of decorative.</span>
+          </div>
+          <div class="stat">
+            <strong>12+</strong>
+            <span>Named ecosystem signals spanning cloud, HSM, enterprise security, and AI infrastructure.</span>
+          </div>
+          <div class="stat">
+            <strong>14</strong>
+            <span>Source references surfaced in the archive instead of buried in planning docs.</span>
+          </div>
         </div>
-      </div>
+      </aside>
     </section>
 
-    <section class="section">
-      <h2>Timeline</h2>
-      <div class="timeline">
-        <div class="item"><div class="year">Age 16</div><div class="headline">Entered USTC</div><div class="desc">Entered the University of Science and Technology of China. This becomes the opening mythic milestone for the page.</div></div>
-        <div class="item"><div class="year">Early years</div><div class="headline">Technical formation accelerates</div><div class="desc">An early technical trajectory begins to separate from the ordinary path.</div></div>
-        <div class="item"><div class="year">Graduate era</div><div class="headline">Ph.D. at CUHK</div><div class="desc">Advanced training in Electrical and Electronic Engineering at The Chinese University of Hong Kong.</div></div>
-        <div class="item"><div class="year">Research era</div><div class="headline">Beckman Laser Institute / UC Irvine</div><div class="desc">Research chapter in California before the founder phase.</div></div>
-        <div class="item"><div class="year">Founder era</div><div class="headline">Co-founds Bloombase</div><div class="desc">Bloombase begins its long arc in enterprise data-at-rest security from the Silicon Valley / Redwood City context.</div></div>
-        <div class="item"><div class="year">2014</div><div class="headline">VMware + Hitachi alliance milestones</div><div class="desc">Enterprise ecosystem credibility becomes visible through alliance and certification milestones.</div></div>
-        <div class="item"><div class="year">2015</div><div class="headline">HP, Thales, HPE milestones</div><div class="desc">A cluster of cloud and security validation moments across major enterprise platforms.</div></div>
-        <div class="item"><div class="year">2017</div><div class="headline">IBM validation</div><div class="desc">Bloombase StoreSafe receives IBM security intelligence validation.</div></div>
-        <div class="item"><div class="year">2018</div><div class="headline">VMware Cloud on AWS + Canada chapter</div><div class="desc">Cloud transition and Canada expansion become visible in the public story.</div></div>
-        <div class="item"><div class="year">2019</div><div class="headline">Azure Marketplace + nCipher</div><div class="desc">Public cloud distribution and security partnership continue the enterprise arc.</div></div>
-        <div class="item"><div class="year">2020</div><div class="headline">Futurex milestone</div><div class="desc">Further cryptographic and security ecosystem trust signal.</div></div>
-        <div class="item"><div class="year">2023</div><div class="headline">NVIDIA DPU / GPU era</div><div class="desc">Bloombase is reframed for accelerated infrastructure and the AI era.</div></div>
-        <div class="item"><div class="year">2024</div><div class="headline">Conference / ecosystem presence</div><div class="desc">RSA, GTC, MWC, CYBERSEC and broader ecosystem visibility keep the story current.</div></div>
-        <div class="item"><div class="year">2025</div><div class="headline">Utimaco alliance</div><div class="desc">A current strategic alliance tied to AI-era security solutions.</div></div>
-      </div>
+    <nav class="phase-rail card" aria-label="Chapter navigation">
+      <ol id="phaseRail"></ol>
+    </nav>
+
+    <section class="overview">
+      <article class="card overview-copy">
+        <div class="section-kicker">Information architecture</div>
+        <h2>A founder page that reads like an editorial archive</h2>
+        <p class="intro-copy">
+          The page follows a calm magazine-like rhythm: thesis first, then chapter navigation, then the main chronology, then a geography layer, then a selective validation wall, and finally the source archive. That sequence keeps the project premium and legible instead of turning into a startup page with a timeline bolted on.
+        </p>
+      </article>
+      <aside class="card overview-notes">
+        <div class="section-kicker">Design memo translated into implementation</div>
+        <ul>
+          <li>One chronological spine, chapter by chapter.</li>
+          <li>Map movement only when the story changes.</li>
+          <li>Validation grouped by meaning, not dumped as logos.</li>
+          <li>Sources made visible to support editorial credibility.</li>
+        </ul>
+      </aside>
     </section>
 
-    <section class="section">
-      <h2>Validation Wall</h2>
-      <div class="validation">
-        <div class="logo">VMware</div>
-        <div class="logo">Hitachi</div>
-        <div class="logo">HP / HPE</div>
-        <div class="logo">Thales</div>
-        <div class="logo">IBM</div>
-        <div class="logo">AWS</div>
-        <div class="logo">Azure</div>
-        <div class="logo">nCipher</div>
-        <div class="logo">Futurex</div>
-        <div class="logo">NVIDIA</div>
-        <div class="logo">Utimaco</div>
-        <div class="logo">Bloombase</div>
-      </div>
+    <section class="main-grid">
+      <div class="chapters" id="chapters"></div>
+
+      <aside class="sticky-stack">
+        <section class="card map-panel">
+          <div class="section-label">Geography module</div>
+          <h2 style="font-size:34px; margin-bottom:14px;">A selective world map, synced to the chapter arc</h2>
+          <div class="map-frame" id="mapFrame">
+            <div class="map-grid"></div>
+            <div class="map-caption">
+              <h3 id="mapTitle">Loading…</h3>
+              <p id="mapSummary"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card validation-panel">
+          <div class="section-label">Validation wall</div>
+          <h2 style="font-size:34px; margin-bottom:14px;">Credibility grouped by ecosystem role</h2>
+          <div class="validation-groups" id="validationGroups"></div>
+        </section>
+      </aside>
     </section>
-  </div>
+
+    <section class="sources-wrap">
+      <article class="card sources-panel">
+        <div class="section-label">Archive / sources</div>
+        <h2>The site earns trust by showing its receipts</h2>
+        <p class="intro-copy">
+          The source archive is not decorative. It is what moves the page away from tribute aesthetics and toward museum-style credibility. Some early-life details remain intentionally restrained because the public record still needs stronger confirmation.
+        </p>
+        <div class="sources-list" id="sourcesList"></div>
+        <p class="footer-note">Next upgrade path: replace remaining inferred early-life placeholders with direct primary sources, then add richer media artifacts for the strongest chapters.</p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    async function loadJson(path) {
+      const res = await fetch(path);
+      if (!res.ok) throw new Error(`Failed to load ${path}`);
+      return res.json();
+    }
+
+    function make(tag, className, text) {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (text !== undefined) el.textContent = text;
+      return el;
+    }
+
+    function renderPhaseRail(chapters) {
+      const rail = document.getElementById('phaseRail');
+      chapters.forEach((chapter) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = `#${chapter.id}`;
+        a.dataset.target = chapter.id;
+        a.innerHTML = `<span class="phase-kicker">${chapter.range}</span><strong>${chapter.phase}</strong>`;
+        li.appendChild(a);
+        rail.appendChild(li);
+      });
+    }
+
+    function renderChapters(chapters, sourcesById) {
+      const root = document.getElementById('chapters');
+      chapters.forEach((chapter) => {
+        const article = make('article', 'card chapter');
+        article.id = chapter.id;
+        article.dataset.chapter = chapter.id;
+        article.dataset.locationId = chapter.locationId;
+
+        const head = make('div', 'chapter-head');
+        head.append(make('span', 'chapter-range', chapter.range));
+        head.append(make('span', 'chapter-phase', chapter.phase));
+        article.append(head);
+
+        article.append(make('h3', '', chapter.title));
+        article.append(make('div', 'dek', chapter.dek));
+
+        chapter.narrative.forEach((paragraph) => article.append(make('p', '', paragraph)));
+
+        const proofList = make('ul', 'proof-list');
+        chapter.proofPoints.forEach((point) => {
+          const li = make('li', '', point);
+          proofList.append(li);
+        });
+        article.append(proofList);
+
+        const sourceRow = make('div', 'chapter-sources');
+        chapter.sources.forEach((sourceId) => {
+          const source = sourcesById.get(sourceId);
+          if (!source) return;
+          const link = make('a', 'source-pill', source.label);
+          link.href = source.url;
+          link.target = source.url.startsWith('http') ? '_blank' : '_self';
+          if (link.target === '_blank') link.rel = 'noreferrer';
+          sourceRow.append(link);
+        });
+        article.append(sourceRow);
+
+        root.append(article);
+      });
+    }
+
+    function drawMap(locations, chapters) {
+      const frame = document.getElementById('mapFrame');
+      const locationById = new Map(locations.map((location) => [location.id, location]));
+      const title = document.getElementById('mapTitle');
+      const summary = document.getElementById('mapSummary');
+
+      const dotRefs = new Map();
+      const labelRefs = new Map();
+
+      for (let i = 0; i < locations.length - 1; i++) {
+        const start = locations[i];
+        const end = locations[i + 1];
+        const dx = end.x - start.x;
+        const dy = end.y - start.y;
+        const length = Math.sqrt(dx * dx + dy * dy);
+        const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+        const line = make('div', 'map-line');
+        line.style.left = `${start.x}%`;
+        line.style.top = `${start.y}%`;
+        line.style.width = `${length}%`;
+        line.style.transform = `rotate(${angle}deg)`;
+        frame.append(line);
+      }
+
+      locations.forEach((location) => {
+        const dot = make('button', 'map-dot');
+        dot.type = 'button';
+        dot.style.left = `${location.x}%`;
+        dot.style.top = `${location.y}%`;
+        dot.setAttribute('aria-label', location.name);
+        dot.addEventListener('click', () => {
+          const chapter = chapters.find((item) => item.locationId === location.id);
+          if (chapter) document.getElementById(chapter.id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        frame.append(dot);
+        dotRefs.set(location.id, dot);
+
+        const label = make('div', 'map-label');
+        label.style.left = `${location.x}%`;
+        label.style.top = `${location.y}%`;
+        label.innerHTML = `<strong>${location.name}</strong>${location.label}`;
+        frame.append(label);
+        labelRefs.set(location.id, label);
+      });
+
+      function setActive(locationId) {
+        locations.forEach((location) => {
+          dotRefs.get(location.id)?.classList.toggle('active', location.id === locationId);
+          labelRefs.get(location.id)?.style.setProperty('opacity', location.id === locationId ? '1' : '.62');
+        });
+        const current = locationById.get(locationId) || locations[0];
+        title.textContent = current.name;
+        summary.textContent = current.summary;
+      }
+
+      setActive(chapters[0].locationId);
+      return setActive;
+    }
+
+    function renderValidation(groups) {
+      const root = document.getElementById('validationGroups');
+      groups.forEach((group) => {
+        const section = make('section', 'validation-group');
+        section.append(make('h3', '', group.group));
+        const items = make('div', 'validation-items');
+        group.items.forEach((item) => items.append(make('span', '', item)));
+        section.append(items);
+        root.append(section);
+      });
+    }
+
+    function renderSources(sources) {
+      const root = document.getElementById('sourcesList');
+      sources.forEach((source) => {
+        const article = make('article', 'source-item');
+        const copy = make('div');
+        copy.append(make('strong', '', source.label));
+        copy.append(make('p', '', source.note));
+        article.append(copy);
+        const link = make('a', '', source.url.startsWith('http') ? 'Open source' : 'Open file');
+        link.href = source.url;
+        link.target = source.url.startsWith('http') ? '_blank' : '_self';
+        if (link.target === '_blank') link.rel = 'noreferrer';
+        article.append(link);
+        root.append(article);
+      });
+    }
+
+    function activateScrollSync(chapters, setActiveLocation) {
+      const chapterEls = chapters.map((chapter) => document.getElementById(chapter.id));
+      const railLinks = Array.from(document.querySelectorAll('.phase-rail a'));
+
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        const activeId = visible.target.id;
+        const activeChapter = chapters.find((chapter) => chapter.id === activeId);
+        if (!activeChapter) return;
+        railLinks.forEach((link) => link.classList.toggle('active', link.dataset.target === activeId));
+        setActiveLocation(activeChapter.locationId);
+      }, {
+        rootMargin: '-18% 0px -50% 0px',
+        threshold: [0.25, 0.5, 0.75]
+      });
+
+      chapterEls.forEach((el) => observer.observe(el));
+      railLinks[0]?.classList.add('active');
+    }
+
+    async function init() {
+      const [chapters, locations, validationGroups, sources] = await Promise.all([
+        loadJson('./data/chapters.json'),
+        loadJson('./data/locations.json'),
+        loadJson('./data/validation.json'),
+        loadJson('./data/sources.json')
+      ]);
+
+      const sourcesById = new Map(sources.map((source) => [source.id, source]));
+      renderPhaseRail(chapters);
+      renderChapters(chapters, sourcesById);
+      const setActiveLocation = drawMap(locations, chapters);
+      renderValidation(validationGroups);
+      renderSources(sources);
+      activateScrollSync(chapters, setActiveLocation);
+    }
+
+    init().catch((error) => {
+      console.error(error);
+      document.body.insertAdjacentHTML('beforeend', `<pre style="margin:20px; padding:16px; background:#fff; color:#900;">${error.message}</pre>`);
+    });
+  </script>
 </body>
 </html>

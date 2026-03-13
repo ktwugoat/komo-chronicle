@@ -7,18 +7,23 @@
 - Milestone table v1 and v2 created
 - Initial timeline / storymap JSON scaffold created
 - First landing page prototype created
+- SOTA design review added at `research/sota-design-review.md`
+- Editorial content schema added:
+  - `data/chapters.json`
+  - `data/locations.json`
+  - `data/validation.json`
+  - `data/sources.json`
+- Landing page rebuilt into an editorial chronicle with:
+  - premium hero + thesis framing
+  - phase rail / quick navigation
+  - narrative timeline chapters
+  - synced geography module
+  - curated validation groups
+  - source archive
 
-## Immediate next implementation step
-1. Upgrade `index.html` into a real tribute page
-   - stronger hero
-   - founder summary
-   - timeline section rendered from milestone data
-   - map section placeholder / next map integration target
-   - ecosystem validation wall
-
-## After that
-2. Add richer source-backed milestone data
-3. Add images / logos / visual assets
-4. Integrate TimelineJS or custom timeline rendering
-5. Integrate StoryMapJS or custom geographic section
-6. Publishable polished v1
+## Next implementation steps
+1. Replace the current abstract geography treatment with a real map layer (preferably MapLibre) while preserving the restrained editorial feel.
+2. Strengthen the source archive by capturing more direct primary URLs for early academic/founding details and the 2025 Utimaco announcement page.
+3. Add a denser secondary archive/reference timeline view using the existing `data/timeline.json` content.
+4. Introduce real media/artifact slots (photos, article snippets, conference visuals) only for the strongest source-backed chapters.
+5. Consider migrating the static prototype into Astro once the content model stabilizes.

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "early-acceleration",
+    "phase": "Early formation",
+    "range": "Early years",
+    "title": "An accelerated technical trajectory starts early",
+    "dek": "The opening frame is not just that Sean Xiang became a founder, but that his path appears to have started on an unusually compressed academic and technical timeline.",
+    "narrative": [
+      "The public story begins with an early-start reputation: a technical path that separated from the ordinary cadence well before the founder chapter became visible. In the existing research memo, this shows up as the origin myth for the site — not because it is flashy, but because it establishes the pace of the career that follows.",
+      "Rather than overclaiming details that are not yet fully sourced, the chronicle treats this period as formative acceleration: early entry into serious technical study, followed by deeper specialization and a cross-border academic arc. The right editorial move here is restraint. The page should preserve the feeling of velocity without pretending certainty where the public record is still thin."
+    ],
+    "proofPoints": [
+      "Research memo cites USTC-at-16 as the opening milestone, pending stronger source verification.",
+      "Sets up the later move into advanced engineering research rather than standing alone as trivia.",
+      "Editorial role: establish unusual trajectory before the founder story begins."
+    ],
+    "locationId": "hong-kong",
+    "sources": ["dossier", "timeline-v2"]
+  },
+  {
+    "id": "research-formation",
+    "phase": "CUHK / PhD",
+    "range": "Graduate era",
+    "title": "Research depth, not just founder energy",
+    "dek": "Before Silicon Valley company building, there is a long research arc anchored in electrical and electronic engineering.",
+    "narrative": [
+      "What stands out in the public record is not a fast jump straight into entrepreneurship, but a serious academic foundation. Sean Xiang is publicly described as holding a Ph.D. in Electrical and Electronic Engineering from The Chinese University of Hong Kong, which gives the chronicle an important tonal shift: this is a builder shaped by technical depth, not a founder manufactured by branding alone.",
+      "That matters because Bloombase operates in data-at-rest security, encryption, platform trust, and infrastructure partnerships — domains where credibility compounds slowly. The academic chapter is therefore more than biography. It is the first clue to why the later company arc is so persistent across multiple computing waves."
+    ],
+    "proofPoints": [
+      "Ph.D. in Electrical and Electronic Engineering from The Chinese University of Hong Kong.",
+      "Provides the strongest public anchor for the pre-founder chapter.",
+      "Narrative function: explain later durability in security and infrastructure markets."
+    ],
+    "locationId": "hong-kong",
+    "sources": ["launch-academy", "timeline-v2"]
+  },
+  {
+    "id": "california-transition",
+    "phase": "California transition",
+    "range": "Research era",
+    "title": "California becomes the bridge from scientist to operator",
+    "dek": "The Beckman Laser Institute chapter places Sean Xiang inside a research environment in Irvine before the company-building story takes center stage.",
+    "narrative": [
+      "The public profile also places Sean Xiang at the Beckman Laser Institute at the University of California, Irvine as a scientist. That detail matters because it adds an American research chapter between doctoral formation and the visible founder era.",
+      "In the structure of the site, Irvine should function as a bridge chapter: the geography changes, the network changes, and the narrative starts to move from pure research into the institutional context from which Silicon Valley company building becomes plausible. It is a transition chapter, not a detour — one of the places where the biography becomes easier to map and easier to believe."
+    ],
+    "proofPoints": [
+      "Scientist at The Beckman Laser Institute, University of California, Irvine.",
+      "Introduces the California chapter before Bloombase becomes the main stage.",
+      "Narrative function: connect academic depth to founder execution."
+    ],
+    "locationId": "irvine",
+    "sources": ["launch-academy", "dossier"]
+  },
+  {
+    "id": "founding-bloombase",
+    "phase": "Bloombase founding",
+    "range": "Founder era",
+    "title": "Bloombase is the long arc: enterprise data security built for endurance",
+    "dek": "The company chapter should be framed less as a startup launch moment and more as the beginning of a multi-era infrastructure build.",
+    "narrative": [
+      "Sean Xiang is publicly identified as co-founder and CEO of Bloombase, a company oriented around enterprise data-at-rest security, storage security, and encryption. The chronicle should avoid the generic startup-landing-page reflex of presenting this as a flashy launch. The stronger read is endurance: Bloombase persists across hardware, cloud, and now AI-infrastructure transitions.",
+      "Redwood City and the Silicon Valley context matter here, but mainly as evidence of the market the company chose to inhabit. Bloombase sits in one of the least forgiving parts of enterprise technology: security products that must earn trust from platforms, HSM vendors, cloud ecosystems, and buyers who do not reward novelty by itself."
+    ],
+    "proofPoints": [
+      "Sean Xiang is publicly described as Co-Founder and CEO of Bloombase.",
+      "Bloombase centers on enterprise data-at-rest security and encryption.",
+      "Narrative function: establish the company as the spine of the chronicle, not just one milestone among many."
+    ],
+    "locationId": "redwood-city",
+    "sources": ["dossier", "timeline-v2"]
+  },
+  {
+    "id": "enterprise-validation",
+    "phase": "Enterprise validation years",
+    "range": "2014–2020",
+    "title": "Validation accumulates through alliances, certifications, and interoperability",
+    "dek": "The middle of the story is where Bloombase becomes legible as a trusted enterprise player rather than simply a founder-led company with a good narrative.",
+    "narrative": [
+      "From 2014 through 2020, a series of concrete milestones makes the company easier to situate inside the enterprise security ecosystem. Public announcements show Bloombase joining VMware's Technology Alliance Partner Program, entering Hitachi Data Systems' alliance program, certifying with HP Enterprise Secure Key Manager, joining Thales' ASAP alliance, earning HPE cloud and ArcSight signals, securing IBM validation, launching for VMware Cloud on AWS, appearing in Azure Marketplace, and collaborating with nCipher and Futurex.",
+      "The editorial point is not to turn these into a noisy logo dump. It is to show an accumulation pattern: the company repeatedly appears where interoperability, trust, and security assurance matter. In a founder chronicle, that pattern is stronger than any one announcement because it shows persistence across years and across infrastructure regimes."
+    ],
+    "proofPoints": [
+      "2014: VMware and Hitachi alliance milestones.",
+      "2015: HP ESKM, Thales ASAP, HPE Helion Ready / ArcSight.",
+      "2017–2020: IBM validation, VMware Cloud on AWS, Azure Marketplace, nCipher, Futurex."
+    ],
+    "locationId": "redwood-city",
+    "sources": ["vmware-2014", "hitachi-2014", "hp-2015", "thales-2015", "hpe-2015", "ibm-2017", "vmware-aws-2018", "azure-2019", "ncipher-2019", "futurex-2020"]
+  },
+  {
+    "id": "geographic-expansion",
+    "phase": "Canada / global ecosystem",
+    "range": "2018 onward",
+    "title": "The geography widens: expansion becomes part of the founder story",
+    "dek": "Canada enters the narrative not as a random pin on a map, but as a visible expansion chapter tied to talent, cryptography, and ecosystem positioning.",
+    "narrative": [
+      "A 2018 Launch Academy profile gives the chronicle something important: a public explanation for why the story expands beyond Silicon Valley. The piece frames Canada as attractive because of talent, advanced cryptography capability, and broader ecosystem conditions, giving the map an actual narrative purpose rather than decorative internationalism.",
+      "This section should therefore answer a precise question for the reader: how did the journey move across institutions and markets? Hong Kong explains academic depth, Irvine explains transition, Redwood City explains company formation, and Vancouver explains strategic expansion. That is enough geography to feel global without becoming messy."
+    ],
+    "proofPoints": [
+      "2018 Launch Academy / Maple story makes Canada expansion publicly legible.",
+      "Geographic layer should stay selective: only the places that change the story belong here.",
+      "Narrative function: show institutional and market movement, not just travel."
+    ],
+    "locationId": "vancouver",
+    "sources": ["launch-academy", "timeline-v2"]
+  },
+  {
+    "id": "ai-era",
+    "phase": "AI-era repositioning",
+    "range": "2023–2025",
+    "title": "The latest chapter is not nostalgia — it is AI infrastructure",
+    "dek": "The recent Bloombase narrative reframes decades of security work for accelerated computing, data pipelines, and AI-era protection.",
+    "narrative": [
+      "The strongest reason this chronicle matters now is that it does not end in a legacy-enterprise graveyard. In 2023, Bloombase publicly framed its work around rebuilding data-at-rest security with NVIDIA DPUs and GPUs. In 2025, the company announced a technology alliance with Utimaco focused on data security solutions for the AI era.",
+      "Those signals re-open the story for a contemporary audience. They suggest that the company is not merely surviving on old credibility, but attempting to reinterpret security primitives for an accelerated-computing environment. Editorially, this is the payoff chapter: long technical formation, years of enterprise validation, and then a present-tense argument for relevance."
+    ],
+    "proofPoints": [
+      "2023 NVIDIA DPU / GPU security framing.",
+      "2024 conference and ecosystem visibility across RSA, GTC, MWC, CYBERSEC.",
+      "2025 Utimaco alliance focused on AI-era data security."
+    ],
+    "locationId": "global-ai",
+    "sources": ["nvidia-2023", "utimaco-2025", "dossier"]
+  }
+]

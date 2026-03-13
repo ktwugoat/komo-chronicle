@@ -1,0 +1,52 @@
+[
+  {
+    "id": "hong-kong",
+    "name": "Hong Kong",
+    "label": "CUHK / doctoral formation",
+    "lat": 22.3193,
+    "lon": 114.1694,
+    "x": 78,
+    "y": 42,
+    "summary": "The strongest public anchor of the academic chapter: Ph.D. formation at The Chinese University of Hong Kong."
+  },
+  {
+    "id": "irvine",
+    "name": "Irvine, California",
+    "label": "Beckman Laser Institute / UC Irvine",
+    "lat": 33.6846,
+    "lon": -117.8265,
+    "x": 16,
+    "y": 38,
+    "summary": "Research bridge chapter in California before the founder arc takes over."
+  },
+  {
+    "id": "redwood-city",
+    "name": "Redwood City, California",
+    "label": "Bloombase / Silicon Valley",
+    "lat": 37.4852,
+    "lon": -122.2364,
+    "x": 13,
+    "y": 28,
+    "summary": "The company chapter and the center of the enterprise-security build."
+  },
+  {
+    "id": "vancouver",
+    "name": "Vancouver, Canada",
+    "label": "Maple / expansion chapter",
+    "lat": 49.2827,
+    "lon": -123.1207,
+    "x": 11,
+    "y": 19,
+    "summary": "A public expansion story tied to talent, cryptography, and ecosystem positioning."
+  },
+  {
+    "id": "global-ai",
+    "name": "Global AI infrastructure",
+    "label": "Conference and alliance layer",
+    "lat": 0,
+    "lon": 0,
+    "x": 48,
+    "y": 24,
+    "summary": "The current chapter is distributed across cloud, accelerator, and security ecosystems rather than one city."
+  }
+]
