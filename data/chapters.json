@@ -41,10 +41,7 @@
     "narrative": [
       "This marked the formal beginning of a highly accelerated academic and technical trajectory, laying a rigorous foundation in the sciences."
     ],
-    "proofPoints": [
-      "Admitted to the University of Science and Technology of China (USTC) in Hefei in 1980.",
-      "Majored in Physics."
-    ],
+    "proofPoints": [],
     "locationId": "hefei",
     "locationIds": ["hefei"],
     "mapCaption": "Xiang entered USTC in Hefei, Anhui in 1980, majoring in Physics.",
@@ -78,12 +75,9 @@
     "dek": "A Ph.D. in Electrical and Electronic Engineering from CUHK, followed by a Research Associate role at HKUST, preceded everything that followed.",
     "narrative": [
       "Sean Xiang’s trajectory did not begin with a leap into entrepreneurship, but with a rigorous academic foundation. Earning a Ph.D. in Electrical and Electronic Engineering from The Chinese University of Hong Kong, he established a deep technical baseline.",
-      "After CUHK, he continued as a Research Associate at the Hong Kong University of Science and Technology (1996–1997), extending his research depth before the move to California. This scientific grounding proved crucial — the later Bloombase architecture proved resilient across multiple computing waves precisely because of this formation period."
+      "After CUHK, a Research Associate role at HKUST (1996–1997) extended his research depth before the move to California. This scientific grounding proved crucial — the later Bloombase architecture proved resilient across multiple computing waves precisely because of this formation period."
     ],
-    "proofPoints": [
-      "Ph.D. in Electrical and Electronic Engineering from The Chinese University of Hong Kong (CUHK).",
-      "Research Associate, Hong Kong University of Science and Technology (HKUST), 1996–1997."
-    ],
+    "proofPoints": [],
     "locationId": "hong-kong",
     "locationIds": ["hong-kong"],
     "mapCaption": "Ph.D. formation at The Chinese University of Hong Kong in Electrical and Electronic Engineering.",
@@ -116,12 +110,9 @@
     "title": "Bridging science and technology strategy",
     "dek": "Scientist at the Beckman Laser Institute & Medical Clinic, UC Irvine, August 1997 to December 1999.",
     "narrative": [
-      "From August 1997 to December 1999, Sean Xiang worked as a Scientist at the Beckman Laser Institute & Medical Clinic at UC Irvine, directly applying his research background in a U.S. institutional context.",
       "The move from Hong Kong to California shifted the geography and the network — from academic formation toward the institutional ecosystems of the American technology sector, setting the stage for the company-building phase that followed."
     ],
-    "proofPoints": [
-      "Scientist, Beckman Laser Institute & Medical Clinic, UC Irvine, Aug 1997 – Dec 1999."
-    ],
+    "proofPoints": [],
     "locationId": "irvine",
     "locationIds": ["irvine"],
     "mapCaption": "Scientist at the Beckman Laser Institute, UC Irvine — the transition from pure academia toward company-building.",
@@ -154,11 +145,10 @@
     "title": "Bloombase is the long arc: enterprise data security built for endurance",
     "dek": "Co-Founder & CEO of Bloombase since January 2012 — a multi-era infrastructure build embedding specialized security within global enterprise systems.",
     "narrative": [
-      "Sean Xiang co-founded Bloombase in January 2012 and has led it as CEO ever since. Establishing headquarters in Redwood City placed Bloombase directly within Silicon Valley's infrastructure ecosystem.",
-      "The location was a strategic alignment with cloud ecosystems, hardware security module vendors, and enterprise buyers who demanded uncompromising platform trust. In this highly unforgiving enterprise security market, Bloombase laid the groundwork for decades of architectural relevance."
+      "Establishing headquarters in Redwood City placed Bloombase directly within Silicon Valley's infrastructure ecosystem — a strategic alignment with cloud ecosystems, hardware security module vendors, and enterprise buyers who demanded uncompromising platform trust.",
+      "In this highly unforgiving enterprise security market, Bloombase laid the groundwork for decades of architectural relevance."
     ],
     "proofPoints": [
-      "Co-Founder & CEO, Bloombase, January 2012 – present.",
       "2013 releases across OpenStack, EMC, and VMware demonstrate early and deep platform integration.",
       "2012 appearances in the Open Virtualization Alliance show early positioning in cloud security.",
       "2014 advisory board expansion highlights early strategic organizational growth."
@@ -261,8 +251,7 @@
       "This geographic shift marked a transition from a Silicon Valley-centric operation to a mature, international engineering organization structured for scale."
     ],
     "proofPoints": [
-      "Vancouver office launch captured in 2018 Launch Academy profile.",
-      "Expansion actively targeted advanced regional cryptography talent."
+      "Vancouver office launch captured in 2018 Launch Academy profile."
     ],
     "locationId": "vancouver",
     "locationIds": ["vancouver"],
@@ -296,13 +285,9 @@
     "title": "Parallel academic chapter: Founding Dean and Institute co-founder in Shenzhen",
     "dek": "Alongside leading Bloombase, Sean Xiang built an academic track in Shenzhen — Founding Dean of the School of Artificial Intelligence at Shenzhen Technology University, then Chair Professor and Co-founder at the X-Institute of Shenzhen.",
     "narrative": [
-      "From January 2018 to June 2021, Sean Xiang served as Distinguished Professor and Founding Dean of the School of Artificial Intelligence at Shenzhen Technology University — a part-time institutional role that ran in parallel with his CEO duties at Bloombase.",
-      "From June 2021 to December 2023, he continued in Shenzhen as Chair Professor, Co-founder, and Executive President of the X-Institute of Shenzhen. This parallel academic arc reflects the same technical thesis driving Bloombase: that AI-era infrastructure demands deep cryptographic and security foundations."
+      "Both roles were part-time and ran in parallel with his CEO duties at Bloombase. This parallel academic arc reflects the same technical thesis: that AI-era infrastructure demands deep cryptographic and security foundations."
     ],
-    "proofPoints": [
-      "Distinguished Professor, Founding Dean of School of Artificial Intelligence, Shenzhen Technology University, Jan 2018 – Jun 2021.",
-      "Chair Professor, Co-founder & Executive President, X-Institute of Shenzhen, Jun 2021 – Dec 2023."
-    ],
+    "proofPoints": [],
     "locationId": "shenzhen",
     "locationIds": ["shenzhen"],
     "mapCaption": "Shenzhen academic chapter: Founding Dean of AI at SZTech, then X-Institute co-founder.",
@@ -338,11 +323,7 @@
       "In 2025, a strategic alliance with Utimaco delivered integrated NIST FIPS 140-2 Level 3 certified HSM key protection and OASIS KMIP-compliant key management for AI-era workloads. Bloombase also joined the PKI Consortium in November 2024, deepening its participation in cryptographic standards infrastructure."
     ],
     "proofPoints": [
-      "2023: Bloombase StoreSafe rebuilt for NVIDIA DPU and GPU accelerated infrastructure.",
-      "2024: Sean Xiang panelist at NVIDIA GTC 2024 on AI-era cyber defense; PQC encryption demo at GTC booth.",
-      "2024: Bloombase joins PKI Consortium (November 2024).",
-      "2024: Entrust partnership integrating StoreSafe with nShield Connect HSMs.",
-      "2025: Strategic technology alliance with Utimaco — FIPS 140-2 Level 3 HSM + KMIP key management for AI workloads."
+      "2024: Entrust partnership integrating StoreSafe with nShield Connect HSMs."
     ],
     "locationId": "global-ai",
     "locationIds": ["global-ai"],
