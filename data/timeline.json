@@ -389,14 +389,14 @@
     {
       "text": {
         "headline": "Born in Shanxi",
-        "text": "Born in Jincheng, Shanxi, marking the beginning of the journey."
+        "text": "Born in Shanxi, marking the beginning of the journey."
       },
       "sourceIds": [
         "dossier",
         "timeline-v2"
       ],
       "id": "born-in-shanxi",
-      "chapterId": "jincheng-birth",
+      "chapterId": "shanxi-birth",
       "dateLabel": "Undated - opening frame",
       "undated": true,
       "sortBucket": "formation"
