@@ -2736,22 +2736,22 @@
         <h1>Koko & Momo</h1>
         <p class="lede">From first meeting to adventures across cities — a journey of love and discovery.</p>
         <p class="summary">
-          An editorial archive tracing academic research through enterprise validation, anchored by a verifiable timeline, geography, and primary sources.
+          A chronicle of Koko and Momo's journey together, from Hefei to Beijing, Singapore to California.
         </p>
         <div class="chips" id="heroChips">
-          <span class="chip">CUHK Ph.D.</span>
-          <span class="chip">Beckman / UC Irvine</span>
-          <span class="chip">Bloombase</span>
-          <span class="chip">Enterprise security alliances</span>
-          <span class="chip">NVIDIA / AI-era repositioning</span>
+          <span class="chip">First met in Hefei</span>
+          <span class="chip">Became a couple in Wuhan</span>
+          <span class="chip">Singapore adventure</span>
+          <span class="chip">Beijing summers</span>
+          <span class="chip">California journey</span>
         </div>
       </article>
 
       <aside class="card hero-aside">
         <div>
-          <div class="aside-title">Chronicle thesis</div>
+          <div class="aside-title">Our Story</div>
           <p class="summary" style="margin-top:8px; margin-bottom:0;">
-            Technical depth, compounded over decades, into enterprise leadership. It traces ecosystem partnerships through a present-tense focus on AI infrastructure.
+            A love story across cities and time, from first meeting to adventures together.
           </p>
         </div>
         <div class="thesis-grid" id="heroStats"></div>
@@ -2952,9 +2952,9 @@
       const root = document.getElementById('heroStats');
       if (!root) return;
       const stats = [
-        ['14 years', 'leading Bloombase as CEO'],
-        ['20+', 'enterprise alliances and certifications'],
-        ['Physics → EE PhD → Security CEO', 'the technical arc']
+        ['Feb 2024', 'First met in Hefei'],
+        ['Mar 2024', 'Became a couple in Wuhan'],
+        ['5 cities', 'Hefei, Wuhan, Singapore, Beijing, California']
       ];
 
       stats.forEach(([value, text]) => {
@@ -4795,10 +4795,10 @@
 
     function chapterTone(chapter) {
       const blob = `${chapter.id} ${chapter.phase} ${chapter.title}`.toLowerCase();
-      if (blob.includes('early') || blob.includes('formation')) return 'formation';
-      if (blob.includes('research') || blob.includes('cuhk') || blob.includes('california')) return 'research';
-      if (blob.includes('founding') || blob.includes('bloombase')) return 'founder';
-      if (blob.includes('validation') || blob.includes('expansion')) return 'validation';
+      if (blob.includes('beginning') || blob.includes('first')) return 'formation';
+      if (blob.includes('spring') || blob.includes('wuhan')) return 'research';
+      if (blob.includes('summer') || blob.includes('singapore')) return 'founder';
+      if (blob.includes('beijing') || blob.includes('long')) return 'validation';
       return 'ai-era';
     }
 
