@@ -1,518 +1,181 @@
 {
   "title": {
     "text": {
-      "headline": "Sean Xiang - Founder Chronicle",
-      "text": "A simple MVP timeline of study, research, company building, partnerships, and AI-era milestones."
+      "headline": "Koko & Momo - Love Chronicle",
+      "text": "A timeline of our journey together, from first meeting to adventures across cities."
     }
   },
   "events": [
     {
       "start_date": {
-        "year": "2012",
-        "month": "12",
-        "day": "12"
-      },
-      "text": {
-        "headline": "Open Virtualization Alliance resource",
-        "text": "An external ecosystem resource captures Bloombase in secure virtualization discourse before the stronger 2013 first-party release trail begins."
-      },
-      "sourceIds": [
-        "ova-2012"
-      ],
-      "id": "ova-overview-2012",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2013",
+        "year": "2024",
         "month": "2",
-        "day": "18"
-      },
-      "text": {
-        "headline": "OpenStack Community",
-        "text": "Bloombase joins OpenStack, with Sean Xiang publicly framed as co-founder and CEO and cloud-security advocate."
-      },
-      "sourceIds": [
-        "openstack-2013"
-      ],
-      "id": "openstack-community",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2013",
-        "month": "5",
-        "day": "8"
-      },
-      "text": {
-        "headline": "EMC Technology Partner Program",
-        "text": "Bloombase announces EMC interoperability across VNX, Atmos, and NetWorker as enterprise validation starts to stack up."
-      },
-      "sourceIds": [
-        "emc-2013"
-      ],
-      "id": "emc-technology-partner",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2013",
-        "month": "8",
-        "day": "30"
-      },
-      "text": {
-        "headline": "VMware Technology Alliance",
-        "text": "Bloombase joins VMware's TAP program, making virtualization and cloud trust part of the public company narrative."
-      },
-      "sourceIds": [
-        "vmware-2013"
-      ],
-      "id": "vmware-technology-alliance-2013",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2014",
-        "month": "1",
         "day": "22"
       },
       "text": {
-        "headline": "Dell Technology Partner Certification",
-        "text": "Bloombase achieves Dell Technology Partner certification for next-generation data-at-rest encryption security."
+        "headline": "First Met",
+        "text": "Koko and Momo met for the first time in Hefei, marking the beginning of their story."
       },
       "sourceIds": [
-        "vmware-2014"
+        "memory"
       ],
-      "id": "vmware-technology-alliance",
-      "chapterId": "enterprise-validation"
+      "id": "first-met",
+      "chapterId": "beginning",
+      "sortBucket": "beginning"
     },
     {
       "start_date": {
-        "year": "2014",
-        "month": "10",
-        "day": "8"
-      },
-      "text": {
-        "headline": "Bloombase adds Gregory W. Slayton to its advisory board",
-        "text": "A direct company release shows the founder chapter maturing into an international-growth and strategic-guidance story, not just a run of product interoperability milestones."
-      },
-      "sourceIds": [
-        "slayton-2014"
-      ],
-      "id": "slayton-advisory-board-2014",
-      "chapterId": "founding-bloombase"
-    },
-    {
-      "start_date": {
-        "year": "2014",
-        "month": "11",
-        "day": "18"
-      },
-      "text": {
-        "headline": "Hitachi Alliance",
-        "text": "Bloombase joins Hitachi Data Systems' Technology Alliance Program."
-      },
-      "sourceIds": [
-        "hitachi-2014"
-      ],
-      "id": "hitachi-alliance",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2015",
-        "month": "9",
-        "day": "1"
-      },
-      "text": {
-        "headline": "HP ESKM Interoperability",
-        "text": "StoreSafe certified interoperable with HP Enterprise Secure Key Manager."
-      },
-      "sourceIds": [
-        "hp-2015"
-      ],
-      "id": "hp-eskm-interoperability",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2015",
-        "month": "11",
-        "day": "2"
-      },
-      "text": {
-        "headline": "Thales ASAP Alliance",
-        "text": "Bloombase joins Thales ASAP alliance."
-      },
-      "sourceIds": [
-        "thales-2015"
-      ],
-      "id": "thales-asap-alliance",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2015",
-        "month": "12",
-        "day": "3"
-      },
-      "text": {
-        "headline": "HPE Helion Ready / ArcSight",
-        "text": "Cloud and security certification milestone."
-      },
-      "sourceIds": [
-        "hpe-2015"
-      ],
-      "id": "hpe-helion-arcsight",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2016",
-        "month": "6",
-        "day": "13"
-      },
-      "text": {
-        "headline": "Ultra Electronics AEP Keyper HSM interoperability",
-        "text": "Bloombase expands the trust-layer story with a direct HSM interoperability release focused on hardened key storage and large-scale enterprise security."
-      },
-      "sourceIds": [
-        "ultra-2016"
-      ],
-      "id": "ultra-aep-keyper",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2017",
+        "year": "2024",
         "month": "3",
-        "day": "20"
+        "day": "16"
       },
       "text": {
-        "headline": "IBM Validation",
-        "text": "StoreSafe receives IBM Ready for Security Intelligence validation."
+        "headline": "First Held Hands",
+        "text": "In Wuhan, Koko and Momo held hands for the first time."
       },
       "sourceIds": [
-        "ibm-2017"
+        "memory"
       ],
-      "id": "ibm-validation",
-      "chapterId": "enterprise-validation"
+      "id": "first-hands",
+      "chapterId": "wuhan-spring",
+      "sortBucket": "spring2024"
     },
     {
       "start_date": {
-        "year": "2017",
-        "month": "7",
+        "year": "2024",
+        "month": "3",
         "day": "17"
       },
       "text": {
-        "headline": "ATTO interoperability certification",
-        "text": "Bloombase certifies StoreSafe with ATTO storage-networking hardware, extending the validation arc into SAN, NAS, and high-speed connectivity infrastructure."
+        "headline": "Got Together",
+        "text": "Koko and Momo officially became a couple in Wuhan."
       },
       "sourceIds": [
-        "atto-2017"
+        "memory"
       ],
-      "id": "atto-certification",
-      "chapterId": "enterprise-validation"
+      "id": "got-together",
+      "chapterId": "wuhan-spring",
+      "sortBucket": "spring2024"
     },
     {
       "start_date": {
-        "year": "2017",
-        "month": "8",
-        "day": "1"
+        "year": "2024",
+        "month": "5"
       },
       "text": {
-        "headline": "Huawei OceanStor V3 interoperability certification",
-        "text": "Bloombase certifies StoreSafe with Huawei OceanStor V3, extending the validation trail into unified storage infrastructure and telecom / MSP deployment contexts."
+        "headline": "Wuhan Days",
+        "text": "Spending time together in Wuhan, building memories."
       },
       "sourceIds": [
-        "huawei-2017"
+        "memory"
       ],
-      "id": "huawei-oceanstor-2017",
-      "chapterId": "enterprise-validation"
+      "id": "wuhan-may",
+      "chapterId": "wuhan-spring",
+      "sortBucket": "spring2024"
     },
     {
       "start_date": {
-        "year": "2018",
-        "month": "7",
-        "day": "9"
+        "year": "2024",
+        "month": "6"
       },
       "text": {
-        "headline": "VMware Cloud on AWS",
-        "text": "StoreSafe for VMware Cloud on AWS announced."
+        "headline": "Back to Hefei",
+        "text": "Returning to where it all began - Hefei in June."
       },
       "sourceIds": [
-        "vmware-aws-2018"
+        "memory"
       ],
-      "id": "vmware-cloud-on-aws",
-      "chapterId": "enterprise-validation"
+      "id": "hefei-june",
+      "chapterId": "summer-travels",
+      "sortBucket": "summer2024"
     },
     {
       "start_date": {
-        "year": "2018",
-        "month": "8",
-        "day": "27"
+        "year": "2024",
+        "month": "6"
       },
       "text": {
-        "headline": "Canada Expansion Story",
-        "text": "Launch Academy / Maple public expansion chapter."
+        "headline": "Singapore Adventure",
+        "text": "First international trip together to Singapore."
       },
       "sourceIds": [
-        "launch-academy"
+        "memory"
       ],
-      "id": "canada-expansion-story",
-      "chapterId": "geographic-expansion"
+      "id": "singapore",
+      "chapterId": "summer-travels",
+      "sortBucket": "summer2024"
     },
     {
       "start_date": {
-        "year": "2019",
-        "month": "1",
-        "day": "22"
+        "year": "2024",
+        "month": "6"
+      },
+      "end_date": {
+        "year": "2024",
+        "month": "8"
       },
       "text": {
-        "headline": "Azure Marketplace",
-        "text": "Bloombase StoreSafe available in Microsoft Azure Marketplace."
+        "headline": "Beijing Summer",
+        "text": "Summer in Beijing together, June to August 2024."
       },
       "sourceIds": [
-        "azure-2019"
+        "memory"
       ],
-      "id": "azure-marketplace",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2019",
-        "month": "3",
-        "day": "5"
-      },
-      "text": {
-        "headline": "Marvell LiquidSecurity HSM partnership",
-        "text": "A partner-hosted Marvell release extends the 2019 enterprise trust layer into network HSM infrastructure between the Azure and nCipher milestones."
-      },
-      "sourceIds": [
-        "marvell-2019"
-      ],
-      "id": "marvell-liquidsecurity-2019",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2019",
-        "month": "10",
-        "day": "21"
-      },
-      "text": {
-        "headline": "nCipher Collaboration",
-        "text": "Cloud data-at-rest protection collaboration."
-      },
-      "sourceIds": [
-        "ncipher-2019"
-      ],
-      "id": "ncipher-collaboration",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2020",
-        "month": "2",
-        "day": "18"
-      },
-      "text": {
-        "headline": "Futurex Collaboration",
-        "text": "Security partnership milestone."
-      },
-      "sourceIds": [
-        "futurex-2020"
-      ],
-      "id": "futurex-collaboration",
-      "chapterId": "enterprise-validation"
-    },
-    {
-      "start_date": {
-        "year": "2023"
-      },
-      "text": {
-        "headline": "NVIDIA DPU / GPU Era",
-        "text": "Rebuilding Bloombase data-at-rest security with NVIDIA DPUs and GPUs."
-      },
-      "sourceIds": [
-        "nvidia-2023"
-      ],
-      "id": "nvidia-dpu-gpu-era",
-      "chapterId": "ai-era"
-    },
-    {
-      "start_date": {
-        "year": "2024"
-      },
-      "text": {
-        "headline": "Conference / Ecosystem Visibility",
-        "text": "RSA, GTC, MWC, CYBERSEC and broader public ecosystem presence."
-      },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "conference-ecosystem-visibility",
-      "chapterId": "ai-era"
+      "id": "beijing-summer",
+      "chapterId": "beijing-chapter",
+      "sortBucket": "summer2024"
     },
     {
       "start_date": {
         "year": "2025",
-        "month": "4",
-        "day": "29"
+        "month": "3"
       },
       "text": {
-        "headline": "Utimaco Alliance",
-        "text": "Alliance focused on AI-era data security solutions."
+        "headline": "Beijing Return",
+        "text": "Back to Beijing in March 2025."
       },
       "sourceIds": [
-        "utimaco-2025"
+        "memory"
       ],
-      "id": "utimaco-alliance",
-      "chapterId": "ai-era"
+      "id": "beijing-march",
+      "chapterId": "beijing-chapter",
+      "sortBucket": "2025"
     },
     {
       "start_date": {
-        "year": "1980"
-      },
-      "text": {
-        "headline": "Entering USTC",
-        "text": "Entered the University of Science and Technology of China in 1980, majoring in Physics."
-      },
-      "sourceIds": [
-        "dossier",
-        "timeline-v2"
-      ],
-      "id": "entering-ustc",
-      "chapterId": "hefei-ustc",
-      "sortBucket": "formation"
-    },
-    {
-      "text": {
-        "headline": "Born in Shanxi",
-        "text": "Born in Shanxi, marking the beginning of the journey."
-      },
-      "sourceIds": [
-        "dossier",
-        "timeline-v2"
-      ],
-      "id": "born-in-shanxi",
-      "chapterId": "shanxi-birth",
-      "dateLabel": "Undated - opening frame",
-      "undated": true,
-      "sortBucket": "formation"
-    },
-    {
-      "start_date": {
-        "year": "1996"
+        "year": "2025",
+        "month": "5"
       },
       "end_date": {
-        "year": "1997"
-      },
-      "text": {
-        "headline": "Research Associate, HKUST",
-        "text": "Research Associate at Hong Kong University of Science and Technology, 1996–1997, following the CUHK doctorate."
-      },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "hkust-research-associate",
-      "chapterId": "research-formation",
-      "sortBucket": "research"
-    },
-    {
-      "start_date": {
-        "year": "1997",
+        "year": "2025",
         "month": "8"
       },
-      "end_date": {
-        "year": "1999",
-        "month": "12"
-      },
       "text": {
-        "headline": "Scientist, Beckman Laser Institute, UC Irvine",
-        "text": "Scientist at the Beckman Laser Institute & Medical Clinic, UC Irvine, Aug 1997 – Dec 1999."
+        "headline": "Extended Beijing Stay",
+        "text": "An extended stay in Beijing from May to August 2025."
       },
       "sourceIds": [
-        "launch-academy",
-        "dossier"
+        "memory"
       ],
-      "id": "beckman-uc-irvine",
-      "chapterId": "california-transition",
-      "sortBucket": "research"
-    },
-    {
-      "text": {
-        "headline": "CUHK PhD",
-        "text": "Advanced training in Electrical and Electronic Engineering at The Chinese University of Hong Kong."
-      },
-      "sourceIds": [
-        "launch-academy",
-        "dossier"
-      ],
-      "id": "cuhk-phd",
-      "chapterId": "research-formation",
-      "dateLabel": "Undated graduate-era anchor",
-      "undated": true,
-      "sortBucket": "research"
+      "id": "beijing-extended",
+      "chapterId": "beijing-chapter",
+      "sortBucket": "2025"
     },
     {
       "start_date": {
-        "year": "2012",
-        "month": "1"
+        "year": "2026",
+        "month": "3"
       },
       "text": {
-        "headline": "Bloombase co-founded",
-        "text": "Sean Xiang co-founds Bloombase in January 2012 and begins his tenure as CEO, building toward the 2013 public release trail."
+        "headline": "California Journey",
+        "text": "Momo travels to California and then returns to China."
       },
       "sourceIds": [
-        "bloombase-about",
-        "bloombase-offices",
-        "bloombase-news-index",
-        "dossier"
+        "memory"
       ],
-      "id": "bloombase-founded",
-      "chapterId": "founding-bloombase",
-      "sortBucket": "founding"
-    },
-    {
-      "start_date": {
-        "year": "2018",
-        "month": "1"
-      },
-      "end_date": {
-        "year": "2021",
-        "month": "6"
-      },
-      "text": {
-        "headline": "Founding Dean, School of AI — Shenzhen Technology University",
-        "text": "Distinguished Professor and Founding Dean of the School of Artificial Intelligence at Shenzhen Technology University, January 2018 – June 2021."
-      },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "sztech-founding-dean",
-      "chapterId": "shenzhen-academic",
-      "sortBucket": "shenzhen"
-    },
-    {
-      "start_date": {
-        "year": "2021",
-        "month": "6"
-      },
-      "end_date": {
-        "year": "2023",
-        "month": "12"
-      },
-      "text": {
-        "headline": "Chair Professor & Executive President — X-Institute of Shenzhen",
-        "text": "Chair Professor, Co-founder, and Executive President at the X-Institute of Shenzhen, June 2021 – December 2023."
-      },
-      "sourceIds": [
-        "dossier"
-      ],
-      "id": "x-institute-shenzhen",
-      "chapterId": "shenzhen-academic",
-      "sortBucket": "shenzhen"
+      "id": "california-trip",
+      "chapterId": "future",
+      "sortBucket": "2026"
     }
   ]
 }

@@ -1,354 +1,155 @@
 [
   {
-    "id": "shanxi-birth",
-    "phase": "Shanxi",
-    "range": "Early years",
-    "title": "Born in Shanxi",
-    "dek": "Sean Xiang was born in Shanxi.",
-    "narrative": [],
-    "proofPoints": [],
-    "locationId": "shanxi-birthplace",
-    "locationIds": ["shanxi-birthplace"],
-    "mapCaption": "Born in Shanxi.",
-    "mapCamera": {
-      "center": [
-        112.8518,
-        35.4907
-      ],
-      "zoom": 5.0,
-      "pitch": 18,
-      "bearing": -10
-    },
-    "sources": [
-      "dossier",
-      "timeline-v2"
-    ],
-    "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Restrained narrative",
-      "strengthLabel": "Source mix",
-      "strength": "Narrative chapter",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Early life chapter"
-    }
-  },
-  {
-    "id": "hefei-ustc",
-    "phase": "USTC",
-    "range": "1980",
-    "title": "Entering USTC",
-    "dek": "Admitted to USTC in Hefei in 1980, majoring in Physics.",
+    "id": "beginning",
+    "phase": "Beginning",
+    "range": "February 2024",
+    "title": "Where It All Began",
+    "dek": "Koko and Momo met in Hefei on February 22, 2024.",
     "narrative": [
-      "This marked the formal beginning of a highly accelerated academic and technical trajectory, laying a rigorous foundation in the sciences."
+      "Every love story has a beginning. For Koko and Momo, it was a winter day in Hefei that changed everything."
     ],
     "proofPoints": [],
     "locationId": "hefei",
     "locationIds": ["hefei"],
-    "mapCaption": "Xiang entered USTC in Hefei, Anhui in 1980, majoring in Physics.",
+    "mapCaption": "First meeting in Hefei, February 22, 2024.",
     "mapCamera": {
-      "center": [
-        117.2638,
-        31.8390
-      ],
-      "zoom": 5.0,
+      "center": [117.2638, 31.8390],
+      "zoom": 10.0,
       "pitch": 18,
       "bearing": -10
     },
-    "sources": [
-      "dossier",
-      "timeline-v2"
-    ],
+    "sources": ["memory"],
     "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Restrained narrative",
-      "strengthLabel": "Source mix",
-      "strength": "Narrative chapter",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Academic foundation chapter"
+      "stanceLabel": "Memory",
+      "stance": "Personal memory",
+      "strengthLabel": "Source",
+      "strength": "Shared memory",
+      "artifactLabel": "Chapter",
+      "artifact": "Beginning chapter"
     }
   },
   {
-    "id": "research-formation",
-    "phase": "CUHK",
-    "range": "Graduate era – 1997",
-    "title": "A long research arc before Silicon Valley",
-    "dek": "A Ph.D. in Electrical and Electronic Engineering from CUHK, followed by a Research Associate role at HKUST, preceded everything that followed.",
+    "id": "wuhan-spring",
+    "phase": "Spring",
+    "range": "March - May 2024",
+    "title": "Wuhan Spring",
+    "dek": "From holding hands to becoming a couple, Wuhan witnessed the blossoming of their relationship.",
     "narrative": [
-      "Sean Xiang’s trajectory did not begin with a leap into entrepreneurship, but with a rigorous academic foundation. Earning a Ph.D. in Electrical and Electronic Engineering from The Chinese University of Hong Kong, he established a deep technical baseline.",
-      "After CUHK, a Research Associate role at HKUST (1996–1997) extended his research depth before the move to California. This scientific grounding proved crucial — the later Bloombase architecture proved resilient across multiple computing waves precisely because of this formation period."
+      "March 16, 2024 - their hands found each other for the first time. The next day, March 17, they officially became a couple.",
+      "The spring days in Wuhan were filled with new discoveries, shared laughter, and the excitement of a relationship just beginning."
     ],
     "proofPoints": [],
-    "locationId": "hong-kong",
-    "locationIds": ["hong-kong"],
-    "mapCaption": "Ph.D. formation at The Chinese University of Hong Kong in Electrical and Electronic Engineering.",
+    "locationId": "wuhan",
+    "locationIds": ["wuhan"],
+    "mapCaption": "Wuhan - where they held hands and became a couple.",
     "mapCamera": {
-      "center": [
-        114.2068,
-        22.4196
-      ],
+      "center": [114.3055, 30.5928],
       "zoom": 10.5,
       "pitch": 34,
       "bearing": 6
     },
-    "sources": [
-      "launch-academy",
-      "timeline-v2"
-    ],
+    "sources": ["memory"],
     "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Public profile-backed chapter",
-      "strengthLabel": "Source mix",
-      "strength": "Third-party connective source plus timeline synthesis",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Research formation chapter"
+      "stanceLabel": "Memory",
+      "stance": "Personal memory",
+      "strengthLabel": "Source",
+      "strength": "Shared memory",
+      "artifactLabel": "Chapter",
+      "artifact": "Spring chapter"
     }
   },
   {
-    "id": "california-transition",
-    "phase": "Beckman",
-    "range": "1997–1999",
-    "title": "Bridging science and technology strategy",
-    "dek": "Scientist at the Beckman Laser Institute & Medical Clinic, UC Irvine, August 1997 to December 1999.",
+    "id": "summer-travels",
+    "phase": "Summer",
+    "range": "June 2024",
+    "title": "Summer Adventures",
+    "dek": "Hefei revisited and a first international journey to Singapore.",
     "narrative": [
-      "The move from Hong Kong to California shifted the geography and the network — from academic formation toward the institutional ecosystems of the American technology sector, setting the stage for the company-building phase that followed."
+      "June brought them back to Hefei, the city where they first met, now seeing it through different eyes as a couple.",
+      "Their first international adventure together took them to Singapore, creating memories beyond borders."
     ],
     "proofPoints": [],
-    "locationId": "irvine",
-    "locationIds": ["irvine"],
-    "mapCaption": "Scientist at the Beckman Laser Institute, UC Irvine — the transition from pure academia toward company-building.",
+    "locationId": "singapore",
+    "locationIds": ["hefei", "singapore"],
+    "mapCaption": "From Hefei to Singapore - summer travels.",
     "mapCamera": {
-      "center": [
-        -117.8443,
-        33.6405
-      ],
+      "center": [103.8198, 1.3521],
       "zoom": 10.5,
       "pitch": 30,
       "bearing": -18
     },
-    "sources": [
-      "launch-academy",
-      "dossier"
-    ],
+    "sources": ["memory"],
     "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Bridge chapter with one key public profile anchor",
-      "strengthLabel": "Source mix",
-      "strength": "Third-party profile plus dossier synthesis",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "California transition chapter"
+      "stanceLabel": "Memory",
+      "stance": "Personal memory",
+      "strengthLabel": "Source",
+      "strength": "Shared memory",
+      "artifactLabel": "Chapter",
+      "artifact": "Summer chapter"
     }
   },
   {
-    "id": "founding-bloombase",
-    "phase": "Bloombase",
-    "range": "2012–present",
-    "title": "Bloombase is the long arc: enterprise data security built for endurance",
-    "dek": "Co-Founder & CEO of Bloombase since January 2012 — a multi-era infrastructure build embedding specialized security within global enterprise systems.",
+    "id": "beijing-chapter",
+    "phase": "Beijing",
+    "range": "2024-2025",
+    "title": "Beijing: The Long Chapter",
+    "dek": "Multiple stays in Beijing spanning from summer 2024 through 2025.",
     "narrative": [
-      "Establishing headquarters in Redwood City placed Bloombase directly within Silicon Valley's infrastructure ecosystem — a strategic alignment with cloud ecosystems, hardware security module vendors, and enterprise buyers who demanded uncompromising platform trust.",
-      "In this highly unforgiving enterprise security market, Bloombase laid the groundwork for decades of architectural relevance."
+      "Beijing became a recurring chapter in their story. The first summer together from June to August 2024 established the city as a special place.",
+      "They returned in March 2025, and then spent an extended period from May to August 2025, deepening their connection to the city and to each other."
     ],
     "proofPoints": [
-      "2013 releases across OpenStack, EMC, and VMware demonstrate early and deep platform integration.",
-      "2012 appearances in the Open Virtualization Alliance show early positioning in cloud security.",
-      "2014 advisory board expansion highlights early strategic organizational growth."
+      "Summer 2024: June - August in Beijing",
+      "March 2025: Return to Beijing",
+      "May - August 2025: Extended Beijing stay"
     ],
-    "locationId": "redwood-city",
-    "locationIds": ["redwood-city"],
-    "mapCaption": "Bloombase founded in Redwood City, Silicon Valley.",
+    "locationId": "beijing",
+    "locationIds": ["beijing"],
+    "mapCaption": "Beijing - multiple chapters across 2024 and 2025.",
     "mapCamera": {
-      "center": [
-        -122.2364,
-        37.4852
-      ],
+      "center": [116.4074, 39.9042],
       "zoom": 10.5,
       "pitch": 28,
       "bearing": -22
     },
-    "sources": [
-      "ova-2012",
-      "bloombase-about",
-      "bloombase-offices",
-      "slayton-2014",
-      "bloombase-news-index",
-      "openstack-2013",
-      "emc-2013",
-      "vmware-2013",
-      "dossier",
-      "timeline-v2"
-    ],
+    "sources": ["memory"],
     "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Company-spine chapter",
-      "strengthLabel": "Source mix",
-      "strength": "Primary company URLs now support a stronger founding and geography layer",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Source cards ready"
+      "stanceLabel": "Memory",
+      "stance": "Personal memory",
+      "strengthLabel": "Source",
+      "strength": "Shared memory",
+      "artifactLabel": "Chapter",
+      "artifact": "Beijing chapter"
     }
   },
   {
-    "id": "enterprise-validation",
-    "phase": "Expand",
-    "range": "2014–2020",
-    "title": "Validation accumulates through alliances, certifications, and interoperability",
-    "dek": "A dense network of certifications and partnerships established Bloombase as a universally trusted layer in enterprise infrastructure.",
+    "id": "future",
+    "phase": "Future",
+    "range": "2026",
+    "title": "New Horizons",
+    "dek": "Momo's journey to California and back, marking new adventures ahead.",
     "narrative": [
-      "From 2014 to 2020, Bloombase methodically expanded its interoperability map. Announcements cataloged deep technical integration with Dell, Hitachi, HP ESKM, Thales ASAP, IBM, VMware Cloud on AWS, and Microsoft Azure Marketplace.",
-      "These milestones represent more than a collection of alliances; they show a clear accumulation pattern of trust. Across changing infrastructure regimes, Bloombase consistently positioned itself at the nexus where data security and performance are non-negotiable."
-    ],
-    "proofPoints": [
-      "2013-2014: Early validation established with OpenStack, EMC, VMware, Dell, and Hitachi.",
-      "2015-2017: Certifications with HP, Thales, Ultra Electronics, HPE, IBM, ATTO, and Huawei deepen custody and storage trust.",
-      "2018-2020: Public cloud scale confirmed through VMware Cloud on AWS and Microsoft Azure Marketplace.",
-      "Hardware security module (HSM) integrations widened aggressively through Marvell, nCipher, and Futurex."
-    ],
-    "locationId": "redwood-city",
-    "locationIds": ["redwood-city"],
-    "mapCaption": "Enterprise validation years based in Silicon Valley.",
-    "mapCamera": {
-      "center": [
-        -122.2364,
-        37.4852
-      ],
-      "zoom": 9.0,
-      "pitch": 44,
-      "bearing": -8
-    },
-    "sources": [
-      "openstack-2013",
-      "emc-2013",
-      "vmware-2013",
-      "vmware-2014",
-      "hitachi-2014",
-      "hp-2015",
-      "thales-2015",
-      "hpe-2015",
-      "ibm-2017",
-      "huawei-2017",
-      "vmware-aws-2018",
-      "azure-2019",
-      "marvell-2019",
-      "ncipher-2019",
-      "futurex-2020"
-    ],
-    "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Strongest historical chapter",
-      "strengthLabel": "Source mix",
-      "strength": "Dense first-party alliance and certification trail",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Ready for richer document-style artifact cards"
-    }
-  },
-  {
-    "id": "geographic-expansion",
-    "phase": "Vancouver",
-    "range": "2018 onward",
-    "title": "The geography widens: strategic expansion to Canada",
-    "dek": "Expansion beyond Silicon Valley emphasized global talent, advanced cryptography capability, and strategic ecosystem scale.",
-    "narrative": [
-      "Recognizing the increasing global demand for rigorous data protection, Bloombase strategically expanded its operations into Canada. As detailed in a 2018 Launch Academy profile, Vancouver provided a strong talent pool, advanced cryptography resources, and a supportive technology ecosystem.",
-      "This geographic shift marked a transition from a Silicon Valley-centric operation to a mature, international engineering organization structured for scale."
-    ],
-    "proofPoints": [
-      "Vancouver office launch captured in 2018 Launch Academy profile."
-    ],
-    "locationId": "vancouver",
-    "locationIds": ["vancouver"],
-    "mapCaption": "Bloombase expands to Vancouver for cryptography talent and ecosystem scale.",
-    "mapCamera": {
-      "center": [
-        -123.1207,
-        49.2827
-      ],
-      "zoom": 5.25,
-      "pitch": 32,
-      "bearing": 14
-    },
-    "sources": [
-      "launch-academy",
-      "timeline-v2"
-    ],
-    "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Selective expansion chapter",
-      "strengthLabel": "Source mix",
-      "strength": "One strong public expansion profile plus chronology support",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Geographic expansion chapter"
-    }
-  },
-  {
-    "id": "shenzhen-academic",
-    "phase": "Shenzhen",
-    "range": "2018–2023",
-    "title": "Parallel academic chapter: Founding Dean and Institute co-founder in Shenzhen",
-    "dek": "Alongside leading Bloombase, Sean Xiang built an academic track in Shenzhen — Founding Dean of the School of Artificial Intelligence at Shenzhen Technology University, then Chair Professor and Co-founder at the X-Institute of Shenzhen.",
-    "narrative": [
-      "Both roles were part-time and ran in parallel with his CEO duties at Bloombase. This parallel academic arc reflects the same technical thesis: that AI-era infrastructure demands deep cryptographic and security foundations."
+      "March 2026 brought a new chapter as Momo traveled to California, experiencing new places before returning to China.",
+      "Distance and travel became part of their story, but the connection remained strong."
     ],
     "proofPoints": [],
-    "locationId": "shenzhen",
-    "locationIds": ["shenzhen"],
-    "mapCaption": "Shenzhen academic chapter: Founding Dean of AI at SZTech, then X-Institute co-founder.",
+    "locationId": "california",
+    "locationIds": ["california"],
+    "mapCaption": "California journey in March 2026.",
     "mapCamera": {
-      "center": [
-        114.0579,
-        22.5431
-      ],
+      "center": [-119.4179, 36.7783],
       "zoom": 5.5,
       "pitch": 28,
       "bearing": 0
     },
-    "sources": [
-      "dossier"
-    ],
+    "sources": ["memory"],
     "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "LinkedIn-confirmed institutional roles",
-      "strengthLabel": "Source mix",
-      "strength": "Direct LinkedIn profile data",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Shenzhen academic chapter"
-    }
-  },
-  {
-    "id": "ai-era",
-    "phase": "AI era",
-    "range": "2023–now",
-    "title": "The current chapter is not nostalgia — it is AI infrastructure",
-    "dek": "Rebuilding enterprise security primitives for the AI-infrastructure era: post-quantum cryptography, NVIDIA accelerators, and a new standards-layer presence.",
-    "narrative": [
-      "In 2023, Bloombase rebuilt data-at-rest encryption to run natively on NVIDIA DPUs and GPUs — a technical argument that security must operate at the accelerator level to avoid becoming a bottleneck in AI data pipelines. At NVIDIA GTC 2024, Sean Xiang served as a panelist on AI-era cyber defense alongside executives from NVIDIA, Qrypt, and Reality Defender; the Bloombase booth demonstrated post-quantum cryptography (PQC) encryption powered by NVIDIA GPU, DPU, and Morpheus AI.",
-      "In 2025, a strategic alliance with Utimaco delivered integrated NIST FIPS 140-2 Level 3 certified HSM key protection and OASIS KMIP-compliant key management for AI-era workloads. Bloombase also joined the PKI Consortium in November 2024, deepening its participation in cryptographic standards infrastructure."
-    ],
-    "proofPoints": [
-      "2024: Entrust partnership integrating StoreSafe with nShield Connect HSMs."
-    ],
-    "locationId": "global-ai",
-    "locationIds": ["global-ai"],
-    "mapCaption": "Bloombase integrates with NVIDIA, Utimaco, and global cloud infrastructure.",
-    "mapCamera": {
-      "center": [
-        8,
-        24
-      ],
-      "zoom": 1.35,
-      "pitch": 10,
-      "bearing": 0
-    },
-    "sources": [
-      "nvidia-2023",
-      "utimaco-2025",
-      "dossier"
-    ],
-    "evidenceProfile": {
-      "stanceLabel": "Evidence stance",
-      "stance": "Present-tense relevance chapter",
-      "strengthLabel": "Source mix",
-      "strength": "Direct Bloombase sources with a clear AI-era frame",
-      "artifactLabel": "Artifact readiness",
-      "artifact": "Best candidate for stronger media / announcement treatment"
+      "stanceLabel": "Memory",
+      "stance": "Personal memory",
+      "strengthLabel": "Source",
+      "strength": "Shared memory",
+      "artifactLabel": "Chapter",
+      "artifact": "Future chapter"
     }
   }
 ]

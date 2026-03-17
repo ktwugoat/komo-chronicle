@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ktwu01.github.io)",
+      "Bash(node -e \":*)",
+      "WebFetch(domain:ktwugoat.github.io)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://ktwugoat.github.io/komo-chronicle/data/chapters.json\")",
+      "Bash(curl -s -o /dev/null -w %{http_code} https://ktwugoat.github.io/komo-chronicle/data/storymap.json)",
+      "Bash(curl -s \"https://ktwugoat.github.io/komo-chronicle/data/sources.json\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(type\\(d\\).__name__, list\\(d.keys\\(\\)\\)[:5] if isinstance\\(d, dict\\) else f''''array len={len\\(d\\)}''''\\)\")",
+      "Bash(curl -s \"https://ktwugoat.github.io/komo-chronicle/data/chapters.json\")",
+      "Bash(curl -s \"https://ktwugoat.github.io/komo-chronicle/data/timeline.json\")",
+      "Bash(curl -s \"https://ktwugoat.github.io/komo-chronicle/data/artifacts.json\")",
+      "Bash(curl -s \"https://ktwugoat.github.io/komo-chronicle/data/locations.json\")",
+      "Bash(grep -v \"^\\\\s*//\")"
+    ]
+  }
+}
