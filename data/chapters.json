@@ -137,10 +137,10 @@
       "Momo visits Koko in the US: February 2026.",
       "Momo returns to Beijing afterwards."
     ],
-    "locationId": "beijing",
-    "locationIds": ["us", "beijing"],
+    "locationId": "sf",
+    "locationIds": ["sf", "beijing"],
     "mapCaption": "魔魔去美国看叩叩，然后回到北京。",
-    "mapCamera": { "center": [116.4074, 39.9042], "zoom": 6.5, "pitch": 28, "bearing": 0 },
+    "mapCamera": { "center": [-122.4194, 37.7749], "zoom": 6.5, "pitch": 28, "bearing": 0 },
     "sources": [],
     "evidenceProfile": {
       "stanceLabel": "Chapter", "stance": "Present chapter",
