@@ -2,154 +2,104 @@
   {
     "id": "beginning",
     "phase": "Beginning",
-    "range": "February 2024",
-    "title": "Where It All Began",
-    "dek": "Koko and Momo met in Hefei on February 22, 2024.",
+    "range": "Feb – Mar 2024",
+    "title": "How it all started",
+    "dek": "叩叩魔魔的故事从合肥开始，在武汉确定。Koko and Momo first met in Hefei on February 22, 2024, and officially became a couple in Wuhan on March 17, 2024.",
     "narrative": [
-      "Every love story has a beginning. For Koko and Momo, it was a winter day in Hefei that changed everything."
-    ],
-    "proofPoints": [],
-    "locationId": "hefei",
-    "locationIds": ["hefei"],
-    "mapCaption": "First meeting in Hefei, February 22, 2024.",
-    "mapCamera": {
-      "center": [117.2638, 31.8390],
-      "zoom": 10.0,
-      "pitch": 18,
-      "bearing": -10
-    },
-    "sources": ["memory"],
-    "evidenceProfile": {
-      "stanceLabel": "Memory",
-      "stance": "Personal memory",
-      "strengthLabel": "Source",
-      "strength": "Shared memory",
-      "artifactLabel": "Chapter",
-      "artifact": "Beginning chapter"
-    }
-  },
-  {
-    "id": "wuhan-spring",
-    "phase": "Spring",
-    "range": "March - May 2024",
-    "title": "Wuhan Spring",
-    "dek": "From holding hands to becoming a couple, Wuhan witnessed the blossoming of their relationship.",
-    "narrative": [
-      "March 16, 2024 - their hands found each other for the first time. The next day, March 17, they officially became a couple.",
-      "The spring days in Wuhan were filled with new discoveries, shared laughter, and the excitement of a relationship just beginning."
-    ],
-    "proofPoints": [],
-    "locationId": "wuhan",
-    "locationIds": ["wuhan"],
-    "mapCaption": "Wuhan - where they held hands and became a couple.",
-    "mapCamera": {
-      "center": [114.3055, 30.5928],
-      "zoom": 10.5,
-      "pitch": 34,
-      "bearing": 6
-    },
-    "sources": ["memory"],
-    "evidenceProfile": {
-      "stanceLabel": "Memory",
-      "stance": "Personal memory",
-      "strengthLabel": "Source",
-      "strength": "Shared memory",
-      "artifactLabel": "Chapter",
-      "artifact": "Spring chapter"
-    }
-  },
-  {
-    "id": "summer-travels",
-    "phase": "Summer",
-    "range": "June 2024",
-    "title": "Summer Adventures",
-    "dek": "Hefei revisited and a first international journey to Singapore.",
-    "narrative": [
-      "June brought them back to Hefei, the city where they first met, now seeing it through different eyes as a couple.",
-      "Their first international adventure together took them to Singapore, creating memories beyond borders."
-    ],
-    "proofPoints": [],
-    "locationId": "singapore",
-    "locationIds": ["hefei", "singapore"],
-    "mapCaption": "From Hefei to Singapore - summer travels.",
-    "mapCamera": {
-      "center": [103.8198, 1.3521],
-      "zoom": 10.5,
-      "pitch": 30,
-      "bearing": -18
-    },
-    "sources": ["memory"],
-    "evidenceProfile": {
-      "stanceLabel": "Memory",
-      "stance": "Personal memory",
-      "strengthLabel": "Source",
-      "strength": "Shared memory",
-      "artifactLabel": "Chapter",
-      "artifact": "Summer chapter"
-    }
-  },
-  {
-    "id": "beijing-chapter",
-    "phase": "Beijing",
-    "range": "2024-2025",
-    "title": "Beijing: The Long Chapter",
-    "dek": "Multiple stays in Beijing spanning from summer 2024 through 2025.",
-    "narrative": [
-      "Beijing became a recurring chapter in their story. The first summer together from June to August 2024 established the city as a special place.",
-      "They returned in March 2025, and then spent an extended period from May to August 2025, deepening their connection to the city and to each other."
+      "It began in Hefei on February 22, 2024 — the first meeting.",
+      "Three weeks later in Wuhan, on March 16, they held hands for the first time. The next day, March 17, KoMo officially began."
     ],
     "proofPoints": [
-      "Summer 2024: June - August in Beijing",
-      "March 2025: Return to Beijing",
-      "May - August 2025: Extended Beijing stay"
+      "First met: Hefei, February 22, 2024.",
+      "First held hands: Wuhan, March 16, 2024.",
+      "Together since: Wuhan, March 17, 2024."
+    ],
+    "locationId": "hefei",
+    "locationIds": ["hefei", "wuhan"],
+    "mapCaption": "叩叩魔魔的故事从合肥开始。",
+    "mapCamera": { "center": [117.2638, 31.8390], "zoom": 5.0, "pitch": 18, "bearing": -10 },
+    "sources": [],
+    "evidenceProfile": {
+      "stanceLabel": "Chapter", "stance": "The origin chapter",
+      "strengthLabel": "Milestones", "strength": "First meet, first hold, together",
+      "artifactLabel": "Moments", "artifact": "3 milestones"
+    }
+  },
+  {
+    "id": "travels-2024",
+    "phase": "2024 Travels",
+    "range": "May – Aug 2024",
+    "title": "The first year of adventures",
+    "dek": "Wuhan in May, Hefei in June, Singapore, then a whole summer in Beijing.",
+    "narrative": [
+      "In May 2024, KoMo returned to Wuhan. In June, they visited Hefei again, then flew to Singapore.",
+      "The summer of 2024 was spent in Beijing, from June through August."
+    ],
+    "proofPoints": [
+      "Wuhan trip: May 2024.",
+      "Hefei trip: June 2024.",
+      "Singapore trip: June 2024.",
+      "Beijing summer: June – August 2024."
+    ],
+    "locationId": "beijing",
+    "locationIds": ["wuhan", "hefei", "singapore", "beijing"],
+    "mapCaption": "KoMo's first year of travels together.",
+    "mapCamera": { "center": [116.4074, 39.9042], "zoom": 4.0, "pitch": 18, "bearing": 0 },
+    "sources": [],
+    "evidenceProfile": {
+      "stanceLabel": "Chapter", "stance": "First year of travels",
+      "strengthLabel": "Milestones", "strength": "4 trips across China and Southeast Asia",
+      "artifactLabel": "Moments", "artifact": "4 trips"
+    }
+  },
+  {
+    "id": "travels-2025",
+    "phase": "2025",
+    "range": "Mar – Aug 2025",
+    "title": "Beijing, again and again",
+    "dek": "Two Beijing stays in 2025 — March, then May through August.",
+    "narrative": [
+      "In March 2025, KoMo was back in Beijing.",
+      "From May to August 2025, another extended summer in Beijing."
+    ],
+    "proofPoints": [
+      "Beijing: March 2025.",
+      "Beijing: May – August 2025."
     ],
     "locationId": "beijing",
     "locationIds": ["beijing"],
-    "mapCaption": "Beijing - multiple chapters across 2024 and 2025.",
-    "mapCamera": {
-      "center": [116.4074, 39.9042],
-      "zoom": 10.5,
-      "pitch": 28,
-      "bearing": -22
-    },
-    "sources": ["memory"],
+    "mapCaption": "Beijing stays in 2025.",
+    "mapCamera": { "center": [116.4074, 39.9042], "zoom": 6.5, "pitch": 28, "bearing": 0 },
+    "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Memory",
-      "stance": "Personal memory",
-      "strengthLabel": "Source",
-      "strength": "Shared memory",
-      "artifactLabel": "Chapter",
-      "artifact": "Beijing chapter"
+      "stanceLabel": "Chapter", "stance": "2025 Beijing chapter",
+      "strengthLabel": "Milestones", "strength": "Two extended Beijing stays",
+      "artifactLabel": "Moments", "artifact": "2 trips"
     }
   },
   {
-    "id": "future",
-    "phase": "Future",
-    "range": "2026",
-    "title": "New Horizons",
-    "dek": "Momo's journey to California and back, marking new adventures ahead.",
+    "id": "travels-2026",
+    "phase": "2026",
+    "range": "Feb 2026",
+    "title": "Momo comes to Koko",
+    "dek": "魔魔去美国看叩叩。In February 2026, Momo traveled to the US to visit Koko.",
     "narrative": [
-      "March 2026 brought a new chapter as Momo traveled to California, experiencing new places before returning to China.",
-      "Distance and travel became part of their story, but the connection remained strong."
+      "February 2026: Momo flew to the US to visit Koko — the first time together on Koko's side of the world.",
+      "After the visit, Momo returned to Beijing."
     ],
-    "proofPoints": [],
-    "locationId": "california",
-    "locationIds": ["california"],
-    "mapCaption": "California journey in March 2026.",
-    "mapCamera": {
-      "center": [-119.4179, 36.7783],
-      "zoom": 5.5,
-      "pitch": 28,
-      "bearing": 0
-    },
-    "sources": ["memory"],
+    "proofPoints": [
+      "Momo visits Koko in the US: February 2026.",
+      "Momo returns to Beijing afterwards."
+    ],
+    "locationId": "us",
+    "locationIds": ["us", "beijing"],
+    "mapCaption": "魔魔去美国看叩叩。",
+    "mapCamera": { "center": [-95, 37], "zoom": 3.0, "pitch": 10, "bearing": 0 },
+    "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Memory",
-      "stance": "Personal memory",
-      "strengthLabel": "Source",
-      "strength": "Shared memory",
-      "artifactLabel": "Chapter",
-      "artifact": "Future chapter"
+      "stanceLabel": "Chapter", "stance": "Present chapter",
+      "strengthLabel": "Milestones", "strength": "First US visit",
+      "artifactLabel": "Moments", "artifact": "1 milestone"
     }
   }
 ]

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Koko & Momo — Love Chronicle</title>
-  <meta name="description" content="A chronicle of Koko and Momo's journey together across cities and time." />
+  <title>叩叩 & 魔魔 — KoMo Chronicle</title>
+  <meta name="description" content="A couples chronicle for Koko (叩叩) and Momo (魔魔), together since March 17, 2024." />
   <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
   <style>
     :root {
@@ -2732,26 +2732,26 @@
 
     <section class="hero">
       <article class="card hero-copy">
-        <div class="eyebrow">Love chronicle</div>
-        <h1>Koko & Momo</h1>
-        <p class="lede">From first meeting to adventures across cities — a journey of love and discovery.</p>
+        <div class="eyebrow">Couples chronicle</div>
+        <h1>叩叩 &amp; 魔魔</h1>
+        <p class="lede">Together since March 17, 2024 — a journey across Hefei, Wuhan, Singapore, Beijing, and the US.</p>
         <p class="summary">
-          A chronicle of Koko and Momo's journey together, from Hefei to Beijing, Singapore to California.
+          A chronicle of Koko (叩叩) and Momo (魔魔): how they met, where they've been, and every moment in between.
         </p>
         <div class="chips" id="heroChips">
-          <span class="chip">First met in Hefei</span>
-          <span class="chip">Became a couple in Wuhan</span>
-          <span class="chip">Singapore adventure</span>
+          <span class="chip">Hefei 2024</span>
+          <span class="chip">Wuhan</span>
+          <span class="chip">Singapore</span>
           <span class="chip">Beijing summers</span>
-          <span class="chip">California journey</span>
+          <span class="chip">US 2026</span>
         </div>
       </article>
 
       <aside class="card hero-aside">
         <div>
-          <div class="aside-title">Our Story</div>
+          <div class="aside-title">Chronicle thesis</div>
           <p class="summary" style="margin-top:8px; margin-bottom:0;">
-            A love story across cities and time, from first meeting to adventures together.
+            叩叩魔魔，一直在一起。A timeline of love, travel, and shared moments — from the first meeting in Hefei to the US and beyond.
           </p>
         </div>
         <div class="thesis-grid" id="heroStats"></div>
@@ -2826,7 +2826,7 @@
         <section class="card map-panel">
           <div class="section-label">Geography</div>
           <div class="map-shell">
-            <div id="map" aria-label="Map showing the geographic journey of Koko and Momo's story"></div>
+            <div id="map" aria-label="Map showing the geographic journey of Koko and Momo"></div>
             <div class="map-overlay"></div>
             <div class="map-caption">
               <h3 id="mapTitle">Loading…</h3>
@@ -2952,9 +2952,9 @@
       const root = document.getElementById('heroStats');
       if (!root) return;
       const stats = [
-        ['Feb 2024', 'First met in Hefei'],
-        ['Mar 2024', 'Became a couple in Wuhan'],
-        ['5 cities', 'Hefei, Wuhan, Singapore, Beijing, California']
+        ['Mar 17, 2024', 'together since'],
+        ['8+', 'trips across two years'],
+        ['Hefei → Wuhan → Beijing → US', 'the journey so far']
       ];
 
       stats.forEach(([value, text]) => {
@@ -4795,10 +4795,9 @@
 
     function chapterTone(chapter) {
       const blob = `${chapter.id} ${chapter.phase} ${chapter.title}`.toLowerCase();
-      if (blob.includes('beginning') || blob.includes('first')) return 'formation';
-      if (blob.includes('spring') || blob.includes('wuhan')) return 'research';
-      if (blob.includes('summer') || blob.includes('singapore')) return 'founder';
-      if (blob.includes('beijing') || blob.includes('long')) return 'validation';
+      if (blob.includes('beginning')) return 'formation';
+      if (blob.includes('2024')) return 'research';
+      if (blob.includes('2025')) return 'validation';
       return 'ai-era';
     }
 

@@ -1,8 +1,8 @@
 {
   "title": {
     "text": {
-      "headline": "Koko & Momo - Love Chronicle",
-      "text": "A timeline of our journey together, from first meeting to adventures across cities."
+      "headline": "叩叩 & 魔魔 — KoMo Chronicle",
+      "text": "A couples chronicle. Koko (叩叩) and Momo (魔魔), together since March 17, 2024."
     }
   },
   "events": [
@@ -13,15 +13,11 @@
         "day": "22"
       },
       "text": {
-        "headline": "First Met",
-        "text": "Koko and Momo met for the first time in Hefei, marking the beginning of their story."
+        "headline": "First Met — Hefei",
+        "text": "叩叩魔魔第一次见面。Koko and Momo meet for the first time in Hefei."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "first-met",
-      "chapterId": "beginning",
-      "sortBucket": "beginning"
+      "id": "first-meet",
+      "chapterId": "beginning"
     },
     {
       "start_date": {
@@ -30,15 +26,11 @@
         "day": "16"
       },
       "text": {
-        "headline": "First Held Hands",
-        "text": "In Wuhan, Koko and Momo held hands for the first time."
+        "headline": "First Held Hands — Wuhan",
+        "text": "叩叩魔魔第一次牵手。In Wuhan together — the first hand-hold."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "first-hands",
-      "chapterId": "wuhan-spring",
-      "sortBucket": "spring2024"
+      "id": "first-hold",
+      "chapterId": "beginning"
     },
     {
       "start_date": {
@@ -47,135 +39,112 @@
         "day": "17"
       },
       "text": {
-        "headline": "Got Together",
-        "text": "Koko and Momo officially became a couple in Wuhan."
+        "headline": "Together — Wuhan",
+        "text": "叩叩魔魔在一起了。KoMo officially begins. Still in Wuhan."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "got-together",
-      "chapterId": "wuhan-spring",
-      "sortBucket": "spring2024"
+      "id": "together",
+      "chapterId": "beginning"
     },
     {
       "start_date": {
         "year": "2024",
-        "month": "5"
+        "month": "5",
+        "day": "1"
       },
       "text": {
-        "headline": "Wuhan Days",
-        "text": "Spending time together in Wuhan, building memories."
+        "headline": "Wuhan Trip",
+        "text": "Back to Wuhan together in May 2024."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "wuhan-may",
-      "chapterId": "wuhan-spring",
-      "sortBucket": "spring2024"
+      "id": "wuhan-may-2024",
+      "chapterId": "travels-2024"
     },
     {
       "start_date": {
         "year": "2024",
-        "month": "6"
+        "month": "6",
+        "day": "1"
       },
       "text": {
-        "headline": "Back to Hefei",
-        "text": "Returning to where it all began - Hefei in June."
+        "headline": "Hefei Trip",
+        "text": "Trip to Hefei in June 2024."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "hefei-june",
-      "chapterId": "summer-travels",
-      "sortBucket": "summer2024"
+      "id": "hefei-jun-2024",
+      "chapterId": "travels-2024"
     },
     {
       "start_date": {
         "year": "2024",
-        "month": "6"
+        "month": "6",
+        "day": "15"
       },
       "text": {
-        "headline": "Singapore Adventure",
-        "text": "First international trip together to Singapore."
+        "headline": "Singapore Trip",
+        "text": "KoMo travels to Singapore in June 2024."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "singapore",
-      "chapterId": "summer-travels",
-      "sortBucket": "summer2024"
+      "id": "singapore-jun-2024",
+      "chapterId": "travels-2024"
     },
     {
       "start_date": {
         "year": "2024",
-        "month": "6"
+        "month": "6",
+        "day": "20"
       },
       "end_date": {
         "year": "2024",
-        "month": "8"
+        "month": "8",
+        "day": "31"
       },
       "text": {
-        "headline": "Beijing Summer",
-        "text": "Summer in Beijing together, June to August 2024."
+        "headline": "Beijing — Summer 2024",
+        "text": "KoMo spends the summer in Beijing, June through August 2024."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "beijing-summer",
-      "chapterId": "beijing-chapter",
-      "sortBucket": "summer2024"
+      "id": "beijing-summer-2024",
+      "chapterId": "travels-2024"
     },
     {
       "start_date": {
         "year": "2025",
-        "month": "3"
+        "month": "3",
+        "day": "1"
       },
       "text": {
-        "headline": "Beijing Return",
-        "text": "Back to Beijing in March 2025."
+        "headline": "Beijing — March 2025",
+        "text": "Trip to Beijing in March 2025."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "beijing-march",
-      "chapterId": "beijing-chapter",
-      "sortBucket": "2025"
+      "id": "beijing-mar-2025",
+      "chapterId": "travels-2025"
     },
     {
       "start_date": {
         "year": "2025",
-        "month": "5"
+        "month": "5",
+        "day": "1"
       },
       "end_date": {
         "year": "2025",
-        "month": "8"
+        "month": "8",
+        "day": "31"
       },
       "text": {
-        "headline": "Extended Beijing Stay",
-        "text": "An extended stay in Beijing from May to August 2025."
+        "headline": "Beijing — May to August 2025",
+        "text": "Extended stay in Beijing from May through August 2025."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "beijing-extended",
-      "chapterId": "beijing-chapter",
-      "sortBucket": "2025"
+      "id": "beijing-may-aug-2025",
+      "chapterId": "travels-2025"
     },
     {
       "start_date": {
         "year": "2026",
-        "month": "3"
+        "month": "2",
+        "day": "1"
       },
       "text": {
-        "headline": "California Journey",
-        "text": "Momo travels to California and then returns to China."
+        "headline": "Momo Visits Koko in the US",
+        "text": "魔魔去美国看叩叩。Momo travels to the US in February 2026 to visit Koko, then returns to Beijing afterwards."
       },
-      "sourceIds": [
-        "memory"
-      ],
-      "id": "california-trip",
-      "chapterId": "future",
-      "sortBucket": "2026"
+      "id": "momo-us-2026",
+      "chapterId": "travels-2026"
     }
   ]
 }

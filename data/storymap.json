@@ -4,43 +4,43 @@
       {
         "type": "overview",
         "text": {
-          "headline": "Our Journey Together",
-          "text": "A love story across cities, from Hefei to Beijing, Singapore to California."
+          "headline": "叩叩魔魔 — KoMo's Journey",
+          "text": "A love story across cities: Hefei, Wuhan, Singapore, Beijing, and the US."
         }
       },
       {
-        "location": { "lat": 31.8390, "lon": 117.2638, "zoom": 10 },
+        "location": { "lat": 31.8390, "lon": 117.2638, "zoom": 6 },
         "text": {
           "headline": "Hefei / First Meeting",
-          "text": "February 22, 2024 - where Koko and Momo first met."
+          "text": "February 22, 2024 — where Koko and Momo first met."
         }
       },
       {
-        "location": { "lat": 30.5928, "lon": 114.3055, "zoom": 10 },
+        "location": { "lat": 30.5928, "lon": 114.3055, "zoom": 6 },
         "text": {
-          "headline": "Wuhan / Becoming Us",
-          "text": "March 2024 - holding hands and becoming a couple."
+          "headline": "Wuhan / Together",
+          "text": "March 16-17, 2024 — first held hands, officially became a couple."
         }
       },
       {
-        "location": { "lat": 1.3521, "lon": 103.8198, "zoom": 11 },
+        "location": { "lat": 1.3521, "lon": 103.8198, "zoom": 9 },
         "text": {
-          "headline": "Singapore / First Adventure",
-          "text": "June 2024 - first international trip together."
+          "headline": "Singapore / First Trip",
+          "text": "June 2024 — KoMo's first international adventure together."
         }
       },
       {
-        "location": { "lat": 39.9042, "lon": 116.4074, "zoom": 10 },
+        "location": { "lat": 39.9042, "lon": 116.4074, "zoom": 7 },
         "text": {
-          "headline": "Beijing / The Long Chapter",
-          "text": "Multiple stays from summer 2024 through 2025."
+          "headline": "Beijing / Summer Base",
+          "text": "Multiple stays in 2024 and 2025 — Beijing became their summer home."
         }
       },
       {
-        "location": { "lat": 36.7783, "lon": -119.4179, "zoom": 6 },
+        "location": { "lat": 37.0902, "lon": -95.7129, "zoom": 3.5 },
         "text": {
-          "headline": "California / New Horizons",
-          "text": "March 2026 - Momo's journey to California."
+          "headline": "United States / Momo Visits",
+          "text": "February 2026 — Momo travels to the US to visit Koko."
         }
       }
     ]
