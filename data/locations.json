@@ -43,5 +43,14 @@
     "lon": -95.7129,
     "summary": "Koko lives in the US. Momo visited in February 2026.",
     "camera": { "center": [-95.7129, 37.0902], "zoom": 3.5 }
+  },
+  {
+    "id": "sf",
+    "name": "San Francisco, California",
+    "label": "Future home — happily ever after",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "summary": "Where Koko and Momo will live happily ever after.",
+    "camera": { "center": [-122.4194, 37.7749], "zoom": 10.0 }
   }
 ]
