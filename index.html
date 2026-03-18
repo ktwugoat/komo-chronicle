@@ -532,11 +532,11 @@
     }
 
     .main-grid {
-      display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(300px, .98fr); gap: 24px; align-items: start;
+      display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(300px, .98fr); gap: 24px;
     }
     .chapters { display: grid; gap: 18px; }
     .chapter {
-      position: relative; padding: 28px 28px 26px 34px; scroll-margin-top: 72px;
+      position: relative; padding: 28px 28px 26px 34px; scroll-margin-top: 92px;
     }
     .chapter::before {
       content: ""; position: absolute; left: 16px; top: 30px; bottom: 30px; width: 2px; background: linear-gradient(180deg, rgba(25,50,79,.25), rgba(25,50,79,0));
@@ -1043,7 +1043,14 @@
       text-transform: uppercase;
     }
 
-    .sticky-stack { position: sticky; top: 70px; display: grid; gap: 18px; }
+    .sticky-stack { 
+      position: sticky; 
+      top: 90px; 
+      display: grid; 
+      gap: 18px; 
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+    }
     .map-panel { overflow: hidden; }
     .map-shell {
       position: relative; min-height: 460px; border-radius: 24px; overflow: hidden;
@@ -5409,8 +5416,8 @@
         railLinks.forEach((link) => link.classList.toggle('active', link.dataset.target === activeId));
         setActiveLocation(activeChapter.locationId, activeChapter);
       }, {
-        rootMargin: '-18% 0px -50% 0px',
-        threshold: [0.25, 0.5, 0.75]
+        rootMargin: '-120px 0px -40% 0px',
+        threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
       });
 
       chapterEls.forEach((el) => observer.observe(el));
