@@ -3925,7 +3925,7 @@
       presentDirection.signals.forEach((signal) => {
         const card = make('section', 'signal-card');
         card.append(make('strong', '', signal.label));
-        card.append(make('p', '', signal.text));
+        card.append(make('p', '', `${signal.value}${signal.note ? ` — ${signal.note}` : ''}`));
         signals.append(card);
       });
       left.append(signals);
