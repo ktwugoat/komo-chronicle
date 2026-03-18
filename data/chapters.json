@@ -26,30 +26,76 @@
     }
   },
   {
-    "id": "travels-2024",
-    "phase": "2024 Travels",
-    "range": "May – Aug 2024",
-    "title": "The first year of adventures",
-    "dek": "Wuhan in May, Hefei in June, Singapore, then a whole summer in Beijing.",
+    "id": "travels-2024-spring",
+    "phase": "2024 Spring",
+    "range": "May – Jun 2024",
+    "title": "Wuhan and Hefei revisited",
+    "dek": "Returning to where it all began — Wuhan in May, Hefei in June.",
     "narrative": [
-      "In May 2024, KoMo returned to Wuhan. In June, they visited Hefei again, then flew to Singapore.",
-      "The summer of 2024 was spent in Beijing, from June through August."
+      "In May 2024, KoMo returned to Wuhan, revisiting the city where they became a couple.",
+      "June brought them back to Hefei, the city where they first met."
     ],
     "proofPoints": [
       "Wuhan trip: May 2024.",
-      "Hefei trip: June 2024.",
-      "Singapore trip: June 2024.",
+      "Hefei trip: June 2024."
+    ],
+    "locationId": "wuhan",
+    "locationIds": ["wuhan", "hefei"],
+    "mapCaption": "Revisiting Wuhan and Hefei.",
+    "mapCamera": { "center": [114.3055, 30.5928], "zoom": 5.5, "pitch": 18, "bearing": 0 },
+    "sources": [],
+    "evidenceProfile": {
+      "stanceLabel": "Chapter", "stance": "Spring travels",
+      "strengthLabel": "Milestones", "strength": "2 trips revisiting their origins",
+      "artifactLabel": "Moments", "artifact": "2 trips"
+    }
+  },
+  {
+    "id": "singapore",
+    "phase": "Singapore",
+    "range": "Jun 2024",
+    "title": "First international adventure",
+    "dek": "KoMo's first trip abroad together — Singapore in June 2024.",
+    "narrative": [
+      "June 2024: KoMo traveled to Singapore for their first international adventure together.",
+      "A new city, new experiences, and memories beyond borders."
+    ],
+    "proofPoints": [
+      "Singapore trip: June 2024."
+    ],
+    "locationId": "singapore",
+    "locationIds": ["singapore"],
+    "mapCaption": "First international trip — Singapore.",
+    "mapCamera": { "center": [103.8198, 1.3521], "zoom": 9.0, "pitch": 30, "bearing": -18 },
+    "sources": [],
+    "evidenceProfile": {
+      "stanceLabel": "Chapter", "stance": "International adventure",
+      "strengthLabel": "Milestones", "strength": "First trip abroad together",
+      "artifactLabel": "Moments", "artifact": "1 milestone"
+    }
+  },
+  {
+    "id": "beijing-2024",
+    "phase": "Beijing 2024",
+    "range": "Jun – Aug 2024",
+    "title": "Beijing summer",
+    "dek": "The first Beijing summer together — June through August 2024.",
+    "narrative": [
+      "The summer of 2024 was spent in Beijing, from June through August.",
+      "Beijing became their summer base, a city that would welcome them back again and again."
+    ],
+    "proofPoints": [
       "Beijing summer: June – August 2024."
     ],
     "locationId": "beijing",
-    "locationIds": ["wuhan", "hefei", "singapore", "beijing"],
-    "mapCaption": "KoMo's first year of travels together.",
-    "mapCamera": { "center": [116.4074, 39.9042], "zoom": 4.0, "pitch": 18, "bearing": 0 },
+    "locationIds": ["beijing"],
+    "mapCaption": "Beijing summer 2024.",
+    "mapCamera": { "center": [116.4074, 39.9042], "zoom": 7.0, "pitch": 18, "bearing": 0 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "First year of travels",
-      "strengthLabel": "Milestones", "strength": "4 trips across China and Southeast Asia",
-      "artifactLabel": "Moments", "artifact": "4 trips"
+      "stanceLabel": "Chapter", "stance": "Summer in Beijing",
+      "strengthLabel": "Milestones", "strength": "First Beijing summer",
+      "artifactLabel": "Moments", "artifact": "1 milestone"
     }
   },
   {
@@ -91,15 +137,15 @@
       "Momo visits Koko in the US: February 2026.",
       "Momo returns to Beijing afterwards."
     ],
-    "locationId": "us",
+    "locationId": "beijing",
     "locationIds": ["us", "beijing"],
-    "mapCaption": "魔魔去美国看叩叩。",
-    "mapCamera": { "center": [-95, 37], "zoom": 3.0, "pitch": 10, "bearing": 0 },
+    "mapCaption": "魔魔去美国看叩叩，然后回到北京。",
+    "mapCamera": { "center": [116.4074, 39.9042], "zoom": 6.5, "pitch": 28, "bearing": 0 },
     "sources": [],
     "evidenceProfile": {
       "stanceLabel": "Chapter", "stance": "Present chapter",
-      "strengthLabel": "Milestones", "strength": "First US visit",
-      "artifactLabel": "Moments", "artifact": "1 milestone"
+      "strengthLabel": "Milestones", "strength": "First US visit, back to Beijing",
+      "artifactLabel": "Moments", "artifact": "2 milestones"
     }
   }
 ]
