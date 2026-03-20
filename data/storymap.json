@@ -4,43 +4,43 @@
       {
         "type": "overview",
         "text": {
-          "headline": "叩叩魔魔 — KoMo's Journey",
-          "text": "A love story across cities: Hefei, Wuhan, Singapore, Beijing, and the US."
+          "headline": "叩叩魔魔的旅程",
+          "text": "一段跨越城市的爱情故事：合肥、武汉、新加坡、北京，以及美国。"
         }
       },
       {
         "location": { "lat": 31.8390, "lon": 117.2638, "zoom": 6 },
         "text": {
-          "headline": "Hefei / First Meeting",
-          "text": "February 22, 2024 — where Koko and Momo first met."
+          "headline": "合肥 / 初次相遇",
+          "text": "2024年2月22日——叩叩魔魔第一次见面的地方。"
         }
       },
       {
         "location": { "lat": 30.5928, "lon": 114.3055, "zoom": 6 },
         "text": {
-          "headline": "Wuhan / Together",
-          "text": "March 16-17, 2024 — first held hands, officially became a couple."
+          "headline": "武汉 / 在一起",
+          "text": "2024年3月16日至17日——第一次牵手，正式在一起。"
         }
       },
       {
         "location": { "lat": 1.3521, "lon": 103.8198, "zoom": 9 },
         "text": {
-          "headline": "Singapore / First Trip",
-          "text": "June 2024 — KoMo's first international adventure together."
+          "headline": "新加坡 / 第一次出境旅行",
+          "text": "2024年6月——叩叩魔魔第一次一起出国冒险。"
         }
       },
       {
         "location": { "lat": 39.9042, "lon": 116.4074, "zoom": 7 },
         "text": {
-          "headline": "Beijing / Summer Base",
-          "text": "Multiple stays in 2024 and 2025 — Beijing became their summer home."
+          "headline": "北京 / 夏日据点",
+          "text": "2024年和2025年多次长住——北京成了他们的夏日之家。"
         }
       },
       {
         "location": { "lat": 37.0902, "lon": -95.7129, "zoom": 3.5 },
         "text": {
-          "headline": "United States / Momo Visits",
-          "text": "February 2026 — Momo travels to the US to visit Koko."
+          "headline": "美国 / 魔魔探望叩叩",
+          "text": "2026年2月——魔魔飞往美国探望叩叩。"
         }
       }
     ]

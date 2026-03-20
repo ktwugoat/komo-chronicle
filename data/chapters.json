@@ -1,18 +1,18 @@
 [
   {
     "id": "beginning",
-    "phase": "Beginning",
-    "range": "Feb – Mar 2024",
-    "title": "How it all started",
-    "dek": "叩叩魔魔的故事从合肥开始，在武汉确定。Koko and Momo first met in Hefei on February 22, 2024, and officially became a couple in Wuhan on March 17, 2024.",
+    "phase": "开始",
+    "range": "2024年2月 – 3月",
+    "title": "一切的起点",
+    "dek": "叩叩魔魔的故事从合肥开始，在武汉确定。2024年2月22日在合肥初次相遇，2024年3月17日在武汉正式在一起。",
     "narrative": [
-      "It began in Hefei on February 22, 2024 — the first meeting.",
-      "Three weeks later in Wuhan, on March 16, they held hands for the first time. The next day, March 17, KoMo officially began."
+      "2024年2月22日，在合肥，第一次见面。",
+      "三周后在武汉，3月16日第一次牵手。第二天，3月17日，叩叩魔魔正式在一起。"
     ],
     "proofPoints": [
-      "First met: Hefei, February 22, 2024.",
-      "First held hands: Wuhan, March 16, 2024.",
-      "Together since: Wuhan, March 17, 2024."
+      "初次相遇：合肥，2024年2月22日。",
+      "第一次牵手：武汉，2024年3月16日。",
+      "在一起：武汉，2024年3月17日。"
     ],
     "locationId": "hefei",
     "locationIds": ["hefei", "wuhan"],
@@ -20,122 +20,122 @@
     "mapCamera": { "center": [117.2638, 31.8390], "zoom": 5.0, "pitch": 18, "bearing": -10 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "The origin chapter",
-      "strengthLabel": "Milestones", "strength": "First meet, first hold, together",
-      "artifactLabel": "Moments", "artifact": "3 milestones"
+      "stanceLabel": "章节", "stance": "起源章节",
+      "strengthLabel": "里程碑", "strength": "初遇、牵手、在一起",
+      "artifactLabel": "瞬间", "artifact": "3个里程碑"
     }
   },
   {
     "id": "travels-2024-spring",
-    "phase": "2024 Spring",
-    "range": "May – Jun 2024",
-    "title": "Wuhan and Hefei revisited",
-    "dek": "Returning to where it all began — Wuhan in May, Hefei in June.",
+    "phase": "2024年春",
+    "range": "2024年5月 – 6月",
+    "title": "重回武汉与合肥",
+    "dek": "重回一切开始的地方——5月武汉，6月合肥。",
     "narrative": [
-      "In May 2024, KoMo returned to Wuhan, revisiting the city where they became a couple.",
-      "June brought them back to Hefei, the city where they first met."
+      "2024年5月，叩叩魔魔重返武汉，再次踏上他们在一起的城市。",
+      "6月，他们回到合肥，初次相遇的地方。"
     ],
     "proofPoints": [
-      "Wuhan trip: May 2024.",
-      "Hefei trip: June 2024."
+      "武汉之旅：2024年5月。",
+      "合肥之旅：2024年6月。"
     ],
     "locationId": "wuhan",
     "locationIds": ["wuhan", "hefei"],
-    "mapCaption": "Revisiting Wuhan and Hefei.",
+    "mapCaption": "重返武汉与合肥。",
     "mapCamera": { "center": [114.3055, 30.5928], "zoom": 5.5, "pitch": 18, "bearing": 0 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "Spring travels",
-      "strengthLabel": "Milestones", "strength": "2 trips revisiting their origins",
-      "artifactLabel": "Moments", "artifact": "2 trips"
+      "stanceLabel": "章节", "stance": "春季旅行",
+      "strengthLabel": "里程碑", "strength": "2次重返起点之旅",
+      "artifactLabel": "瞬间", "artifact": "2次旅行"
     }
   },
   {
     "id": "singapore",
-    "phase": "Singapore",
-    "range": "Jun 2024",
-    "title": "First international adventure",
-    "dek": "KoMo's first trip abroad together — Singapore in June 2024.",
+    "phase": "新加坡",
+    "range": "2024年6月",
+    "title": "第一次出境旅行",
+    "dek": "叩叩魔魔第一次一起出国——2024年6月，新加坡。",
     "narrative": [
-      "June 2024: KoMo traveled to Singapore for their first international adventure together.",
-      "A new city, new experiences, and memories beyond borders."
+      "2024年6月，叩叩魔魔一起去新加坡，开启了第一次出境旅行。",
+      "新城市，新体验，跨越国界的共同记忆。"
     ],
     "proofPoints": [
-      "Singapore trip: June 2024."
+      "新加坡之旅：2024年6月。"
     ],
     "locationId": "singapore",
     "locationIds": ["singapore"],
-    "mapCaption": "First international trip — Singapore.",
+    "mapCaption": "第一次出境旅行——新加坡。",
     "mapCamera": { "center": [103.8198, 1.3521], "zoom": 9.0, "pitch": 30, "bearing": -18 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "International adventure",
-      "strengthLabel": "Milestones", "strength": "First trip abroad together",
-      "artifactLabel": "Moments", "artifact": "1 milestone"
+      "stanceLabel": "章节", "stance": "出境冒险",
+      "strengthLabel": "里程碑", "strength": "第一次一起出国",
+      "artifactLabel": "瞬间", "artifact": "1个里程碑"
     }
   },
   {
     "id": "beijing-2024",
-    "phase": "Beijing 2024",
-    "range": "Jun – Aug 2024",
-    "title": "Beijing summer",
-    "dek": "The first Beijing summer together — June through August 2024.",
+    "phase": "北京 2024",
+    "range": "2024年6月 – 8月",
+    "title": "北京的夏天",
+    "dek": "第一个在北京一起度过的夏天——2024年6月至8月。",
     "narrative": [
-      "The summer of 2024 was spent in Beijing, from June through August.",
-      "Beijing became their summer base, a city that would welcome them back again and again."
+      "2024年的夏天，叩叩魔魔在北京度过，从6月到8月。",
+      "北京成了他们的夏日据点，一座一次次欢迎他们归来的城市。"
     ],
     "proofPoints": [
-      "Beijing summer: June – August 2024."
+      "北京夏天：2024年6月 – 8月。"
     ],
     "locationId": "beijing",
     "locationIds": ["beijing"],
-    "mapCaption": "Beijing summer 2024.",
+    "mapCaption": "2024年北京夏天。",
     "mapCamera": { "center": [116.4074, 39.9042], "zoom": 7.0, "pitch": 18, "bearing": 0 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "Summer in Beijing",
-      "strengthLabel": "Milestones", "strength": "First Beijing summer",
-      "artifactLabel": "Moments", "artifact": "1 milestone"
+      "stanceLabel": "章节", "stance": "北京的夏天",
+      "strengthLabel": "里程碑", "strength": "第一个北京夏天",
+      "artifactLabel": "瞬间", "artifact": "1个里程碑"
     }
   },
   {
     "id": "travels-2025",
-    "phase": "2025",
-    "range": "Mar – Aug 2025",
-    "title": "Beijing, again and again",
-    "dek": "Two Beijing stays in 2025 — March, then May through August.",
+    "phase": "2025年",
+    "range": "2025年3月 – 8月",
+    "title": "一次次回到北京",
+    "dek": "2025年两次北京之行——3月，以及5月至8月。",
     "narrative": [
-      "In March 2025, KoMo was back in Beijing.",
-      "From May to August 2025, another extended summer in Beijing."
+      "2025年3月，叩叩魔魔再次来到北京。",
+      "2025年5月至8月，又一个漫长的北京夏天。"
     ],
     "proofPoints": [
-      "Beijing: March 2025.",
-      "Beijing: May – August 2025."
+      "北京：2025年3月。",
+      "北京：2025年5月 – 8月。"
     ],
     "locationId": "beijing",
     "locationIds": ["beijing"],
-    "mapCaption": "Beijing stays in 2025.",
+    "mapCaption": "2025年北京之行。",
     "mapCamera": { "center": [116.4074, 39.9042], "zoom": 6.5, "pitch": 28, "bearing": 0 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "2025 Beijing chapter",
-      "strengthLabel": "Milestones", "strength": "Two extended Beijing stays",
-      "artifactLabel": "Moments", "artifact": "2 trips"
+      "stanceLabel": "章节", "stance": "2025年北京章节",
+      "strengthLabel": "里程碑", "strength": "两次北京长住",
+      "artifactLabel": "瞬间", "artifact": "2次旅行"
     }
   },
   {
     "id": "travels-2026",
-    "phase": "2026",
-    "range": "Feb 2026",
-    "title": "Momo comes to Koko",
-    "dek": "魔魔去美国看叩叩。In February 2026, Momo traveled to the US to visit Koko.",
+    "phase": "2026年",
+    "range": "2026年2月",
+    "title": "魔魔去找叩叩",
+    "dek": "魔魔去美国看叩叩。2026年2月，魔魔飞往美国探望叩叩。",
     "narrative": [
-      "February 2026: Momo flew to the US to visit Koko — the first time together on Koko's side of the world.",
-      "After the visit, Momo returned to Beijing."
+      "2026年2月，魔魔飞往美国探望叩叩——第一次在叩叩的世界里相聚。",
+      "探望结束后，魔魔回到北京。"
     ],
     "proofPoints": [
-      "Momo visits Koko in the US: February 2026.",
-      "Momo returns to Beijing afterwards."
+      "魔魔赴美探望叩叩：2026年2月。",
+      "魔魔之后返回北京。"
     ],
     "locationId": "sf",
     "locationIds": ["sf", "beijing"],
@@ -143,23 +143,23 @@
     "mapCamera": { "center": [-122.4194, 37.7749], "zoom": 6.5, "pitch": 28, "bearing": 0 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "Present chapter",
-      "strengthLabel": "Milestones", "strength": "First US visit, back to Beijing",
-      "artifactLabel": "Moments", "artifact": "2 milestones"
+      "stanceLabel": "章节", "stance": "当前章节",
+      "strengthLabel": "里程碑", "strength": "第一次赴美，返回北京",
+      "artifactLabel": "瞬间", "artifact": "2个里程碑"
     }
   },
   {
     "id": "future",
-    "phase": "Future",
-    "range": "Future",
-    "title": "Happily ever after",
-    "dek": "叩叩魔魔，永远在一起。Koko and Momo, together forever.",
+    "phase": "未来",
+    "range": "未来",
+    "title": "从此幸福快乐",
+    "dek": "叩叩魔魔，永远在一起。",
     "narrative": [
-      "The future is full of adventures waiting to be discovered.",
-      "Traveling the world together, creating memories wherever they go, and building a lifetime of happiness."
+      "未来充满了等待探索的冒险。",
+      "一起走遍世界，在每一个地方留下共同的记忆，共同建造一生的幸福。"
     ],
     "proofPoints": [
-      "Happy travels all over the world together."
+      "一起快乐地走遍全世界。"
     ],
     "locationId": "sf",
     "locationIds": ["sf"],
@@ -167,9 +167,9 @@
     "mapCamera": { "center": [-122.4194, 37.7749], "zoom": 10.0, "pitch": 35, "bearing": -15 },
     "sources": [],
     "evidenceProfile": {
-      "stanceLabel": "Chapter", "stance": "Future chapter",
-      "strengthLabel": "Dreams", "strength": "Happily ever after",
-      "artifactLabel": "Moments", "artifact": "Forever"
+      "stanceLabel": "章节", "stance": "未来章节",
+      "strengthLabel": "梦想", "strength": "从此幸福快乐",
+      "artifactLabel": "瞬间", "artifact": "永远"
     }
   }
 ]

@@ -1,147 +1,99 @@
 {
   "title": {
     "text": {
-      "headline": "叩叩魔魔年谱 — KoMo Chronicle",
-      "text": "A couples chronicle. Koko (叩叩) and Momo (魔魔), together since March 17, 2024."
+      "headline": "叩叩魔魔年谱",
+      "text": "情侣编年史。叩叩和魔魔，自2024年3月17日在一起。"
     }
   },
   "events": [
     {
-      "start_date": {
-        "year": "2024",
-        "month": "2",
-        "day": "22"
-      },
+      "start_date": { "year": "2024", "month": "2", "day": "22" },
       "text": {
-        "headline": "First Met — Hefei",
-        "text": "叩叩魔魔第一次见面。Koko and Momo meet for the first time in Hefei."
+        "headline": "初次相遇——合肥",
+        "text": "叩叩魔魔第一次见面。两人在合肥初次相遇。"
       },
       "id": "first-meet",
       "chapterId": "beginning"
     },
     {
-      "start_date": {
-        "year": "2024",
-        "month": "3",
-        "day": "16"
-      },
+      "start_date": { "year": "2024", "month": "3", "day": "16" },
       "text": {
-        "headline": "First Held Hands — Wuhan",
-        "text": "叩叩魔魔第一次牵手。In Wuhan together — the first hand-hold."
+        "headline": "第一次牵手——武汉",
+        "text": "叩叩魔魔第一次牵手。在武汉，第一次牵手。"
       },
       "id": "first-hold",
       "chapterId": "beginning"
     },
     {
-      "start_date": {
-        "year": "2024",
-        "month": "3",
-        "day": "17"
-      },
+      "start_date": { "year": "2024", "month": "3", "day": "17" },
       "text": {
-        "headline": "Together — Wuhan",
-        "text": "叩叩魔魔在一起了。KoMo officially begins. Still in Wuhan."
+        "headline": "在一起——武汉",
+        "text": "叩叩魔魔在一起了。叩叩魔魔正式开始，仍在武汉。"
       },
       "id": "together",
       "chapterId": "beginning"
     },
     {
-      "start_date": {
-        "year": "2024",
-        "month": "5",
-        "day": "1"
-      },
+      "start_date": { "year": "2024", "month": "5", "day": "1" },
       "text": {
-        "headline": "Wuhan Trip",
-        "text": "Back to Wuhan together in May 2024."
+        "headline": "武汉之旅",
+        "text": "2024年5月，一起重返武汉。"
       },
       "id": "wuhan-may-2024",
       "chapterId": "travels-2024"
     },
     {
-      "start_date": {
-        "year": "2024",
-        "month": "6",
-        "day": "1"
-      },
+      "start_date": { "year": "2024", "month": "6", "day": "1" },
       "text": {
-        "headline": "Hefei Trip",
-        "text": "Trip to Hefei in June 2024."
+        "headline": "合肥之旅",
+        "text": "2024年6月，合肥之旅。"
       },
       "id": "hefei-jun-2024",
       "chapterId": "travels-2024"
     },
     {
-      "start_date": {
-        "year": "2024",
-        "month": "6",
-        "day": "15"
-      },
+      "start_date": { "year": "2024", "month": "6", "day": "15" },
       "text": {
-        "headline": "Singapore Trip",
-        "text": "KoMo travels to Singapore in June 2024."
+        "headline": "新加坡之旅",
+        "text": "叩叩魔魔于2024年6月一起去了新加坡。"
       },
       "id": "singapore-jun-2024",
       "chapterId": "travels-2024"
     },
     {
-      "start_date": {
-        "year": "2024",
-        "month": "6",
-        "day": "20"
-      },
-      "end_date": {
-        "year": "2024",
-        "month": "8",
-        "day": "31"
-      },
+      "start_date": { "year": "2024", "month": "6", "day": "20" },
+      "end_date": { "year": "2024", "month": "8", "day": "31" },
       "text": {
-        "headline": "Beijing — Summer 2024",
-        "text": "KoMo spends the summer in Beijing, June through August 2024."
+        "headline": "北京——2024年夏",
+        "text": "叩叩魔魔在北京度过夏天，2024年6月至8月。"
       },
       "id": "beijing-summer-2024",
       "chapterId": "travels-2024"
     },
     {
-      "start_date": {
-        "year": "2025",
-        "month": "3",
-        "day": "1"
-      },
+      "start_date": { "year": "2025", "month": "3", "day": "1" },
       "text": {
-        "headline": "Beijing — March 2025",
-        "text": "Trip to Beijing in March 2025."
+        "headline": "北京——2025年3月",
+        "text": "2025年3月，北京之行。"
       },
       "id": "beijing-mar-2025",
       "chapterId": "travels-2025"
     },
     {
-      "start_date": {
-        "year": "2025",
-        "month": "5",
-        "day": "1"
-      },
-      "end_date": {
-        "year": "2025",
-        "month": "8",
-        "day": "31"
-      },
+      "start_date": { "year": "2025", "month": "5", "day": "1" },
+      "end_date": { "year": "2025", "month": "8", "day": "31" },
       "text": {
-        "headline": "Beijing — May to August 2025",
-        "text": "Extended stay in Beijing from May through August 2025."
+        "headline": "北京——2025年5月至8月",
+        "text": "2025年5月至8月，在北京长住。"
       },
       "id": "beijing-may-aug-2025",
       "chapterId": "travels-2025"
     },
     {
-      "start_date": {
-        "year": "2026",
-        "month": "2",
-        "day": "1"
-      },
+      "start_date": { "year": "2026", "month": "2", "day": "1" },
       "text": {
-        "headline": "Momo Visits Koko in the US",
-        "text": "魔魔去美国看叩叩。Momo travels to the US in February 2026 to visit Koko, then returns to Beijing afterwards."
+        "headline": "魔魔赴美探望叩叩",
+        "text": "魔魔去美国看叩叩。2026年2月，魔魔飞往美国探望叩叩，之后返回北京。"
       },
       "id": "momo-us-2026",
       "chapterId": "travels-2026"

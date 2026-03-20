@@ -1,11 +1,11 @@
 {
-  "eyebrow": "Now",
-  "title": "Still going",
-  "summary": "叩叩魔魔，一直在一起。KoMo — Koko (叩叩) and Momo (魔魔) — together since March 17, 2024, across Hefei, Wuhan, Singapore, Beijing, and now the US.",
+  "eyebrow": "现在",
+  "title": "还在继续",
+  "summary": "叩叩魔魔，一直在一起。叩叩和魔魔，自2024年3月17日在一起，走过合肥、武汉、新加坡、北京，如今来到美国。",
   "signals": [
-    { "label": "Days together", "value": "730+", "note": "Since March 17, 2024" },
-    { "label": "Cities visited", "value": "5", "note": "Hefei, Wuhan, Singapore, Beijing, US" },
-    { "label": "Trips", "value": "8+", "note": "Across two years of adventures" }
+    { "label": "在一起的天数", "value": "730+", "note": "自2024年3月17日起" },
+    { "label": "到访城市", "value": "5", "note": "合肥、武汉、新加坡、北京、美国" },
+    { "label": "旅行次数", "value": "8+", "note": "两年间的冒险" }
   ],
   "sourceIds": ["memory"]
 }

@@ -1,56 +1,56 @@
 [
   {
     "id": "hefei",
-    "name": "Hefei, Anhui",
-    "label": "Where it began — first meeting",
+    "name": "合肥，安徽",
+    "label": "一切开始的地方——初次相遇",
     "lat": 31.8390,
     "lon": 117.2638,
-    "summary": "Koko and Momo first met in Hefei on February 22, 2024.",
+    "summary": "叩叩魔魔于2024年2月22日在合肥初次相遇。",
     "camera": { "center": [117.2638, 31.8390], "zoom": 6.0 }
   },
   {
     "id": "wuhan",
-    "name": "Wuhan, Hubei",
-    "label": "First hold, first together",
+    "name": "武汉，湖北",
+    "label": "第一次牵手，正式在一起",
     "lat": 30.5928,
     "lon": 114.3055,
-    "summary": "In Wuhan: first held hands March 16, officially together March 17, 2024.",
+    "summary": "在武汉：3月16日第一次牵手，3月17日正式在一起，2024年。",
     "camera": { "center": [114.3055, 30.5928], "zoom": 6.0 }
   },
   {
     "id": "singapore",
-    "name": "Singapore",
-    "label": "Singapore trip — June 2024",
+    "name": "新加坡",
+    "label": "新加坡之旅——2024年6月",
     "lat": 1.3521,
     "lon": 103.8198,
-    "summary": "KoMo traveled to Singapore in June 2024.",
+    "summary": "叩叩魔魔于2024年6月一起去了新加坡。",
     "camera": { "center": [103.8198, 1.3521], "zoom": 9.0 }
   },
   {
     "id": "beijing",
-    "name": "Beijing",
-    "label": "Summer base — 2024 & 2025",
+    "name": "北京",
+    "label": "夏日据点——2024年 & 2025年",
     "lat": 39.9042,
     "lon": 116.4074,
-    "summary": "Beijing was KoMo's summer base in 2024 and 2025.",
+    "summary": "北京是叩叩魔魔2024年和2025年的夏日据点。",
     "camera": { "center": [116.4074, 39.9042], "zoom": 7.0 }
   },
   {
     "id": "us",
-    "name": "United States",
-    "label": "Koko's home / Momo's visit Feb 2026",
+    "name": "美国",
+    "label": "叩叩的家 / 魔魔2026年2月探访",
     "lat": 37.0902,
     "lon": -95.7129,
-    "summary": "Koko lives in the US. Momo visited in February 2026.",
+    "summary": "叩叩住在美国。魔魔于2026年2月前往探望。",
     "camera": { "center": [-95.7129, 37.0902], "zoom": 3.5 }
   },
   {
     "id": "sf",
-    "name": "San Francisco, California",
-    "label": "Future home — happily ever after",
+    "name": "旧金山，加利福尼亚",
+    "label": "未来的家——从此幸福快乐",
     "lat": 37.7749,
     "lon": -122.4194,
-    "summary": "Where Koko and Momo will live happily ever after.",
+    "summary": "叩叩魔魔将在这里幸福快乐地生活。",
     "camera": { "center": [-122.4194, 37.7749], "zoom": 10.0 }
   }
 ]

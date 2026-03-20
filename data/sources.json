@@ -1,21 +1,21 @@
 [
   {
     "id": "memory",
-    "label": "Shared memories",
+    "label": "共同记忆",
     "url": "#",
-    "note": "Personal memories of Koko and Momo's journey together.",
+    "note": "叩叩魔魔共同旅程的个人记忆。",
     "category": "memory",
-    "categoryLabel": "Personal Memory",
+    "categoryLabel": "个人记忆",
     "publisherType": "personal",
-    "publisherLabel": "Shared memory",
+    "publisherLabel": "共同记忆",
     "evidenceLevel": "primary",
-    "evidenceLabel": "Primary source",
+    "evidenceLabel": "第一手来源",
     "year": "2024-2026",
-    "directnessLabel": "Direct experience",
-    "artifactReadinessLabel": "Memory",
+    "directnessLabel": "亲身经历",
+    "artifactReadinessLabel": "记忆",
     "claimScope": "personal chronicle",
-    "claimScopeLabel": "Personal chronicle",
+    "claimScopeLabel": "个人编年史",
     "verificationState": "lived",
-    "verificationStateLabel": "Lived experience"
+    "verificationStateLabel": "亲历"
   }
 ]
