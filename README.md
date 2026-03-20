@@ -1,5 +1,9 @@
 # 叩叩魔魔 — KoMo Chronicle
 
+This repository is forked from this template. 
+
+https://github.com/ktwu01/sean-xiang-chronicle
+
 A couples chronicle for Koko (叩叩) and Momo (魔魔), together since March 17, 2024.
 
 ## Timeline
