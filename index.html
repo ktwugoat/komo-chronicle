@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -2849,7 +2849,7 @@
         </section>
 
         <section class="card validation-panel">
-          <div class="section-label">验证生态系统</div>
+          <div class="section-label"></div>
           <div class="validation-groups" id="validationGroups"></div>
         </section>
       </aside>
@@ -2872,9 +2872,9 @@
           <div class="archive-controls">
             <div class="archive-scope" id="archiveScope">
               <div class="archive-scope-meta">
-                <span class="archive-scope-label">Chapter scope</span>
+                <span class="archive-scope-label">章节范围</span>
                 <span class="archive-scope-chip" id="archiveScopeChip"></span>
-                <button class="archive-scope-clear" id="archiveScopeClear" type="button">Show full archive</button>
+                <button class="archive-scope-clear" id="archiveScopeClear" type="button">显示完整档案</button>
               </div>
             </div>
             <div class="archive-filter-group" id="archiveLegend"></div>
@@ -2903,8 +2903,8 @@
               </div>
             <div class="source-controls">
               <label class="source-search" for="sourceSearchInput">
-                <span class="source-filter-label">Search the archive</span>
-                <input class="source-search-input" id="sourceSearchInput" type="search" placeholder="Search source title, publisher, claim scope, notes, or URL" />
+                <span class="source-filter-label">搜索档案</span>
+                <input class="source-search-input" id="sourceSearchInput" type="search" placeholder="搜索来源标题、出版方、声明范围、备注或链接" />
               </label>
               <div class="source-filter-group" id="sourceOriginFilters"></div>
               <div class="source-filter-group" id="sourceEvidenceFilters"></div>
@@ -2917,7 +2917,7 @@
         </section>
         <div class="public-record-wrap">
           <section class="audit-card">
-            <div class="section-label">Primary chronology ledger</div>
+        <div class="section-label">主要编年史台账</div>
             <div class="public-record-grid" id="publicRecordLedger"></div>
             <div class="archive-capture-wrap" id="archiveCaptureDesk"></div>
           </section>
@@ -2959,9 +2959,9 @@
       const root = document.getElementById('heroStats');
       if (!root) return;
       const stats = [
-        ['Mar 17, 2024', 'together since'],
-        ['8+', 'trips across two years'],
-        ['Hefei → Wuhan → Beijing → US', 'the journey so far']
+        ['2024年3月17日', '在一起至今'],
+        ['8+', '两年间的旅行次数'],
+        ['合肥 → 武汉 → 北京 → 美国', '迄今为止的旅程']
       ];
 
       stats.forEach(([value, text]) => {
@@ -2989,9 +2989,9 @@
       }
 
       [
-        ['exhibitGrid', 'Open exhibits'],
-        ['archiveTimeline', 'Open chronology'],
-        ['sources', 'Open source desk']
+        ['exhibitGrid', '打开展品'],
+        ['archiveTimeline', '打开年表'],
+        ['sources', '打开来源台']
       ].forEach(([targetId, label]) => {
         const button = make('button', 'deep-desk-button', label);
         button.type = 'button';
@@ -3029,9 +3029,9 @@
 
         const metrics = make('div', 'chapter-compass-metrics');
         [
-          ['Narrative role', chapter.title],
-          ['Evidence density', `${entry.eventCount} archive event${entry.eventCount === 1 ? '' : 's'} · ${entry.artifactCount} artifact${entry.artifactCount === 1 ? '' : 's'}`],
-          ['Best current anchor', strongestSource ? strongestSource.label : '—'],
+          ['叙事角色', chapter.title],
+          ['证据密度', `${entry.eventCount} 个档案事件 · ${entry.artifactCount} 个文物`],
+          ['最佳当前锚点', strongestSource ? strongestSource.label : '—'],
         ].forEach(([label, value]) => {
           const metric = make('div', 'chapter-compass-metric');
           metric.append(make('strong', '', label));
@@ -3041,7 +3041,7 @@
         card.append(metrics);
 
         const actions = make('div', 'chapter-compass-actions-row');
-        const readButton = make('button', 'chapter-compass-button primary', 'Read chapter');
+        const readButton = make('button', 'chapter-compass-button primary', '阅读章节');
         readButton.type = 'button';
         readButton.addEventListener('click', () => {
           announceChapterFocus(chapter.id, { scrollArchive: true });
@@ -3049,7 +3049,7 @@
         });
         actions.append(readButton);
 
-        const evidenceButton = make('button', 'chapter-compass-button', 'Open evidence desk');
+        const evidenceButton = make('button', 'chapter-compass-button', '打开证据台');
         evidenceButton.type = 'button';
         evidenceButton.addEventListener('click', () => {
           announceChapterFocus(chapter.id, { scrollSources: true, scrollArchive: true });
@@ -3120,9 +3120,9 @@
 
         const actions = make('div', 'deep-brief-actions');
         [
-          ['Read chapter', `#${chapter.id}`, 'primary'],
-          ['Open chronology', '#archiveTimeline', ''],
-          ['Open roadmap', '#sourceRoadmapWrap', '']
+          ['阅读章节', `#${chapter.id}`, 'primary'],
+          ['打开年表', '#archiveTimeline', ''],
+          ['打开路线图', '#sourceRoadmapWrap', '']
         ].forEach(([label, target, tone]) => {
           const link = make('a', `deep-brief-action${tone ? ` ${tone}` : ''}`, label);
           link.href = target;
@@ -3130,7 +3130,7 @@
           actions.append(link);
         });
         if (brief.focusExhibitId) {
-          const exhibitButton = make('button', 'deep-brief-action', 'Open matching exhibit');
+        const exhibitButton = make('button', 'deep-brief-action', '打开匹配展品');
           exhibitButton.type = 'button';
           exhibitButton.addEventListener('click', () => {
             window.setReadingMode?.('deep');
@@ -3142,8 +3142,8 @@
 
         const roadmapEntry = (roadmapByChapter.get(chapter.id) || [])[0];
         const upgrade = make('div', 'deep-brief-upgrade');
-        upgrade.append(make('strong', '', brief.nextUpgradeLabel || 'Next upgrade'));
-        upgrade.append(make('span', '', brief.nextUpgrade || roadmapEntry?.title || chapter.evidenceProfile?.artifact || 'No new chapter-specific upgrade target is queued yet.'));
+        upgrade.append(make('strong', '', brief.nextUpgradeLabel || '下一步升级'));
+        upgrade.append(make('span', '', brief.nextUpgrade || roadmapEntry?.title || chapter.evidenceProfile?.artifact || '暂无新的章节专属升级目标排队。'));
         card.append(upgrade);
 
         root.append(card);
@@ -3159,8 +3159,8 @@
         deep: ''
       };
       const modePills = {
-        skim: ['Fast read', 'Narrative chapters', 'Map + validation'],
-        deep: ['Chapter dossiers', 'Full exhibits', 'Source archive']
+        skim: ['快速阅读', '叙事章节', '地图 + 验证'],
+        deep: ['章节档案', '完整展品', '来源档案']
       };
 
       function setMode(mode) {
@@ -3185,7 +3185,7 @@
 
     function artifactPrimaryLine(sourceOrSources) {
       const source = Array.isArray(sourceOrSources) ? sourceOrSources[0] : sourceOrSources;
-      if (!source) return 'Working artifact context';
+      if (!source) return '工作文物背景';
       const bits = [source.publisherLabel, source.evidenceLabel, source.directnessLabel].filter(Boolean);
       return bits.join(' · ');
     }
@@ -3223,19 +3223,19 @@
       const workingCount = allSources.filter((source) => source.verificationState === 'working').length;
       const surfaces = [...new Set(artifactEntries.map((entry) => entry.taxonomy?.label).filter(Boolean))];
       const publisherLabels = [...new Set(allSources.map((source) => source.publisherLabel || source.publisherType).filter(Boolean))];
-      const timeSpan = years.length ? (years[0] === years[years.length - 1] ? String(years[0]) : `${years[0]}-${years[years.length - 1]}`) : 'Undated exhibit';
+      const timeSpan = years.length ? (years[0] === years[years.length - 1] ? String(years[0]) : `${years[0]}-${years[years.length - 1]}`) : '未注明日期的展品';
 
-      let evidenceMix = `${directCount} direct source${directCount === 1 ? '' : 's'}`;
-      if (contextCount) evidenceMix += ` · ${contextCount} bridge source${contextCount === 1 ? '' : 's'}`;
-      if (!directCount && workingCount) evidenceMix += ` · ${workingCount} working source${workingCount === 1 ? '' : 's'}`;
+      let evidenceMix = `${directCount} 个直接来源`;
+      if (contextCount) evidenceMix += ` · ${contextCount} 个桥接来源`;
+      if (!directCount && workingCount) evidenceMix += ` · ${workingCount} 个工作来源`;
 
       const progression = artifactEntries.length > 1
-        ? `${artifactEntries[0].artifact.title} opens the sequence, then ${artifactEntries[artifactEntries.length - 1].artifact.title} shows where the chapter thickens or reopens.`
-        : `${artifactEntries[0]?.artifact.title || 'This artifact'} carries the chapter largely on its own, so the reading experience should stay restrained and source-led.`;
+        ? `${artifactEntries[0].artifact.title} 开启序列，${artifactEntries[artifactEntries.length - 1].artifact.title} 展示章节深化或重开之处。`
+        : `${artifactEntries[0]?.artifact.title || '本文物'} 基本独立承载本章节，阅读体验应保持克制、以来源为主导。`;
 
       const readingFrame = publisherLabels.length
-        ? `Read this exhibit as ${surfaces.length > 1 ? 'a comparative stack' : 'a focused proof set'} built from ${publisherLabels.join(' + ')} rather than as a loose gallery of documents.`
-        : 'Read this exhibit as a source-led evidence cluster rather than a loose gallery of documents.';
+        ? `将本展品作为由 ${publisherLabels.join(' + ')} 构建的${surfaces.length > 1 ? '比较性堆叠' : '聚焦证明集'}来阅读，而非松散的文件画廊。`
+        : '将本展品作为以来源为主导的证据集群来阅读，而非松散的文件画廊。';
 
       return {
         artifactEntries,
@@ -3251,7 +3251,7 @@
     function renderArtifactVisual(artifact, sources) {
       const visual = make('div', 'artifact-visual');
       visual.dataset.mode = artifact.displayMode || 'document';
-      visual.append(make('div', 'artifact-visual-label', artifact.mediaLabel || 'Source artifact'));
+      visual.append(make('div', 'artifact-visual-label', artifact.mediaLabel || '来源文物'));
 
       const displayMode = artifact.displayMode || 'document';
       const quoteText = artifact.quoteText || artifact.title;
@@ -3402,15 +3402,15 @@
       head.append(copy);
 
       const upgrade = make('div', 'chapter-deep-dossier-upgrade');
-      upgrade.append(make('strong', '', brief?.nextUpgradeLabel || 'Next upgrade'));
-      upgrade.append(make('p', '', brief?.nextUpgrade || roadmapEntries[0]?.title || chapter.evidenceProfile?.artifact || 'No chapter-specific upgrade target queued yet.'));
+      upgrade.append(make('strong', '', brief?.nextUpgradeLabel || '下一步升级'));
+      upgrade.append(make('p', '', brief?.nextUpgrade || roadmapEntries[0]?.title || chapter.evidenceProfile?.artifact || '暂无章节专属升级目标排队。'));
       head.append(upgrade);
       dossier.append(head);
 
       const frames = make('div', 'chapter-deep-dossier-frame-grid');
       [
-        ['Chapter', chapter.dek],
-        ['Sources', brief?.evidenceMove || exhibit?.curatorNote || chapter.evidenceProfile?.stance || '']
+        ['章节', chapter.dek],
+        ['来源', brief?.evidenceMove || exhibit?.curatorNote || chapter.evidenceProfile?.stance || '']
       ].forEach(([label, text]) => {
         const card = make('div', 'chapter-deep-dossier-frame');
         card.append(make('strong', '', label));
@@ -3421,8 +3421,8 @@
 
       const metricsGrid = make('div', 'chapter-deep-dossier-metrics');
       [
-        ['Archive density', `${metrics.eventCount} timeline event${metrics.eventCount === 1 ? '' : 's'} · ${metrics.artifactCount} artifact${metrics.artifactCount === 1 ? '' : 's'}`],
-        ['Exhibit', exhibit ? exhibit.title : '—']
+        ['档案密度', `${metrics.eventCount} 个时间线事件 · ${metrics.artifactCount} 个文物`],
+        ['展品', exhibit ? exhibit.title : '—']
       ].forEach(([label, text]) => {
         const stat = make('div', 'chapter-deep-dossier-metric');
         stat.append(make('strong', '', label));
@@ -3433,19 +3433,19 @@
 
       const proofGrid = make('div', 'chapter-deep-dossier-proof-grid');
       const sourceCard = make('div', 'chapter-deep-dossier-proof');
-      sourceCard.append(make('strong', '', 'Strongest current anchors'));
+      sourceCard.append(make('strong', '', '最强当前锚点'));
       const sourceText = orderedSources.slice(0, 3).map((source) => `${source.label}${source.year ? ` (${source.year})` : ''}`).join(' · ');
       sourceCard.append(make('p', '', sourceText || '—.'));
       proofGrid.append(sourceCard);
 
       const bridgeCard = make('div', 'chapter-deep-dossier-proof');
-      bridgeCard.append(make('strong', '', 'Best next desk move'));
-      bridgeCard.append(make('p', '', roadmapEntries[0]?.desiredEvidence || exhibit?.summary || 'Use the chapter archive cluster and source desk before adding new visual weight.'));
+      bridgeCard.append(make('strong', '', '下一步最佳行动'));
+      bridgeCard.append(make('p', '', roadmapEntries[0]?.desiredEvidence || exhibit?.summary || '在添加新视觉内容之前，请先使用章节档案集群和来源台。'));
       proofGrid.append(bridgeCard);
       dossier.append(proofGrid);
 
       const actions = make('div', 'chapter-deep-dossier-actions');
-      const readEvidence = make('button', 'chapter-deep-dossier-action primary', 'Open chapter evidence');
+      const readEvidence = make('button', 'chapter-deep-dossier-action primary', '打开章节证据');
       readEvidence.type = 'button';
       readEvidence.addEventListener('click', () => {
         window.setReadingMode?.('deep');
@@ -3454,7 +3454,7 @@
       actions.append(readEvidence);
 
       if (exhibit) {
-        const exhibitButton = make('button', 'chapter-deep-dossier-action', 'Open matching exhibit');
+        const exhibitButton = make('button', 'chapter-deep-dossier-action', '打开匹配展品');
         exhibitButton.type = 'button';
         exhibitButton.addEventListener('click', () => {
           window.setReadingMode?.('deep');
@@ -3511,7 +3511,7 @@
         status.dataset.tone = entry.tone === 'ready' ? 'validation' : entry.tone === 'primary' ? 'evidence' : entry.tone === 'context' ? 'primary' : 'present';
         topline.append(status);
         if (exhibit) {
-          const exhibitPill = make('span', 'artifact-pill', 'Matched exhibit');
+          const exhibitPill = make('span', 'artifact-pill', '匹配展品');
           exhibitPill.dataset.tone = 'evidence';
           topline.append(exhibitPill);
         }
@@ -3522,10 +3522,10 @@
 
         const metrics = make('div', 'ledger-metrics');
         [
-          ['Source mix', `${entry.primaryCount} direct / ${entry.contextCount} bridge / ${entry.workingCount} working`],
-          ['Archive density', `${entry.eventCount} timeline event${entry.eventCount === 1 ? '' : 's'} / ${entry.artifactCount} artifact${entry.artifactCount === 1 ? '' : 's'}`],
-          ['Strongest anchor', bestAnchor ? bestAnchor.label : '—'],
-          ['Public-record cue', recordEntry ? `${recordEntry.dateLabel} ? ${recordEntry.title}` : 'No chapter-specific ledger cue yet']
+          ['来源构成', `${entry.primaryCount} 直接 / ${entry.contextCount} 桥接 / ${entry.workingCount} 工作中`],
+          ['档案密度', `${entry.eventCount} 个时间线事件 / ${entry.artifactCount} 个文物`],
+          ['最强锚点', bestAnchor ? bestAnchor.label : '—'],
+          ['公开记录线索', recordEntry ? `${recordEntry.dateLabel} ? ${recordEntry.title}` : '暂无章节专属台账线索']
         ].forEach(([label, value]) => {
           const metric = make('div', 'ledger-metric');
           metric.append(make('strong', '', label));
@@ -3549,7 +3549,7 @@
         }
 
         const actions = make('div', 'ledger-actions');
-        const focus = make('button', 'ledger-action primary', 'Focus chapter');
+        const focus = make('button', 'ledger-action primary', '聚焦章节');
         focus.type = 'button';
         focus.addEventListener('click', () => {
           announceChapterFocus(chapter.id, { scrollArchive: true, scrollSources: true });
@@ -3557,7 +3557,7 @@
         });
         actions.append(focus);
 
-        const archive = make('button', 'ledger-action', 'Open archive evidence');
+        const archive = make('button', 'ledger-action', '打开档案证据');
         archive.type = 'button';
         archive.addEventListener('click', () => {
           window.setReadingMode?.('deep');
@@ -3566,7 +3566,7 @@
         actions.append(archive);
 
         if (exhibit) {
-          const exhibitButton = make('button', 'ledger-action', 'Open matching exhibit');
+          const exhibitButton = make('button', 'ledger-action', '打开匹配展品');
           exhibitButton.type = 'button';
           exhibitButton.addEventListener('click', () => {
             window.setReadingMode?.('deep');
@@ -3656,7 +3656,7 @@
             if (artifactSources.length) {
               const linkRow = make('div', 'artifact-source-links');
               artifactSources.forEach((source, index) => {
-                const link = make('a', `artifact-link${index > 0 ? ' secondary' : ''}`, artifactSources.length === 1 ? 'Open source artifact' : `View source ${index + 1}`);
+                const link = make('a', `artifact-link${index > 0 ? ' secondary' : ''}`, artifactSources.length === 1 ? '打开来源文物' : `查看来源 ${index + 1}`);
                 link.href = source.url;
                 link.target = source.url.startsWith('http') ? '_blank' : '_self';
                 if (link.target === '_blank') link.rel = 'noreferrer';
@@ -3687,11 +3687,11 @@
           const cluster = make('section', 'archive-cluster');
           const clusterHeader = make('div', 'archive-cluster-header');
           const clusterTitle = make('div', 'archive-cluster-title');
-          clusterTitle.append(make('strong', '', 'Supporting archive cluster'));
-          clusterTitle.append(make('span', '', `This chapter is backed by ${chapterEvents.length} reference-grade milestone${chapterEvents.length === 1 ? '' : 's'} in the deeper archive timeline.`));
+          clusterTitle.append(make('strong', '', '支撑档案集群'));
+          clusterTitle.append(make('span', '', `本章节由深层档案时间线中 ${chapterEvents.length} 个参考级里程碑支撑。`));
           clusterHeader.append(clusterTitle);
 
-          const jump = make('button', 'archive-cluster-jump', 'Open cluster in archive');
+          const jump = make('button', 'archive-cluster-jump', '在档案中打开集群');
           jump.type = 'button';
           jump.addEventListener('click', () => {
             openArchiveScope?.(chapter.id, chapterEvents[0].id);
@@ -3772,10 +3772,10 @@
 
         const summaryGrid = make('div', 'exhibit-summary-grid');
         [
-          ['Coverage span', insights.timeSpan],
-          ['Evidence mix', insights.evidenceMix],
-          ['Trust surfaces', insights.surfaces.length ? insights.surfaces.join(' · ') : 'Single source posture'],
-          ['Artifact load', `${insights.artifactEntries.length} artifact${insights.artifactEntries.length === 1 ? '' : 's'}`]
+          ['覆盖时间段', insights.timeSpan],
+          ['证据构成', insights.evidenceMix],
+          ['信任来源', insights.surfaces.length ? insights.surfaces.join(' · ') : '单一来源立场'],
+          ['文物数量', `${insights.artifactEntries.length} 个文物`]
         ].forEach(([label, value]) => {
           const stat = make('div', 'exhibit-summary-stat');
           stat.append(make('strong', '', label));
@@ -3786,12 +3786,12 @@
 
         const readingFrame = make('div', 'exhibit-reading-frame');
         const frameA = make('div', 'exhibit-frame-card');
-        frameA.append(make('strong', '', 'How to read this exhibit'));
+        frameA.append(make('strong', '', '如何阅读本展品'));
         frameA.append(make('p', '', insights.readingFrame));
         readingFrame.append(frameA);
 
         const frameB = make('div', 'exhibit-frame-card');
-        frameB.append(make('strong', '', 'Comparative progression'));
+        frameB.append(make('strong', '', '比较进展'));
         frameB.append(make('p', '', insights.progression));
         readingFrame.append(frameB);
         card.append(readingFrame);
@@ -3805,8 +3805,8 @@
         if (exhibit.comparativeBeats?.length) {
           const beats = make('section', 'exhibit-comparative-beats');
           const header = make('div', 'exhibit-sequence-header');
-          header.append(make('strong', '', 'Comparative narrative'));
-          header.append(make('span', '', 'Each beat clarifies what kind of proof the reader is looking at, and why it matters in sequence.'));
+          header.append(make('strong', '', '比较叙事'));
+          header.append(make('span', '', '每个节拍阐明读者正在看的是哪种证据，以及它在序列中的重要性。'));
           beats.append(header);
 
           exhibit.comparativeBeats.forEach((beat) => {
@@ -3834,20 +3834,20 @@
         if (insights.artifactEntries.length) {
           const sequence = make('section', 'exhibit-sequence');
           const sequenceHeader = make('div', 'exhibit-sequence-header');
-          sequenceHeader.append(make('strong', '', 'Comparative sequence'));
-          sequenceHeader.append(make('span', '', 'The desk now shows how the proof accumulates, not which documents exist.'));
+          sequenceHeader.append(make('strong', '', '比较序列'));
+          sequenceHeader.append(make('span', '', '台账现在展示证据如何积累，而不仅仅是哪些文件存在。'));
           sequence.append(sequenceHeader);
 
           const sequenceGrid = make('div', 'exhibit-sequence-grid');
           insights.artifactEntries.forEach((entry) => {
             const item = make('article', 'exhibit-sequence-card');
             const meta = make('div', 'exhibit-sequence-meta');
-            meta.append(make('span', '', entry.year ? String(entry.year) : 'Undated'));
+            meta.append(make('span', '', entry.year ? String(entry.year) : '未注明日期'));
             if (entry.taxonomy?.label) meta.append(make('span', '', entry.taxonomy.label));
             if (entry.primaryCount) meta.append(make('span', '', `${entry.primaryCount} direct`));
             item.append(meta);
             item.append(make('strong', '', entry.artifact.title));
-            item.append(make('p', '', entry.artifact.excerpt || entry.artifact.caption || 'Source-backed artifact in the exhibit sequence.'));
+            item.append(make('p', '', entry.artifact.excerpt || entry.artifact.caption || '展品序列中有来源支撑的文物。'));
             sequenceGrid.append(item);
           });
           sequence.append(sequenceGrid);
@@ -3874,7 +3874,7 @@
           if (artifactSources.length) {
             const ledger = make('div', 'exhibit-source-ledger');
             artifactSources.forEach((source, index) => {
-              const link = make('a', '', `${index === 0 ? 'Primary trail' : 'Supporting trail'} · ${source.label}`);
+              const link = make('a', '', `${index === 0 ? '主要线索' : '支撑线索'} · ${source.label}`);
               link.href = source.url;
               link.target = source.url.startsWith('http') ? '_blank' : '_self';
               if (link.target === '_blank') link.rel = 'noreferrer';
@@ -3885,11 +3885,11 @@
 
           const actions = make('div', 'exhibit-actions');
           if (chapter) {
-            const chapterLink = make('a', 'exhibit-chapter-link', `Jump to ${chapter.phase}`);
+            const chapterLink = make('a', 'exhibit-chapter-link', `跳转到 ${chapter.phase}`);
             chapterLink.href = `#${chapter.id}`;
             actions.append(chapterLink);
 
-            const archiveButton = make('button', 'exhibit-action', 'Open evidence cluster');
+            const archiveButton = make('button', 'exhibit-action', '打开证据集群');
             archiveButton.type = 'button';
             archiveButton.addEventListener('click', () => openArchiveScope?.(chapter.id));
             actions.append(archiveButton);
@@ -3901,7 +3901,7 @@
 
         if (exhibit.takeaways?.length) {
           const takeawayHeader = make('div', 'exhibit-takeaways');
-          takeawayHeader.append(make('span', 'artifact-pill', 'Editorial takeaways'));
+          takeawayHeader.append(make('span', 'artifact-pill', '编辑要点'));
           const takeawayList = make('div', 'exhibit-takeaway-list');
           exhibit.takeaways.forEach((item) => {
             takeawayList.append(make('div', 'exhibit-takeaway-item', item));
@@ -3961,11 +3961,11 @@
       const artifactReady = sources.filter((source) => (source.artifactReadinessLabel || '').toLowerCase().includes('ready')).length;
 
       [
-        [String(total), 'Tracked sources across the chronicle, spanning direct proof and bridge material.'],
-        [String(directSupport), 'Sources that directly verify a claim on their own URL rather than merely helping the story cohere.'],
-        [String(bridgeSources), 'Useful connective sources that carry biography or context, but should not be mistaken for direct institutional proof.'],
-        [String(workingOnly), 'Internal research scaffolding that keeps uncertain chapters visible without pretending they are fully confirmed.'],
-        [String(artifactReady), 'Sources strong enough to support richer artifact treatment without feeling fake.']
+        [String(total), '编年史中追踪的来源总数，涵盖直接证明和桥接材料。'],
+        [String(directSupport), '能独立通过其 URL 直接验证声明的来源，而非仅帮助故事连贯。'],
+        [String(bridgeSources), '有用的连接性来源，承载传记或背景信息，但不应被误认为直接机构证明。'],
+        [String(workingOnly), '内部研究脚手架，使不确定的章节保持可见，而不假装已完全确认。'],
+        [String(artifactReady), '足够强大、可支持更丰富文物处理而不显得虚假的来源。']
       ].forEach(([value, text]) => {
         const card = make('div', 'source-summary-card');
         card.append(make('strong', '', value));
@@ -3983,10 +3983,10 @@
     }
 
     function auditLabelFromTone(tone) {
-      if (tone === 'ready') return 'Artifact-ready';
-      if (tone === 'primary') return 'Primary-backed';
-      if (tone === 'context') return 'Context-backed';
-      return 'Contextual';
+      if (tone === 'ready') return '文物就绪';
+      if (tone === 'primary') return '主要来源支撑';
+      if (tone === 'context') return '背景来源支撑';
+      return '背景性';
     }
 
     function buildChapterAudit(chapters, sourcesById, eventsByChapterId, artifactsByChapterId) {
@@ -4071,21 +4071,21 @@
       const filterSets = [
         {
           root: priorityRoot,
-          label: 'Priority',
+          label: '优先级',
           key: 'priority',
-          options: [['all', 'All priorities'], ['High', 'High'], ['Medium', 'Medium']]
+          options: [['all', '全部优先级'], ['High', '高'], ['Medium', '中']]
         },
         {
           root: statusRoot,
-          label: 'Status',
+          label: '状态',
           key: 'status',
-          options: [['all', 'All status'], ['Open', 'Open'], ['Queued', 'Queued']]
+          options: [['all', '全部状态'], ['Open', '开放'], ['Queued', '排队中']]
         },
         {
           root: chapterRoot,
-          label: 'Chapter',
+          label: '章节',
           key: 'chapter',
-          options: [['all', 'All chapters'], ...Array.from(new Set(roadmap.map((entry) => entry.chapterId))).map((chapterId) => {
+          options: [['all', '全部章节'], ...Array.from(new Set(roadmap.map((entry) => entry.chapterId))).map((chapterId) => {
             const chapter = chaptersById.get(chapterId);
             return [chapterId, chapter ? chapter.phase : chapterId];
           })]
@@ -4124,7 +4124,7 @@
         });
 
         if (!filtered.length) {
-          root.append(make('div', 'source-empty', 'No roadmap entries match this filter combination yet.'));
+          root.append(make('div', 'source-empty', '暂无符合此筛选条件的路线图条目。'));
           return;
         }
 
@@ -4157,9 +4157,9 @@
 
           const grid = make('div', 'roadmap-grid');
           [
-            ['Wanted evidence', entry.desiredEvidence],
-            ['Why it matters', entry.whyItMatters],
-            ['Target effect', entry.targetEffect]
+            ['所需证据', entry.desiredEvidence],
+            ['重要原因', entry.whyItMatters],
+            ['目标效果', entry.targetEffect]
           ].forEach(([label, text]) => {
             const metric = make('div', 'roadmap-metric');
             metric.append(make('strong', '', label));
@@ -4289,14 +4289,14 @@
             entryCard.append(make('p', '', entry.summary));
 
             const actions = make('div', 'public-record-actions');
-            const sourceLink = make('a', 'public-record-action primary', 'Open source');
+            const sourceLink = make('a', 'public-record-action primary', '打开来源');
             sourceLink.href = entry.url;
             sourceLink.target = entry.url.startsWith('http') ? '_blank' : '_self';
             if (sourceLink.target === '_blank') sourceLink.rel = 'noreferrer';
             actions.append(sourceLink);
 
             if (chapter) {
-              const chapterButton = make('button', 'public-record-action', `Jump to ${chapter.phase}`);
+              const chapterButton = make('button', 'public-record-action', `跳转到 ${chapter.phase}`);
               chapterButton.type = 'button';
               chapterButton.addEventListener('click', () => announceChapterFocus(chapter.id, { scrollSources: true }));
               actions.append(chapterButton);
@@ -4358,13 +4358,13 @@
 
         const body = make('div', 'archive-capture-body');
         const highlightsPanel = make('section', 'archive-capture-panel');
-        highlightsPanel.append(make('h4', '', 'What this capture proves'));
+        highlightsPanel.append(make('h4', '', '本次捕获证明了什么'));
         const highlights = make('div', 'archive-capture-highlights');
         (capture.entryHighlights || []).forEach((entry) => {
           const entryCard = make('article', 'archive-capture-highlight');
           const topline = make('div', 'archive-capture-highlight-topline');
           topline.append(make('span', '', entry.dateLabel));
-          topline.append(make('span', '', 'Visible in preserved index'));
+        topline.append(make('span', '', '在保存的索引中可见'));
           entryCard.append(topline);
           entryCard.append(make('h5', '', entry.title));
           entryCard.append(make('p', '', entry.summary));
@@ -4374,13 +4374,13 @@
         body.append(highlightsPanel);
 
         const supportPanel = make('section', 'archive-capture-panel');
-        supportPanel.append(make('h4', '', 'How to use it'));
+        supportPanel.append(make('h4', '', '如何使用'));
         const notes = make('div', 'archive-capture-notes');
         (capture.notes || []).forEach((note) => notes.append(make('div', 'archive-capture-note', note)));
         supportPanel.append(notes);
 
         const sourceRow = make('div', 'archive-capture-sources');
-        sourceRow.append(make('h4', '', 'Connected sources'));
+        sourceRow.append(make('h4', '', '关联来源'));
         const pills = make('div', 'archive-capture-source-row');
         (capture.sourceIds || []).map((sourceId) => sourcesById.get(sourceId)).filter(Boolean).forEach((source) => {
           const pill = make('a', 'archive-capture-source', source.label);
@@ -4393,11 +4393,11 @@
         supportPanel.append(sourceRow);
 
         const actions = make('div', 'archive-capture-actions');
-        const openCapture = make('a', 'public-record-action primary', capture.captureLabel || 'Open capture');
+        const openCapture = make('a', 'public-record-action primary', capture.captureLabel || '打开捕获');
         openCapture.href = capture.capturePath;
         actions.append(openCapture);
         if (capture.capturedFrom) {
-          const origin = make('a', 'public-record-action', capture.capturedFromLabel || 'Open original');
+          const origin = make('a', 'public-record-action', capture.capturedFromLabel || '打开原始链接');
           origin.href = capture.capturedFrom;
           origin.target = '_blank';
           origin.rel = 'noreferrer';
@@ -4466,9 +4466,9 @@
 
           const meta = make('div', 'source-dossier-meta');
           [
-            ['Source mix', `${directSources.length} direct · ${bridgeSources.length} bridge · ${workingSources.length} working`],
-            ['Archive density', `${eventCount} timeline event${eventCount === 1 ? '' : 's'} · ${artifactCount} artifact${artifactCount === 1 ? '' : 's'}`],
-            ['Strongest anchor', strongestSource ? strongestSource.label : '—']
+            ['来源构成', `${directSources.length} 直接 · ${bridgeSources.length} 桥接 · ${workingSources.length} 工作中`],
+            ['档案密度', `${eventCount} 个时间线事件 · ${artifactCount} 个文物`],
+            ['最强锚点', strongestSource ? strongestSource.label : '—']
           ].forEach(([label, text]) => {
             const stat = make('div', 'source-dossier-stat');
             stat.append(make('strong', '', label));
@@ -4487,7 +4487,7 @@
             sourceRow.append(link);
           });
           if (strongestSource && chapterSources.length > 3) {
-            const more = make('span', 'source-dossier-chip', `+${chapterSources.length - 3} more anchors`);
+            const more = make('span', 'source-dossier-chip', `+${chapterSources.length - 3} 个更多锚点`);
             more.dataset.tone = 'working';
             sourceRow.append(more);
           }
@@ -4507,7 +4507,7 @@
             card.append(roadmapRow);
           }
 
-          const action = make('button', 'source-dossier-action', 'Focus chapter evidence');
+          const action = make('button', 'source-dossier-action', '聚焦章节证据');
           action.type = 'button';
           action.addEventListener('click', () => {
             announceChapterFocus(chapter.id, { scrollSources: true });
@@ -4594,27 +4594,27 @@
       const filterSets = [
         {
           root: originRoot,
-          label: 'Source origin',
+          label: '来源出处',
           key: 'origin',
-          options: [['all', 'All origins'], ['first-party', 'First-party'], ['third-party', 'Third-party'], ['internal', 'Working notes']]
+          options: [['all', '全部出处'], ['first-party', '第一方'], ['third-party', '第三方'], ['internal', '工作笔记']]
         },
         {
           root: evidenceRoot,
-          label: 'Proof posture',
+          label: '证明立场',
           key: 'evidence',
-          options: [['all', 'All evidence'], ['primary', 'Primary'], ['context', 'Context']]
+          options: [['all', '全部证据'], ['primary', '主要'], ['context', '背景']]
         },
         {
           root: verificationRoot,
-          label: 'Verification state',
+          label: '验证状态',
           key: 'verification',
-          options: [['all', 'All states'], ['direct', 'Direct support'], ['bridge', 'Bridge source']]
+          options: [['all', '全部状态'], ['direct', '直接支持'], ['bridge', '桥接来源']]
         },
         {
           root: chapterRoot,
-          label: 'Chapter support',
+          label: '章节支撑',
           key: 'chapter',
-          options: [['all', 'All chapters'], ...chapters.map((chapter) => [chapter.id, chapter.phase])]
+          options: [['all', '全部章节'], ...chapters.map((chapter) => [chapter.id, chapter.phase])]
         }
       ];
 
@@ -4668,7 +4668,7 @@
         });
 
         if (!filtered.length) {
-          root.append(make('div', 'source-empty', 'No sources match this combination yet. Try clearing one filter or switching back to all chapters.'));
+          root.append(make('div', 'source-empty', '暂无符合此条件的来源。请尝试清除某个筛选条件或切换回全部章节。'));
           return;
         }
 
@@ -4704,8 +4704,8 @@
           if (support.eventCount) coverageBits.push(`${support.eventCount} archive event${support.eventCount === 1 ? '' : 's'}`);
           if (support.artifactCount) coverageBits.push(`${support.artifactCount} artifact${support.artifactCount === 1 ? '' : 's'}`);
           const supportLabel = coverageBits.length
-            ? `Verifies ${source.claimScopeLabel || 'supporting evidence'} · supports ${coverageBits.join(' / ')}`
-            : `Verifies ${source.claimScopeLabel || 'supporting evidence'}`;
+            ? `验证 ${source.claimScopeLabel || '支撑证据'} · 支撑 ${coverageBits.join(' / ')}`
+            : `验证 ${source.claimScopeLabel || '支撑证据'}`;
           supportBox.append(make('div', 'source-support-title', supportLabel));
 
           if (support.chapters.length) {
@@ -4730,7 +4730,7 @@
           const roadmapEntries = roadmapByAnchor.get(source.id) || [];
           if (roadmapEntries.length) {
             const roadmapBox = make('div', 'source-support');
-            roadmapBox.append(make('div', 'source-support-title', `Still carrying ${roadmapEntries.length} roadmap target${roadmapEntries.length === 1 ? '' : 's'} for stronger proof`));
+            roadmapBox.append(make('div', 'source-support-title', `仍有 ${roadmapEntries.length} 个路线图目标待更强证明`));
             const row = make('div', 'source-support-row');
             roadmapEntries.forEach((entry) => {
               const button = make('button', 'source-support-chip', entry.title);
@@ -4746,7 +4746,7 @@
           }
 
           article.append(copy);
-          const link = make('a', '', source.url.startsWith('http') ? 'Open source' : 'Open file');
+          const link = make('a', '', source.url.startsWith('http') ? '打开来源' : '打开文件');
           link.href = source.url;
           link.target = source.url.startsWith('http') ? '_blank' : '_self';
           if (link.target === '_blank') link.rel = 'noreferrer';
@@ -4838,8 +4838,8 @@
         }
         if (eventSourceCount) {
           const sourceTone = Array.from(new Set(chapterEvents.flatMap((event) => event.sourceIds || []).map((sourceId) => sourcesById.get(sourceId)?.publisherType).filter(Boolean))).includes('first-party')
-            ? 'Primary-backed'
-            : 'Context-backed';
+            ? '主要来源支撑'
+            : '背景来源支撑';
           evidence.append(make('span', 'map-jump-pill', sourceTone));
         }
         body.append(evidence);
@@ -4867,7 +4867,7 @@
     }
 
     function formatEventDate(startDate) {
-      if (!startDate?.year) return 'Undated';
+      if (!startDate?.year) return '未注明日期';
       const year = startDate.year;
       const month = startDate.month ? String(startDate.month).padStart(2, '0') : null;
       const day = startDate.day ? String(startDate.day).padStart(2, '0') : null;
@@ -4900,7 +4900,7 @@
     }
 
     function eventYearBucket(event) {
-      return hasStructuredStartDate(event) ? String(event.start_date.year) : 'Undated / chronology in progress';
+      return hasStructuredStartDate(event) ? String(event.start_date.year) : '未注明日期 / 年表整理中';
     }
 
     let highlightedArchiveCard = null;
@@ -4948,24 +4948,24 @@
       const scopeClear = document.getElementById('archiveScopeClear');
       const archiveNote = document.getElementById('archiveNote');
       const groups = [
-        ['all', 'All'],
-        ['formation', 'Formation'],
-        ['research', 'Research'],
-        ['company', 'Company'],
-        ['validation', 'Validation'],
-        ['ai-era', 'AI era']
+        ['all', '全部'],
+        ['formation', '形成期'],
+        ['research', '研究期'],
+        ['company', '公司期'],
+        ['validation', '验证期'],
+        ['ai-era', 'AI时代']
       ];
       const sourceOrigins = [
-        ['all', 'All sources'],
-        ['first-party', 'First-party'],
-        ['third-party', 'Third-party'],
-        ['internal', 'Working notes']
+        ['all', '全部来源'],
+        ['first-party', '第一方'],
+        ['third-party', '第三方'],
+        ['internal', '工作笔记']
       ];
       const filters = { group: 'all', origin: 'all', chapterId: 'all' };
 
-      const groupLabel = make('span', 'archive-filter-label', 'Story layer');
+      const groupLabel = make('span', 'archive-filter-label', '故事层级');
       legendRoot.append(groupLabel);
-      const originLabel = make('span', 'archive-filter-label', 'Source origin');
+      const originLabel = make('span', 'archive-filter-label', '来源出处');
       sourceFilterRoot.append(originLabel);
 
       function syncArchiveScopeUi() {
@@ -4978,8 +4978,8 @@
           const scopedEvents = events.filter((event) => filters.chapterId === 'all' || event.chapterId === filters.chapterId);
           const undatedCount = scopedEvents.filter((event) => !hasStructuredStartDate(event)).length;
           archiveNote.textContent = filters.chapterId === 'all'
-            ? `The main chapters are deliberately selective. This archive view exposes the deeper milestone layer so the site can support both skim mode and research mode.`
-            : `Scoped to ${chapter?.phase || 'this chapter'}.`;
+            ? `主要章节是有意精选的。此档案视图展示更深层的里程碑层，使网站同时支持浏览模式和研究模式。`
+            : `已聚焦到 ${chapter?.phase || '本章节'}。`;
         }
       }
 
@@ -5097,7 +5097,7 @@
           }
 
           if (event.chapterId) {
-            const chapterLink = make('a', 'timeline-chapter-link', 'Return to chapter');
+            const chapterLink = make('a', 'timeline-chapter-link', '返回章节');
             chapterLink.href = `#${event.chapterId}`;
             chapterLink.addEventListener('click', (clickEvent) => {
               clickEvent.preventDefault();
@@ -5139,8 +5139,8 @@
           return {
             chapterId: chapter.id,
             kind: 'distributed',
-            routeLabel: 'Distributed AI-era layer',
-            modeLabel: 'No single-city map state',
+            routeLabel: '分布式 AI 时代层',
+            modeLabel: '无单城市地图状态',
             featureCollection: { type: 'FeatureCollection', features: [] },
             previousLocationName: previousReal?.name || null
           };
@@ -5156,8 +5156,8 @@
           return {
             chapterId: chapter.id,
             kind: 'origin',
-            routeLabel: 'Formation anchor',
-            modeLabel: 'Opening map state',
+            routeLabel: '形成期锚点',
+            modeLabel: '起始地图状态',
             featureCollection: { type: 'FeatureCollection', features: [] },
             previousLocationName: null
           };
@@ -5167,8 +5167,8 @@
           return {
             chapterId: chapter.id,
             kind: 'anchor',
-            routeLabel: `Anchored in ${current.name}`,
-            modeLabel: 'Location stays fixed',
+            routeLabel: `锚定在 ${current.name}`,
+            modeLabel: '位置保持不变',
             featureCollection: { type: 'FeatureCollection', features: [] },
             previousLocationName: current.name
           };
@@ -5177,8 +5177,8 @@
         return {
           chapterId: chapter.id,
           kind: 'transition',
-          routeLabel: `${previousReal.name} -> ${current.name}`,
-          modeLabel: 'Chapter transition',
+          routeLabel: `${previousReal.name} → ${current.name}`,
+          modeLabel: '章节过渡',
           previousLocationName: previousReal.name,
           featureCollection: {
             type: 'FeatureCollection',
@@ -5357,9 +5357,9 @@
         const stage = chapter ? journeyStages.get(chapter.id) : null;
         title.textContent = activeLocations.length > 1 ? activeLocations.map(l => l.name).join(' / ') : current.name;
         summary.textContent = chapter?.mapCaption || current.summary;
-        route.textContent = stage?.routeLabel || 'Narrative geography';
-        mode.textContent = stage?.modeLabel || 'Narrative geography';
-        context.textContent = chapter ? `${chapter.phase} · ${chapter.range}` : 'Narrative geography';
+        route.textContent = stage?.routeLabel || '叙事地理';
+        mode.textContent = stage?.modeLabel || '叙事地理';
+        context.textContent = chapter ? `${chapter.phase} · ${chapter.range}` : '叙事地理';
 
         if (!map.loaded()) return;
 
